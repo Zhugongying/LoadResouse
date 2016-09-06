@@ -1,0 +1,62 @@
+//
+//  LoadResouse-Prefix.pch
+//  LoadResouse
+//
+//  Created by 朱共营 on 16/9/6.
+//  Copyright © 2016年 Zhugy. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "RESideMenu.h"
+
+//#define __UpLine__
+
+#ifndef __UpLine__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+#define kScreenSize [UIScreen mainScreen].bounds.size
+
+#define kScreenSizeW [UIScreen mainScreen].bounds.size.width
+#define kScreenSizeH [UIScreen mainScreen].bounds.size.height
+
+
+#define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
+
+#define UIColorRGBA(rgbValue, alphaValue) \
+[UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+
+
+
+#define MESSAGEBOXREADEL(msg)\
+{\
+UIAlertView*_alert=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];\
+_alert.transform=CGAffineTransformMakeTranslation(0,80); \
+[_alert show];\
+}
+
+
+#define MESSAGEBOX(msg)\
+{\
+UIAlertView*_alert=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];\
+_alert.transform=CGAffineTransformMakeTranslation(0,80); \
+[_alert show];\
+}
+
+
+#endif
