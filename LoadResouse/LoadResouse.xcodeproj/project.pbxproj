@@ -21,6 +21,9 @@
 		CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE106CEB1D7EA8DA00C7F181 /* TestViewController.xib */; };
 		CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CED1D7EA8DA00C7F181 /* UIViewController+RESideMenu.m */; };
 		CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CF91D7EAA3200C7F181 /* LeftViewController.m */; };
+		CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */; };
+		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
+		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,13 @@
 		CE106CF61D7EA91F00C7F181 /* LoadResouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadResouse-Prefix.pch"; sourceTree = "<group>"; };
 		CE106CF81D7EAA3200C7F181 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		CE106CF91D7EAA3200C7F181 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		CE106CFF1D7EAEDA00C7F181 /* TableFatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableFatherViewController.h; sourceTree = "<group>"; };
+		CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableFatherViewController.m; sourceTree = "<group>"; };
+		CE106D031D7EB56100C7F181 /* MoreToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreToolViewController.h; sourceTree = "<group>"; };
+		CE106D041D7EB56100C7F181 /* MoreToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreToolViewController.m; sourceTree = "<group>"; };
+		CE106D0B1D7EBF7B00C7F181 /* XTGNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGNViewController.h; sourceTree = "<group>"; };
+		CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGNViewController.m; sourceTree = "<group>"; };
+		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,8 @@
 		CE106CC31D7EA5E600C7F181 /* LoadResouse */ = {
 			isa = PBXGroup;
 			children = (
+				CE106D0F1D7FBCBF00C7F181 /* 全局 */,
+				CE106CFB1D7EAE2500C7F181 /* TableviewFather */,
 				CE106CD91D7EA66C00C7F181 /* Controller */,
 				CE106CD81D7EA66000C7F181 /* ViewCell */,
 				CE106CD71D7EA65500C7F181 /* Model */,
@@ -139,6 +151,7 @@
 		CE106CD91D7EA66C00C7F181 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CE106D021D7EB4E900C7F181 /* 功能模块 */,
 				CE106CF71D7EAA1A00C7F181 /* LeftController */,
 				CE106CDA1D7EA67A00C7F181 /* HomeController */,
 			);
@@ -185,6 +198,50 @@
 			name = LeftController;
 			sourceTree = "<group>";
 		};
+		CE106CFB1D7EAE2500C7F181 /* TableviewFather */ = {
+			isa = PBXGroup;
+			children = (
+				CE106CFF1D7EAEDA00C7F181 /* TableFatherViewController.h */,
+				CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */,
+			);
+			name = TableviewFather;
+			sourceTree = "<group>";
+		};
+		CE106D021D7EB4E900C7F181 /* 功能模块 */ = {
+			isa = PBXGroup;
+			children = (
+				CE106D0A1D7EBF5300C7F181 /* 系统模块 */,
+				CE106D091D7EBF4000C7F181 /* 主 */,
+			);
+			name = "功能模块";
+			sourceTree = "<group>";
+		};
+		CE106D091D7EBF4000C7F181 /* 主 */ = {
+			isa = PBXGroup;
+			children = (
+				CE106D031D7EB56100C7F181 /* MoreToolViewController.h */,
+				CE106D041D7EB56100C7F181 /* MoreToolViewController.m */,
+			);
+			name = "主";
+			sourceTree = "<group>";
+		};
+		CE106D0A1D7EBF5300C7F181 /* 系统模块 */ = {
+			isa = PBXGroup;
+			children = (
+				CE106D0B1D7EBF7B00C7F181 /* XTGNViewController.h */,
+				CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */,
+			);
+			name = "系统模块";
+			sourceTree = "<group>";
+		};
+		CE106D0F1D7FBCBF00C7F181 /* 全局 */ = {
+			isa = PBXGroup;
+			children = (
+				CE106D101D7FBD0400C7F181 /* GlobalDefine.h */,
+			);
+			name = "全局";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +273,7 @@
 				TargetAttributes = {
 					CE106CC01D7EA5E600C7F181 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3U62SP5YP3;
 					};
 				};
 			};
@@ -260,12 +318,15 @@
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
 				CE106CDD1D7EA7C500C7F181 /* HomeViewController.m in Sources */,
 				CE106CEE1D7EA8DA00C7F181 /* MyHtmlViewController.m in Sources */,
+				CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */,
 				CE106CEF1D7EA8DA00C7F181 /* PlayerViewController.m in Sources */,
 				CE106CF31D7EA8DA00C7F181 /* TestViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
 				CE106CF21D7EA8DA00C7F181 /* TableViewController.m in Sources */,
+				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,
+				CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,9 +430,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
 				INFOPLIST_FILE = LoadResouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,9 +445,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
 				INFOPLIST_FILE = LoadResouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,5 @@
 //
-//  LeftViewController.h
+//  MoreToolViewController.h
 //  LoadResouse
 //
 //  Created by 朱共营 on 16/9/6.
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface LeftViewController : UIViewController
+#import "TableFatherViewController.h"
+@interface MoreToolViewController : TableFatherViewController
 
 @end
