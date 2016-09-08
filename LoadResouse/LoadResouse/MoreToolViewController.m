@@ -8,6 +8,7 @@
 
 #import "MoreToolViewController.h"
 #import "XTGNViewController.h"
+#import "BaiSiDJViewController.h"
 @interface MoreToolViewController ()
 
 @end
@@ -23,7 +24,7 @@
 }
 - (void)loadDataResouse:(NSArray *)arr{
     
-    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块", nil];
+    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块",@"百思不得姐", nil];
     [self.tableView reloadData];
     
 }
@@ -38,6 +39,13 @@
         
         }
             break;
+            case 1:
+        {
+        
+            BaiSiDJViewController *bdj=[[BaiSiDJViewController alloc] init];
+            [self.navigationController pushViewController:bdj animated:YES];
+        
+        }
             
         default:
             break;

@@ -33,6 +33,10 @@
     [self.view addSubview:self.tableView];
     
 }
+- (void)creatRegetCell{
+
+
+}
 - (void)loadDataResouse:(NSArray *)arr{
 
     self.dataResouse=[NSMutableArray arrayWithArray:arr];
@@ -67,10 +71,8 @@
 
 }
 - (void)creatLeftBtn{
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Left"
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:self
-                                                                            action:@selector(presentLeftMenuViewController:)];
+    UIImage *image=[[UIImage imageNamed:@"left"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(presentLeftMenuViewController:)];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     imageView.contentMode = UIViewContentModeScaleAspectFill;

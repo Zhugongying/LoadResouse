@@ -24,9 +24,18 @@
 		CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */; };
 		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
+		CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */; };
+		CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E971D800B6200D7720C /* BaiSiBDJCell.m */; };
+		CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */; };
+		CE638E9E1D800BA600D7720C /* FatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E9D1D800BA600D7720C /* FatherModel.m */; };
+		CE638EA11D800BBD00D7720C /* BaiSiBDJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EA01D800BBD00D7720C /* BaiSiBDJModel.m */; };
+		CE638EA51D80102200D7720C /* TitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EA41D80102200D7720C /* TitleModel.m */; };
+		CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EA81D801C4900D7720C /* LoadDataController.m */; };
+		D479882B13F24A3692C724E7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A0DAB4BE8747228BC49F6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE106CC11D7EA5E600C7F181 /* LoadResouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadResouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE106CC51D7EA5E600C7F181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE106CC71D7EA5E600C7F181 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +70,20 @@
 		CE106D0B1D7EBF7B00C7F181 /* XTGNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGNViewController.h; sourceTree = "<group>"; };
 		CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGNViewController.m; sourceTree = "<group>"; };
 		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiDJViewController.h; sourceTree = "<group>"; };
+		CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiDJViewController.m; sourceTree = "<group>"; };
+		CE638E961D800B6200D7720C /* BaiSiBDJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiBDJCell.h; sourceTree = "<group>"; };
+		CE638E971D800B6200D7720C /* BaiSiBDJCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiBDJCell.m; sourceTree = "<group>"; };
+		CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiSiBDJCell.xib; sourceTree = "<group>"; };
+		CE638E9C1D800BA600D7720C /* FatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatherModel.h; sourceTree = "<group>"; };
+		CE638E9D1D800BA600D7720C /* FatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatherModel.m; sourceTree = "<group>"; };
+		CE638E9F1D800BBD00D7720C /* BaiSiBDJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiBDJModel.h; sourceTree = "<group>"; };
+		CE638EA01D800BBD00D7720C /* BaiSiBDJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiBDJModel.m; sourceTree = "<group>"; };
+		CE638EA31D80102200D7720C /* TitleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleModel.h; sourceTree = "<group>"; };
+		CE638EA41D80102200D7720C /* TitleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleModel.m; sourceTree = "<group>"; };
+		CE638EA71D801C4900D7720C /* LoadDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataController.h; sourceTree = "<group>"; };
+		CE638EA81D801C4900D7720C /* LoadDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataController.m; sourceTree = "<group>"; };
+		DB42760E1DE940D69C616B19 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,17 +91,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D479882B13F24A3692C724E7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E20DF4D935D4331BA17581A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69A0DAB4BE8747228BC49F6E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE106CB81D7EA5E600C7F181 = {
 			isa = PBXGroup;
 			children = (
 				CE106CC31D7EA5E600C7F181 /* LoadResouse */,
 				CE106CC21D7EA5E600C7F181 /* Products */,
+				DB42760E1DE940D69C616B19 /* Pods.xcconfig */,
+				0E20DF4D935D4331BA17581A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +127,7 @@
 		CE106CC31D7EA5E600C7F181 /* LoadResouse */ = {
 			isa = PBXGroup;
 			children = (
+				CE638E9B1D800B7800D7720C /* MyModel */,
 				CE106D0F1D7FBCBF00C7F181 /* 全局 */,
 				CE106CFB1D7EAE2500C7F181 /* TableviewFather */,
 				CE106CD91D7EA66C00C7F181 /* Controller */,
@@ -210,6 +245,8 @@
 		CE106D021D7EB4E900C7F181 /* 功能模块 */ = {
 			isa = PBXGroup;
 			children = (
+				CE68F8291D7FF92600DE4A0C /* 百思不得姐 */,
+				CE638EA61D801C1B00D7720C /* 加载数据类 */,
 				CE106D0A1D7EBF5300C7F181 /* 系统模块 */,
 				CE106D091D7EBF4000C7F181 /* 主 */,
 			);
@@ -242,6 +279,72 @@
 			name = "全局";
 			sourceTree = "<group>";
 		};
+		CE638E9B1D800B7800D7720C /* MyModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE638E9C1D800BA600D7720C /* FatherModel.h */,
+				CE638E9D1D800BA600D7720C /* FatherModel.m */,
+			);
+			name = MyModel;
+			sourceTree = "<group>";
+		};
+		CE638EA21D80100700D7720C /* titleModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE638EA31D80102200D7720C /* TitleModel.h */,
+				CE638EA41D80102200D7720C /* TitleModel.m */,
+			);
+			name = titleModel;
+			sourceTree = "<group>";
+		};
+		CE638EA61D801C1B00D7720C /* 加载数据类 */ = {
+			isa = PBXGroup;
+			children = (
+				CE638EA71D801C4900D7720C /* LoadDataController.h */,
+				CE638EA81D801C4900D7720C /* LoadDataController.m */,
+			);
+			name = "加载数据类";
+			sourceTree = "<group>";
+		};
+		CE68F8291D7FF92600DE4A0C /* 百思不得姐 */ = {
+			isa = PBXGroup;
+			children = (
+				CE68F82C1D7FF96100DE4A0C /* Controller */,
+				CE68F82B1D7FF95500DE4A0C /* cell */,
+				CE68F82A1D7FF94900DE4A0C /* Model */,
+			);
+			name = "百思不得姐";
+			sourceTree = "<group>";
+		};
+		CE68F82A1D7FF94900DE4A0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE638EA21D80100700D7720C /* titleModel */,
+				CE638E9F1D800BBD00D7720C /* BaiSiBDJModel.h */,
+				CE638EA01D800BBD00D7720C /* BaiSiBDJModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE68F82B1D7FF95500DE4A0C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE638E961D800B6200D7720C /* BaiSiBDJCell.h */,
+				CE638E971D800B6200D7720C /* BaiSiBDJCell.m */,
+				CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		CE68F82C1D7FF96100DE4A0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */,
+				CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,9 +352,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE106CD21D7EA5E700C7F181 /* Build configuration list for PBXNativeTarget "LoadResouse" */;
 			buildPhases = (
+				B1EA269468C94ECB867BE016 /* Check Pods Manifest.lock */,
 				CE106CBD1D7EA5E600C7F181 /* Sources */,
 				CE106CBE1D7EA5E600C7F181 /* Frameworks */,
 				CE106CBF1D7EA5E600C7F181 /* Resources */,
+				5C3566C20EDE4143A8666EA4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */,
+				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
 				CE106CCE1D7EA5E700C7F181 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -308,22 +414,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C3566C20EDE4143A8666EA4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1EA269468C94ECB867BE016 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE106CBD1D7EA5E600C7F181 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */,
+				CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */,
+				CE638E9E1D800BA600D7720C /* FatherModel.m in Sources */,
 				CE106CF01D7EA8DA00C7F181 /* RECommonFunctions.m in Sources */,
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
+				CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */,
 				CE106CDD1D7EA7C500C7F181 /* HomeViewController.m in Sources */,
+				CE638EA11D800BBD00D7720C /* BaiSiBDJModel.m in Sources */,
 				CE106CEE1D7EA8DA00C7F181 /* MyHtmlViewController.m in Sources */,
+				CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */,
 				CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */,
 				CE106CEF1D7EA8DA00C7F181 /* PlayerViewController.m in Sources */,
 				CE106CF31D7EA8DA00C7F181 /* TestViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
+				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,
 				CE106CF21D7EA8DA00C7F181 /* TableViewController.m in Sources */,
 				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,
 				CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */,
@@ -428,6 +573,7 @@
 		};
 		CE106CD31D7EA5E700C7F181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB42760E1DE940D69C616B19 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -438,11 +584,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
 			name = Debug;
 		};
 		CE106CD41D7EA5E700C7F181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB42760E1DE940D69C616B19 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -453,6 +601,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
 			name = Release;
 		};
@@ -475,6 +624,7 @@
 				CE106CD41D7EA5E700C7F181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

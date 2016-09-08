@@ -9,10 +9,6 @@
 #ifndef GlobalDefine_h
 #define GlobalDefine_h
 
-
-
-
-
 // 设备判断
 #define IS_IPAD         (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE       (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
@@ -26,6 +22,6 @@
 #define IS_AT_LEAST_IOS7     ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 #define IS_AT_LEAST_IOS8     ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
-
+#define KBaisibudejieDuanzi "http://s.budejie.com/topic/list/zuixin/29/bs0315-iphone-4.3/0-20.json"
 
 #endif /* GlobalDefine_h */

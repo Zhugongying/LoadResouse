@@ -16,5 +16,12 @@
 - (void)creatTableView;
 - (void)loadDataResouse:(NSArray *)arr;
 - (void)creatLeftBtn;
+- (void)creatRegetCell;//自定义cell
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
