@@ -9,7 +9,15 @@
 #import "BaiSiDJViewController.h"
 #import "BaiSiBDJCell.h"
 
-@interface BaiSiDJViewController ()
+#import "BaiSiBDJDataController.h"
+
+#import "FenLeiViewController.h"
+
+
+@interface BaiSiDJViewController ()<LoadDataControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic,strong)UICollectionView *chouseCollectView;
+@property (nonatomic,strong)NSMutableArray *titleArr;
 
 @end
 
@@ -20,12 +28,44 @@
     
     [self creatTableView];
     [self creatRegetCell];
+    
+    [self loadDataResouse:nil];
+    [self creatBarBtnRight];
 }
+#pragma mark - 创建筛选按钮
+- (void)creatBarBtnRight{
+
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(presenView)];
+
+}
+
+
+- (void)presenView{
+
+    FenLeiViewController * fenlei=[[FenLeiViewController alloc] init];
+    
+    [self.navigationController pushViewController:fenlei animated:YES];
+    
+
+}
+
+- (void)loadDataResouse:(NSArray *)arr{
+    
+    BaiSiBDJDataController *bsData=[[BaiSiBDJDataController alloc] initWithDelegate:self];
+    
+    [bsData requestWithArgs:nil];
+
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200;
+    
+    
+    
+    
+    return 160;
 }
 - (void)creatRegetCell{
 
@@ -41,7 +81,15 @@
 
 
 }
+- (void)loadDataFinishWithResouse:(LoadDataController *)controller{
 
+
+}
+- (void)loadData:(LoadDataController *)controller failedWithEroor:(NSError *)error{
+
+
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -17,7 +17,8 @@
     #import <Foundation/Foundation.h>
     #import "RESideMenu.h"
     #import "GlobalDefine.h"
-    #import "AFNetworking.h"
+    #import <AFNetworking.h>
+    #import "LoadDataController.h"
 
 //#define __UpLine__
 

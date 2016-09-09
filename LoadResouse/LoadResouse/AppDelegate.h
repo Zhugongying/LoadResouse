@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HomeViewController.h"
+#import <MBProgressHUD.h>
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,RESideMenuDelegate>
 

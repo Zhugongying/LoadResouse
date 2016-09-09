@@ -11,3 +11,7 @@
 @implementation TitleModel
 
 @end
+
+@implementation HeadTileModel
+
+@end

@@ -31,6 +31,10 @@
 		CE638EA11D800BBD00D7720C /* BaiSiBDJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EA01D800BBD00D7720C /* BaiSiBDJModel.m */; };
 		CE638EA51D80102200D7720C /* TitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EA41D80102200D7720C /* TitleModel.m */; };
 		CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EA81D801C4900D7720C /* LoadDataController.m */; };
+		CE638EAD1D81106000D7720C /* BaiSiBDJDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EAC1D81106000D7720C /* BaiSiBDJDataController.m */; };
+		CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EB11D828DA900D7720C /* FenLeiViewController.m */; };
+		CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EB51D82BE0900D7720C /* FenleiCell.m */; };
+		CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638EB61D82BE0900D7720C /* FenleiCell.xib */; };
 		D479882B13F24A3692C724E7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A0DAB4BE8747228BC49F6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +87,13 @@
 		CE638EA41D80102200D7720C /* TitleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleModel.m; sourceTree = "<group>"; };
 		CE638EA71D801C4900D7720C /* LoadDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataController.h; sourceTree = "<group>"; };
 		CE638EA81D801C4900D7720C /* LoadDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataController.m; sourceTree = "<group>"; };
+		CE638EAB1D81106000D7720C /* BaiSiBDJDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiBDJDataController.h; sourceTree = "<group>"; };
+		CE638EAC1D81106000D7720C /* BaiSiBDJDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiBDJDataController.m; sourceTree = "<group>"; };
+		CE638EB01D828DA900D7720C /* FenLeiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenLeiViewController.h; sourceTree = "<group>"; };
+		CE638EB11D828DA900D7720C /* FenLeiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenLeiViewController.m; sourceTree = "<group>"; };
+		CE638EB41D82BE0900D7720C /* FenleiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenleiCell.h; sourceTree = "<group>"; };
+		CE638EB51D82BE0900D7720C /* FenleiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenleiCell.m; sourceTree = "<group>"; };
+		CE638EB61D82BE0900D7720C /* FenleiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FenleiCell.xib; sourceTree = "<group>"; };
 		DB42760E1DE940D69C616B19 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +140,7 @@
 			children = (
 				CE638E9B1D800B7800D7720C /* MyModel */,
 				CE106D0F1D7FBCBF00C7F181 /* 全局 */,
+				CE638EA61D801C1B00D7720C /* 请求类 */,
 				CE106CFB1D7EAE2500C7F181 /* TableviewFather */,
 				CE106CD91D7EA66C00C7F181 /* Controller */,
 				CE106CD81D7EA66000C7F181 /* ViewCell */,
@@ -246,20 +258,19 @@
 			isa = PBXGroup;
 			children = (
 				CE68F8291D7FF92600DE4A0C /* 百思不得姐 */,
-				CE638EA61D801C1B00D7720C /* 加载数据类 */,
 				CE106D0A1D7EBF5300C7F181 /* 系统模块 */,
-				CE106D091D7EBF4000C7F181 /* 主 */,
+				CE106D091D7EBF4000C7F181 /* 主控制器 */,
 			);
 			name = "功能模块";
 			sourceTree = "<group>";
 		};
-		CE106D091D7EBF4000C7F181 /* 主 */ = {
+		CE106D091D7EBF4000C7F181 /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
 				CE106D031D7EB56100C7F181 /* MoreToolViewController.h */,
 				CE106D041D7EB56100C7F181 /* MoreToolViewController.m */,
 			);
-			name = "主";
+			name = "主控制器";
 			sourceTree = "<group>";
 		};
 		CE106D0A1D7EBF5300C7F181 /* 系统模块 */ = {
@@ -297,19 +308,57 @@
 			name = titleModel;
 			sourceTree = "<group>";
 		};
-		CE638EA61D801C1B00D7720C /* 加载数据类 */ = {
+		CE638EA61D801C1B00D7720C /* 请求类 */ = {
 			isa = PBXGroup;
 			children = (
 				CE638EA71D801C4900D7720C /* LoadDataController.h */,
 				CE638EA81D801C4900D7720C /* LoadDataController.m */,
 			);
-			name = "加载数据类";
+			name = "请求类";
+			sourceTree = "<group>";
+		};
+		CE638EAA1D81102D00D7720C /* LoadData */ = {
+			isa = PBXGroup;
+			children = (
+				CE638EAB1D81106000D7720C /* BaiSiBDJDataController.h */,
+				CE638EAC1D81106000D7720C /* BaiSiBDJDataController.m */,
+			);
+			name = LoadData;
+			sourceTree = "<group>";
+		};
+		CE638EAE1D828D7B00D7720C /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */,
+				CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		CE638EAF1D828D8700D7720C /* 分类页 */ = {
+			isa = PBXGroup;
+			children = (
+				CE638EB01D828DA900D7720C /* FenLeiViewController.h */,
+				CE638EB11D828DA900D7720C /* FenLeiViewController.m */,
+			);
+			name = "分类页";
+			sourceTree = "<group>";
+		};
+		CE638EB31D82BDD800D7720C /* 分类Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE638EB41D82BE0900D7720C /* FenleiCell.h */,
+				CE638EB51D82BE0900D7720C /* FenleiCell.m */,
+				CE638EB61D82BE0900D7720C /* FenleiCell.xib */,
+			);
+			name = "分类Cell";
 			sourceTree = "<group>";
 		};
 		CE68F8291D7FF92600DE4A0C /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
 				CE68F82C1D7FF96100DE4A0C /* Controller */,
+				CE638EAA1D81102D00D7720C /* LoadData */,
 				CE68F82B1D7FF95500DE4A0C /* cell */,
 				CE68F82A1D7FF94900DE4A0C /* Model */,
 			);
@@ -329,6 +378,7 @@
 		CE68F82B1D7FF95500DE4A0C /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				CE638EB31D82BDD800D7720C /* 分类Cell */,
 				CE638E961D800B6200D7720C /* BaiSiBDJCell.h */,
 				CE638E971D800B6200D7720C /* BaiSiBDJCell.m */,
 				CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */,
@@ -339,8 +389,8 @@
 		CE68F82C1D7FF96100DE4A0C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */,
-				CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */,
+				CE638EAF1D828D8700D7720C /* 分类页 */,
+				CE638EAE1D828D7B00D7720C /* 首页 */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -406,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */,
+				CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */,
 				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
 				CE106CCE1D7EA5E700C7F181 /* LaunchScreen.storyboard in Resources */,
@@ -463,6 +514,8 @@
 				CE106CEE1D7EA8DA00C7F181 /* MyHtmlViewController.m in Sources */,
 				CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */,
 				CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */,
+				CE638EAD1D81106000D7720C /* BaiSiBDJDataController.m in Sources */,
+				CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */,
 				CE106CEF1D7EA8DA00C7F181 /* PlayerViewController.m in Sources */,
 				CE106CF31D7EA8DA00C7F181 /* TestViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
@@ -470,6 +523,7 @@
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
 				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,
 				CE106CF21D7EA8DA00C7F181 /* TableViewController.m in Sources */,
+				CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */,
 				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,
 				CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */,
 			);

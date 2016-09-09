@@ -21,4 +21,15 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)zanBtnClick:(id)sender {
+}
+
+- (IBAction)caiBtnClick:(id)sender {
+}
+
+- (IBAction)shareBtnClick:(id)sender {
+}
+
+- (IBAction)pLBtnClick:(id)sender {
+}
 @end

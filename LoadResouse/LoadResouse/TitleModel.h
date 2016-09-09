@@ -19,9 +19,20 @@
  }
  */
 
+@property (nonatomic, copy)NSString *name;
+@property (nonatomic ,strong) NSMutableArray *submenus;
+@property (nonatomic ,strong) NSMutableArray *titleList;
+
+@end
+
+@interface HeadTileModel : FatherModel
+
 @property (nonatomic, copy)NSString *url;
 @property (nonatomic, copy)NSString *name;
 @property (nonatomic, copy)NSString *god_topic_type;
 @property (nonatomic, copy)NSString *type;
 @property (nonatomic, copy)NSString *entrytype;
+
+
+
 @end
