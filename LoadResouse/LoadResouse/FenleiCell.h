@@ -10,5 +10,6 @@
 
 @interface FenleiCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *fenLeiName;
+@property (weak, nonatomic) IBOutlet UILabel *headLable;
 
 @end

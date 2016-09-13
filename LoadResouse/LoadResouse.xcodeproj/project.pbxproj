@@ -24,6 +24,8 @@
 		CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */; };
 		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
+		CE4B8F161D87ACD700D9C1BE /* UICollectionReusableView_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */; };
+		CE4B8F171D87ACD700D9C1BE /* UICollectionReusableView_Head.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */; };
 		CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */; };
 		CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E971D800B6200D7720C /* BaiSiBDJCell.m */; };
 		CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */; };
@@ -74,6 +76,9 @@
 		CE106D0B1D7EBF7B00C7F181 /* XTGNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGNViewController.h; sourceTree = "<group>"; };
 		CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGNViewController.m; sourceTree = "<group>"; };
 		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		CE4B8F131D87ACD700D9C1BE /* UICollectionReusableView_Head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionReusableView_Head.h; sourceTree = "<group>"; };
+		CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionReusableView_Head.m; sourceTree = "<group>"; };
+		CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICollectionReusableView_Head.xib; sourceTree = "<group>"; };
 		CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiDJViewController.h; sourceTree = "<group>"; };
 		CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiDJViewController.m; sourceTree = "<group>"; };
 		CE638E961D800B6200D7720C /* BaiSiBDJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiBDJCell.h; sourceTree = "<group>"; };
@@ -290,6 +295,16 @@
 			name = "全局";
 			sourceTree = "<group>";
 		};
+		CE4B8F0D1D87A7D100D9C1BE /* CollectionHead */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B8F131D87ACD700D9C1BE /* UICollectionReusableView_Head.h */,
+				CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */,
+				CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */,
+			);
+			name = CollectionHead;
+			sourceTree = "<group>";
+		};
 		CE638E9B1D800B7800D7720C /* MyModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +362,7 @@
 		CE638EB31D82BDD800D7720C /* 分类Cell */ = {
 			isa = PBXGroup;
 			children = (
+				CE4B8F0D1D87A7D100D9C1BE /* CollectionHead */,
 				CE638EB41D82BE0900D7720C /* FenleiCell.h */,
 				CE638EB51D82BE0900D7720C /* FenleiCell.m */,
 				CE638EB61D82BE0900D7720C /* FenleiCell.xib */,
@@ -456,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */,
+				CE4B8F171D87ACD700D9C1BE /* UICollectionReusableView_Head.xib in Resources */,
 				CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */,
 				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
@@ -522,6 +539,7 @@
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
 				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,
+				CE4B8F161D87ACD700D9C1BE /* UICollectionReusableView_Head.m in Sources */,
 				CE106CF21D7EA8DA00C7F181 /* TableViewController.m in Sources */,
 				CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */,
 				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,

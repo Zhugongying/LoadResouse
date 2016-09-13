@@ -9,7 +9,7 @@
 #import "FenLeiViewController.h"
 
 #import "FenleiCell.h"
-
+#import "UICollectionReusableView_Head.h"
 @interface FenLeiViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
 
@@ -31,7 +31,7 @@
 
     UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
     
-    flowLayout.minimumLineSpacing=10;
+    flowLayout.minimumLineSpacing=5;
     
     flowLayout.minimumInteritemSpacing=5;
     
@@ -50,7 +50,9 @@
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"FenleiCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"FenLeiCell"];
     
-    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header"];
+//    [self.collectionView registerClass:[UICollectionReusableView_Head class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UICollectionReusableView_Head"];
+
+    [self.collectionView registerNib:[UINib nibWithNibName:@"UICollectionReusableView_Head" bundle:[NSBundle mainBundle]] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UICollectionReusableView_Head"];
     
     [self.view addSubview:self.collectionView];
     
@@ -59,7 +61,7 @@
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
 
-    return 12;
+    return 2;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
@@ -70,7 +72,9 @@
 
     FenleiCell *cell=(FenleiCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"FenLeiCell" forIndexPath:indexPath ];
     
-    cell.contentView.backgroundColor=[UIColor whiteColor];
+    
+    
+    cell.contentView.backgroundColor=[UIColor lightGrayColor];
     
     cell.fenLeiName.text=@"ssdssdsd";
 
@@ -81,7 +85,7 @@
 
     if (kind == UICollectionElementKindSectionHeader) {
         
-        UICollectionReusableView *headView=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header" forIndexPath:indexPath];
+        UICollectionReusableView_Head *headView=[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"UICollectionReusableView_Head" forIndexPath:indexPath];
         headView.backgroundColor=[UIColor redColor];
         return headView;
         
@@ -90,6 +94,12 @@
 
 
     return nil;
+}
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+
+
+    return UIEdgeInsetsMake(5, 5, 5, 5);
+
 }
 
 - (void)didReceiveMemoryWarning {

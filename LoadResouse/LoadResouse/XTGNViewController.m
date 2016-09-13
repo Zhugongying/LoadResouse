@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger , SystemItemForIpnone) {
     SystemItemForIpnoneCamera,
     
     SystemItemForIpnoneAddressBook,
-
+    
 };
 
 @interface XTGNViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate,ABPeoplePickerNavigationControllerDelegate>

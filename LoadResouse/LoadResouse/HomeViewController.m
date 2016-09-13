@@ -31,11 +31,11 @@
 //                                                                            target:self
 //                                                                            action:@selector(presentLeftMenuViewController:)];
 //    
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    imageView.contentMode = UIViewContentModeScaleAspectFill;
-    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    imageView.image = [UIImage imageNamed:@"Balloon"];
-    [self.view addSubview:imageView];
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    imageView.contentMode = UIViewContentModeScaleAspectFill;
+//    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    imageView.image = [UIImage imageNamed:@"Balloon"];
+//    [self.view addSubview:imageView];
 
 }
 - (void)didReceiveMemoryWarning {
