@@ -26,6 +26,7 @@
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
 		CE4B8F161D87ACD700D9C1BE /* UICollectionReusableView_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */; };
 		CE4B8F171D87ACD700D9C1BE /* UICollectionReusableView_Head.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */; };
+		CE4B8F651D87DA3400D9C1BE /* hahha in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F641D87DA3400D9C1BE /* hahha */; };
 		CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */; };
 		CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E971D800B6200D7720C /* BaiSiBDJCell.m */; };
 		CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */; };
@@ -79,6 +80,7 @@
 		CE4B8F131D87ACD700D9C1BE /* UICollectionReusableView_Head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionReusableView_Head.h; sourceTree = "<group>"; };
 		CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionReusableView_Head.m; sourceTree = "<group>"; };
 		CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICollectionReusableView_Head.xib; sourceTree = "<group>"; };
+		CE4B8F641D87DA3400D9C1BE /* hahha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hahha; sourceTree = "<group>"; };
 		CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiDJViewController.h; sourceTree = "<group>"; };
 		CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiDJViewController.m; sourceTree = "<group>"; };
 		CE638E961D800B6200D7720C /* BaiSiBDJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiBDJCell.h; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		CE106CC31D7EA5E600C7F181 /* LoadResouse */ = {
 			isa = PBXGroup;
 			children = (
+				CE4B8F631D87DA1F00D9C1BE /* hhha */,
 				CE638E9B1D800B7800D7720C /* MyModel */,
 				CE106D0F1D7FBCBF00C7F181 /* 全局 */,
 				CE638EA61D801C1B00D7720C /* 请求类 */,
@@ -303,6 +306,14 @@
 				CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */,
 			);
 			name = CollectionHead;
+			sourceTree = "<group>";
+		};
+		CE4B8F631D87DA1F00D9C1BE /* hhha */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B8F641D87DA3400D9C1BE /* hahha */,
+			);
+			name = hhha;
 			sourceTree = "<group>";
 		};
 		CE638E9B1D800B7800D7720C /* MyModel */ = {
@@ -474,6 +485,7 @@
 				CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */,
 				CE4B8F171D87ACD700D9C1BE /* UICollectionReusableView_Head.xib in Resources */,
 				CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */,
+				CE4B8F651D87DA3400D9C1BE /* hahha in Resources */,
 				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
 				CE106CCE1D7EA5E700C7F181 /* LaunchScreen.storyboard in Resources */,
