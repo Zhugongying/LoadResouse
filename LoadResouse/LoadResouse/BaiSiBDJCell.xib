@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11185.3" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,221 +12,90 @@
             <rect key="frame" x="0.0" y="0.0" width="387" height="169"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="387" height="168"/>
+                <frame key="frameInset" width="387" height="168"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3S-bK-2OD">
-                        <rect key="frame" x="8" y="8" width="371" height="113"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="0.19455818965517241" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="arK-8F-8By"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="3JA-Za-I07"/>
                         </constraints>
                         <attributedString key="attributedText">
-                            <fragment content="一天，我和女朋友去公园">
+                            <fragment content="哈哈">
                                 <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="  ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="我手划破了">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="没有创可贴">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="女朋友灵机一动">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="从包里拿出卫生巾给我包上了">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment>
-                                <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="后来有一天我和女朋友又去逛公园">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="我女朋友来月经了">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="没有带卫生巾">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="我灵机一动">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="从包里拿出了创可贴">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="PingFangSC-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ......">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-oZ-bxC">
-                        <rect key="frame" x="15" y="130" width="32" height="30"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VG9-ga-if4">
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="8e6-ce-NyO"/>
+                            <constraint firstAttribute="height" constant="83" id="vUb-8U-mH7"/>
                         </constraints>
-                        <state key="normal" title="赞(1)"/>
-                        <connections>
-                            <action selector="zanBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BIY-PD-0MY"/>
-                        </connections>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-QE-fWO">
-                        <rect key="frame" x="55" y="130" width="90" height="30"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-QE-fWO">
                         <state key="normal" title="踩(1)"/>
                         <connections>
                             <action selector="caiBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="01A-BP-CD9"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT9-EI-kbn">
-                        <rect key="frame" x="341" y="130" width="30" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT9-EI-kbn">
                         <state key="normal" title="评论"/>
                         <connections>
                             <action selector="pLBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gjn-lb-fiw"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJd-2Q-p9z">
-                        <rect key="frame" x="153" y="130" width="180" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJd-2Q-p9z">
                         <state key="normal" title="分享"/>
                         <connections>
                             <action selector="shareBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6pi-Xm-WgQ"/>
                         </connections>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-oZ-bxC">
+                        <state key="normal" title="赞(1)"/>
+                        <connections>
+                            <action selector="zanBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BIY-PD-0MY"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="XaL-oZ-bxC" firstAttribute="height" secondItem="4aH-QE-fWO" secondAttribute="height" id="2Yu-nl-0Uk"/>
-                    <constraint firstItem="IJd-2Q-p9z" firstAttribute="leading" secondItem="4aH-QE-fWO" secondAttribute="trailing" constant="8" id="5RH-AM-n7K"/>
-                    <constraint firstItem="lT9-EI-kbn" firstAttribute="width" secondItem="XaL-oZ-bxC" secondAttribute="width" id="6BH-1u-WhK"/>
-                    <constraint firstItem="XaL-oZ-bxC" firstAttribute="height" secondItem="IJd-2Q-p9z" secondAttribute="height" id="9s2-iN-ae0"/>
-                    <constraint firstItem="lT9-EI-kbn" firstAttribute="baseline" secondItem="IJd-2Q-p9z" secondAttribute="baseline" id="AAh-qF-LFf"/>
-                    <constraint firstItem="lT9-EI-kbn" firstAttribute="width" secondItem="4aH-QE-fWO" secondAttribute="width" id="EqA-a7-2U3"/>
-                    <constraint firstItem="lT9-EI-kbn" firstAttribute="baseline" secondItem="4aH-QE-fWO" secondAttribute="baseline" id="I0Z-ex-aal"/>
-                    <constraint firstItem="lT9-EI-kbn" firstAttribute="baseline" secondItem="XaL-oZ-bxC" secondAttribute="baseline" id="KKV-8u-Jlk"/>
-                    <constraint firstItem="XaL-oZ-bxC" firstAttribute="top" secondItem="I3S-bK-2OD" secondAttribute="bottom" constant="8" id="MhB-nn-7XQ"/>
-                    <constraint firstItem="XaL-oZ-bxC" firstAttribute="height" secondItem="lT9-EI-kbn" secondAttribute="height" id="RdM-40-7MB"/>
-                    <constraint firstItem="lT9-EI-kbn" firstAttribute="width" secondItem="IJd-2Q-p9z" secondAttribute="width" id="W56-oV-lfE"/>
-                    <constraint firstItem="lT9-EI-kbn" firstAttribute="leading" secondItem="IJd-2Q-p9z" secondAttribute="trailing" constant="8" id="YUU-Ar-S2J"/>
-                    <constraint firstItem="4aH-QE-fWO" firstAttribute="leading" secondItem="XaL-oZ-bxC" secondAttribute="trailing" constant="8" id="cBR-nI-cyE"/>
+                    <constraint firstItem="VG9-ga-if4" firstAttribute="top" secondItem="I3S-bK-2OD" secondAttribute="bottom" constant="8" id="7MN-hV-Saa"/>
+                    <constraint firstItem="IJd-2Q-p9z" firstAttribute="height" secondItem="XaL-oZ-bxC" secondAttribute="height" id="Dzc-Vk-Qry"/>
+                    <constraint firstItem="lT9-EI-kbn" firstAttribute="height" secondItem="IJd-2Q-p9z" secondAttribute="height" id="Nrt-HJ-Ju3"/>
+                    <constraint firstItem="4aH-QE-fWO" firstAttribute="leading" secondItem="XaL-oZ-bxC" secondAttribute="trailing" constant="8" id="f3J-Gs-Ksx"/>
+                    <constraint firstItem="XaL-oZ-bxC" firstAttribute="top" secondItem="VG9-ga-if4" secondAttribute="bottom" constant="8" id="fTG-WK-8Fu"/>
+                    <constraint firstItem="4aH-QE-fWO" firstAttribute="height" secondItem="lT9-EI-kbn" secondAttribute="height" id="fhN-MS-Ghw"/>
+                    <constraint firstItem="4aH-QE-fWO" firstAttribute="width" secondItem="lT9-EI-kbn" secondAttribute="width" id="g3H-JJ-dAi"/>
+                    <constraint firstItem="IJd-2Q-p9z" firstAttribute="leading" secondItem="4aH-QE-fWO" secondAttribute="trailing" constant="8" id="gbC-vo-o0o"/>
+                    <constraint firstItem="IJd-2Q-p9z" firstAttribute="baseline" secondItem="lT9-EI-kbn" secondAttribute="baseline" id="iGP-cs-1sr"/>
+                    <constraint firstItem="IJd-2Q-p9z" firstAttribute="baseline" secondItem="4aH-QE-fWO" secondAttribute="baseline" id="mlE-LS-H2l"/>
+                    <constraint firstItem="IJd-2Q-p9z" firstAttribute="baseline" secondItem="XaL-oZ-bxC" secondAttribute="baseline" id="mpd-iX-JkA"/>
+                    <constraint firstItem="lT9-EI-kbn" firstAttribute="width" secondItem="IJd-2Q-p9z" secondAttribute="width" id="pIn-w8-Rgb"/>
+                    <constraint firstItem="IJd-2Q-p9z" firstAttribute="width" secondItem="XaL-oZ-bxC" secondAttribute="width" id="reO-9m-2Q5"/>
+                    <constraint firstItem="lT9-EI-kbn" firstAttribute="leading" secondItem="IJd-2Q-p9z" secondAttribute="trailing" constant="8" id="uf8-Qi-ngQ"/>
                 </constraints>
             </tableViewCellContentView>
             <constraints>
-                <constraint firstItem="XaL-oZ-bxC" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="DhK-UE-OAc"/>
-                <constraint firstItem="I3S-bK-2OD" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="8" id="QVe-5h-0dt"/>
-                <constraint firstItem="I3S-bK-2OD" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="aYw-s6-rgl"/>
-                <constraint firstAttribute="trailing" secondItem="I3S-bK-2OD" secondAttribute="trailing" constant="8" id="eVj-Vm-YIl"/>
-                <constraint firstAttribute="trailing" secondItem="lT9-EI-kbn" secondAttribute="trailing" constant="16" id="kmo-9T-i7g"/>
+                <constraint firstItem="XaL-oZ-bxC" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="15D-ZS-0U6"/>
+                <constraint firstItem="VG9-ga-if4" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="5wN-dU-CqM"/>
+                <constraint firstItem="I3S-bK-2OD" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="8" id="CNv-iA-4JJ"/>
+                <constraint firstAttribute="trailing" secondItem="lT9-EI-kbn" secondAttribute="trailing" constant="16" id="eLh-Bl-RfX"/>
+                <constraint firstAttribute="trailing" secondItem="I3S-bK-2OD" secondAttribute="trailing" constant="10" id="fM5-Ck-o7W"/>
+                <constraint firstItem="I3S-bK-2OD" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="10" id="puw-cG-gpt"/>
+                <constraint firstAttribute="trailing" secondItem="VG9-ga-if4" secondAttribute="trailing" constant="8" id="tRn-MS-fah"/>
             </constraints>
             <connections>
+                <outlet property="caiBtn" destination="4aH-QE-fWO" id="THg-3V-IuA"/>
+                <outlet property="plBtn" destination="lT9-EI-kbn" id="Fno-cb-gf4"/>
+                <outlet property="shearBtn" destination="IJd-2Q-p9z" id="C3Y-zS-Z0W"/>
                 <outlet property="titleLable" destination="I3S-bK-2OD" id="N7e-Jb-mUQ"/>
+                <outlet property="videoImageView" destination="VG9-ga-if4" id="9a6-5Q-mJy"/>
                 <outlet property="zanBtn" destination="XaL-oZ-bxC" id="RJo-Zq-afp"/>
             </connections>
-            <point key="canvasLocation" x="342.5" y="307.5"/>
+            <point key="canvasLocation" x="579.5" y="250.5"/>
         </tableViewCell>
     </objects>
 </document>

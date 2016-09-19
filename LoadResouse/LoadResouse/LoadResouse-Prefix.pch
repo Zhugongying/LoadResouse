@@ -19,6 +19,8 @@
     #import "GlobalDefine.h"
     #import <AFNetworking.h>
     #import "LoadDataController.h"
+    #import <MBProgressHUD.h>
+
 
 //#define __UpLine__
 

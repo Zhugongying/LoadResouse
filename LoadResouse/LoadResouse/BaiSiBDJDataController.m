@@ -42,14 +42,13 @@
 
     NSDictionary *dict=(NSDictionary *)content;
     
-    NSLog(@"%@",dict);
+   
     if (dict[@"menus"]) {
         for (NSDictionary *subDict in dict[@"menus"]) {
              TitleModel *titleModel=[[TitleModel alloc] init];
             
+            titleModel.titleList=[NSMutableArray array];
             [titleModel setValuesForKeysWithDictionary:subDict];
-            
-            NSMutableArray *subTitleArr=[NSMutableArray array];
             
             for (NSDictionary *subTitleDict in subDict[@"submenus"]) {
                 
@@ -57,17 +56,16 @@
                 
                 [headModel setValuesForKeysWithDictionary:subTitleDict];
                 
-                [subTitleArr addObject:headModel];
+                [titleModel.titleList addObject:headModel];
                 
             }
-            
-            [titleModel.titleList addObject:subTitleArr];
             
             [self.dataSouseArr addObject:titleModel];
             
             
         }
         
+        return YES;
     }
     
     

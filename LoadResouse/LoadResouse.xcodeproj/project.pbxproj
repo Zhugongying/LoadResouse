@@ -24,9 +24,11 @@
 		CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */; };
 		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
-		CE4B8F161D87ACD700D9C1BE /* UICollectionReusableView_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */; };
-		CE4B8F171D87ACD700D9C1BE /* UICollectionReusableView_Head.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */; };
 		CE4B8F651D87DA3400D9C1BE /* hahha in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F641D87DA3400D9C1BE /* hahha */; };
+		CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F6E1D87F0A800D9C1BE /* MyHeadView.m */; };
+		CE4B8F711D87F0A800D9C1BE /* MyHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F6F1D87F0A800D9C1BE /* MyHeadView.xib */; };
+		CE4B8F751D88E28900D9C1BE /* LoadDataBaisiControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F741D88E28900D9C1BE /* LoadDataBaisiControl.m */; };
+		CE4B8F791D89519300D9C1BE /* BaisiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F781D89519300D9C1BE /* BaisiCell.m */; };
 		CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */; };
 		CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E971D800B6200D7720C /* BaiSiBDJCell.m */; };
 		CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */; };
@@ -77,10 +79,14 @@
 		CE106D0B1D7EBF7B00C7F181 /* XTGNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGNViewController.h; sourceTree = "<group>"; };
 		CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGNViewController.m; sourceTree = "<group>"; };
 		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
-		CE4B8F131D87ACD700D9C1BE /* UICollectionReusableView_Head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionReusableView_Head.h; sourceTree = "<group>"; };
-		CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionReusableView_Head.m; sourceTree = "<group>"; };
-		CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICollectionReusableView_Head.xib; sourceTree = "<group>"; };
 		CE4B8F641D87DA3400D9C1BE /* hahha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hahha; sourceTree = "<group>"; };
+		CE4B8F6D1D87F0A800D9C1BE /* MyHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHeadView.h; sourceTree = "<group>"; };
+		CE4B8F6E1D87F0A800D9C1BE /* MyHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHeadView.m; sourceTree = "<group>"; };
+		CE4B8F6F1D87F0A800D9C1BE /* MyHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyHeadView.xib; sourceTree = "<group>"; };
+		CE4B8F731D88E28900D9C1BE /* LoadDataBaisiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataBaisiControl.h; sourceTree = "<group>"; };
+		CE4B8F741D88E28900D9C1BE /* LoadDataBaisiControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataBaisiControl.m; sourceTree = "<group>"; };
+		CE4B8F771D89519300D9C1BE /* BaisiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaisiCell.h; sourceTree = "<group>"; };
+		CE4B8F781D89519300D9C1BE /* BaisiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaisiCell.m; sourceTree = "<group>"; };
 		CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiDJViewController.h; sourceTree = "<group>"; };
 		CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiDJViewController.m; sourceTree = "<group>"; };
 		CE638E961D800B6200D7720C /* BaiSiBDJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiBDJCell.h; sourceTree = "<group>"; };
@@ -301,9 +307,9 @@
 		CE4B8F0D1D87A7D100D9C1BE /* CollectionHead */ = {
 			isa = PBXGroup;
 			children = (
-				CE4B8F131D87ACD700D9C1BE /* UICollectionReusableView_Head.h */,
-				CE4B8F141D87ACD700D9C1BE /* UICollectionReusableView_Head.m */,
-				CE4B8F151D87ACD700D9C1BE /* UICollectionReusableView_Head.xib */,
+				CE4B8F6D1D87F0A800D9C1BE /* MyHeadView.h */,
+				CE4B8F6E1D87F0A800D9C1BE /* MyHeadView.m */,
+				CE4B8F6F1D87F0A800D9C1BE /* MyHeadView.xib */,
 			);
 			name = CollectionHead;
 			sourceTree = "<group>";
@@ -314,6 +320,24 @@
 				CE4B8F641D87DA3400D9C1BE /* hahha */,
 			);
 			name = hhha;
+			sourceTree = "<group>";
+		};
+		CE4B8F721D88E24700D9C1BE /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				CE638EAB1D81106000D7720C /* BaiSiBDJDataController.h */,
+				CE638EAC1D81106000D7720C /* BaiSiBDJDataController.m */,
+			);
+			name = "分类";
+			sourceTree = "<group>";
+		};
+		CE4B8F761D88E28D00D9C1BE /* 内容 */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B8F731D88E28900D9C1BE /* LoadDataBaisiControl.h */,
+				CE4B8F741D88E28900D9C1BE /* LoadDataBaisiControl.m */,
+			);
+			name = "内容";
 			sourceTree = "<group>";
 		};
 		CE638E9B1D800B7800D7720C /* MyModel */ = {
@@ -346,8 +370,8 @@
 		CE638EAA1D81102D00D7720C /* LoadData */ = {
 			isa = PBXGroup;
 			children = (
-				CE638EAB1D81106000D7720C /* BaiSiBDJDataController.h */,
-				CE638EAC1D81106000D7720C /* BaiSiBDJDataController.m */,
+				CE4B8F721D88E24700D9C1BE /* 分类 */,
+				CE4B8F761D88E28D00D9C1BE /* 内容 */,
 			);
 			name = LoadData;
 			sourceTree = "<group>";
@@ -409,6 +433,8 @@
 				CE638E961D800B6200D7720C /* BaiSiBDJCell.h */,
 				CE638E971D800B6200D7720C /* BaiSiBDJCell.m */,
 				CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */,
+				CE4B8F771D89519300D9C1BE /* BaisiCell.h */,
+				CE4B8F781D89519300D9C1BE /* BaisiCell.m */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -456,6 +482,7 @@
 					CE106CC01D7EA5E600C7F181 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3U62SP5YP3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -483,12 +510,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */,
-				CE4B8F171D87ACD700D9C1BE /* UICollectionReusableView_Head.xib in Resources */,
 				CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */,
 				CE4B8F651D87DA3400D9C1BE /* hahha in Resources */,
 				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
 				CE106CCE1D7EA5E700C7F181 /* LaunchScreen.storyboard in Resources */,
+				CE4B8F711D87F0A800D9C1BE /* MyHeadView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,14 +561,17 @@
 			files = (
 				CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */,
 				CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */,
+				CE4B8F751D88E28900D9C1BE /* LoadDataBaisiControl.m in Sources */,
 				CE638E9E1D800BA600D7720C /* FatherModel.m in Sources */,
 				CE106CF01D7EA8DA00C7F181 /* RECommonFunctions.m in Sources */,
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
+				CE4B8F791D89519300D9C1BE /* BaisiCell.m in Sources */,
 				CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */,
 				CE106CDD1D7EA7C500C7F181 /* HomeViewController.m in Sources */,
 				CE638EA11D800BBD00D7720C /* BaiSiBDJModel.m in Sources */,
 				CE106CEE1D7EA8DA00C7F181 /* MyHtmlViewController.m in Sources */,
 				CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */,
+				CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */,
 				CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */,
 				CE638EAD1D81106000D7720C /* BaiSiBDJDataController.m in Sources */,
 				CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */,
@@ -551,7 +581,6 @@
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
 				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,
-				CE4B8F161D87ACD700D9C1BE /* UICollectionReusableView_Head.m in Sources */,
 				CE106CF21D7EA8DA00C7F181 /* TableViewController.m in Sources */,
 				CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */,
 				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,
@@ -661,13 +690,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3U62SP5YP3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
 				INFOPLIST_FILE = LoadResouse/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
 			name = Debug;
@@ -678,13 +710,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3U62SP5YP3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
 				INFOPLIST_FILE = LoadResouse/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
 			name = Release;

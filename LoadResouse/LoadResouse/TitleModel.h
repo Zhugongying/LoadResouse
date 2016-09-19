@@ -23,6 +23,8 @@
 @property (nonatomic ,strong) NSMutableArray *submenus;
 @property (nonatomic ,strong) NSMutableArray *titleList;
 
+
+
 @end
 
 @interface HeadTileModel : FatherModel

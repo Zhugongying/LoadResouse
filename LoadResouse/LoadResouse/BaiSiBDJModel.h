@@ -24,13 +24,36 @@
  "id": "20478996"
  }
  */
-@property (nonatomic, copy)NSString *comment;
+@property (nonatomic, copy)NSString *comment;//评论
 @property (nonatomic, copy)NSString *text;
 @property (nonatomic, copy)NSString *up;
 @property (nonatomic, copy)NSString *share_url;
-@property (nonatomic, copy)NSString *down;
+@property (nonatomic, copy)NSString *down;//踩
 @property (nonatomic, copy)NSString *passtime;
+@property (nonatomic, copy)NSString *forward;
 @property (nonatomic, copy)NSString *type;
-@property (nonatomic, copy)NSString *id;
+
+@property (nonatomic,strong)NSMutableArray *videoModelArr;
+
+
 
 @end
+
+@interface VideoModel : FatherModel
+
+@property (nonatomic, copy)NSString *playfcount;
+@property (nonatomic, copy)NSString *height;
+@property (nonatomic, copy)NSString *width;
+@property (nonatomic, copy)NSString *duration;
+@property (nonatomic, copy)NSString *playcount;
+@property (nonatomic, strong)NSMutableArray *video;
+@property (nonatomic, strong)NSMutableArray *download;
+@property (nonatomic, strong)NSMutableArray *thumbnail;
+
+
+- (id)initWithDictInfo:(NSDictionary *)info;
+
+
+@end
+
+

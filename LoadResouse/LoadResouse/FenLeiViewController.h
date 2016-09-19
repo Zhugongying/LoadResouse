@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^FenLeiViewControllerBlockUrl)(NSString *);
+
 @interface FenLeiViewController : UIViewController
+
+@property (nonatomic,copy)FenLeiViewControllerBlockUrl myBlock;
+
+- (void)requestOtherUrl:(FenLeiViewControllerBlockUrl)block;
 
 @end

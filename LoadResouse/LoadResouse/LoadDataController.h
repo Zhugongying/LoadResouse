@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <MBProgressHUD.h>
+
 typedef enum {
 
     RequestMethodGET,
@@ -27,7 +27,7 @@ typedef enum {
 @interface LoadDataController : NSObject
 @property (nonatomic,weak)id <LoadDataControllerDelegate> ZhuDelegate;
 
-@property (nonatomic,assign)MBProgressHUD *HUB;
+
 
 #pragma mark - 需重写的回调
 

@@ -1,5 +1,5 @@
 //
-//  UICollectionReusableView_Head.h
+//  MyHeadView.h
 //  LoadResouse
 //
 //  Created by 朱共营 on 16/9/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UICollectionReusableView_Head : UICollectionReusableView
+@interface MyHeadView : UICollectionReusableView
 
 @end
