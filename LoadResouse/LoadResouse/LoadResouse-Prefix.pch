@@ -20,6 +20,7 @@
     #import <AFNetworking.h>
     #import "LoadDataController.h"
     #import <MBProgressHUD.h>
+    #import <UIImageView+WebCache.h>
 
 
 //#define __UpLine__

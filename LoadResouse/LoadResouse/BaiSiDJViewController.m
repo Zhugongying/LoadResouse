@@ -15,6 +15,10 @@
 #import "LoadDataBaisiControl.h"
 #import "BaiSiBDJModel.h"
 
+#import "BSBDJTableViewCell.h"
+
+#import "XQViewController.h"
+
 @interface BaiSiDJViewController ()<LoadDataControllerDelegate>
 
 @property (nonatomic,strong)UICollectionView *chouseCollectView;
@@ -59,12 +63,20 @@
         _hud.labelText=@"稍等。。。";
         _hud.margin=10.f;
         
+        NSString *newUrl=url;
+        
+        if (![url hasSuffix:@"/"]) {
+           
+            newUrl=[NSString stringWithFormat:@"%@/",url];
+        }
+        
+        
         
         
         
         self.contontDataController=[[LoadDataBaisiControl alloc] initWithDelegate:self];
         
-        _contontDataController.contentURL=[NSString stringWithFormat:@"%@%@",url,@"bs0315-iphone-4.3/0-20.json"];
+        _contontDataController.contentURL=[NSString stringWithFormat:@"%@%@",newUrl,@"bs0315-iphone-4.3/0-20.json"];
     
         [_contontDataController requestWithArgs:nil];
     
@@ -87,7 +99,15 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-   
+   BaiSiBDJModel *model=self.contontDataController.contentArr[indexPath.row];
+    if ([model.type isEqualToString:@"text"]) {
+        
+        return 120;
+        
+        
+    }
+    
+    
     
     CGFloat height=[NSString stringWithFormat:@"%@",self.titleArrHeght[indexPath.row]].floatValue;
     
@@ -102,23 +122,61 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    BaiSiBDJCell *cell=[tableView dequeueReusableCellWithIdentifier:@"BaiSiBDJCell" forIndexPath:indexPath];
+//    BSBDJTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"BSBDJTableViewCell" forIndexPath:indexPath];
+    BaiSiBDJModel *model=self.contontDataController.contentArr[indexPath.row];
+    
+    
+    if ([model.type isEqualToString:@"text"]) {
+        
+       
+        
+        BaiSiBDJCell *cell=[tableView dequeueReusableCellWithIdentifier:@"BaiSiBDJCell" forIndexPath:indexPath];
+        
+       
+        cell.selectionStyle=UITableViewCellSelectionStyleNone;
+        
+        [cell showDataWithModel:model];
+        
+        return cell;
+        
+        
+    }
+    
+    
+    BSBDJTableViewCell *cell=[BSBDJTableViewCell cellWithTableView:tableView];
     
     if (self.contontDataController.contentArr.count==0) {
         return nil;
     }
     
-    BaiSiBDJModel *model=self.contontDataController.contentArr[indexPath.row];
+    cell.selectionStyle=UITableViewCellSelectionStyleNone;
     
     [cell showDataWithModel:model];
- 
-    
-    
-    
+
     return cell;
 
 
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    BaiSiBDJModel *model=self.contontDataController.contentArr[indexPath.row];
+    
+    if ([model.type isEqualToString:@"video"]||[model.type isEqualToString:@"text"]) {
+        
+        XQViewController *xq=[[XQViewController alloc] init];
+        
+        VideoModel *videoModel=model.videoModelArr.firstObject;
+        
+        
+        xq.model=model;
+        xq.xqStr=videoModel.video.firstObject;
+        [ self.navigationController pushViewController:xq animated:YES];
+        
+        
+    }
+    
+}
+
 - (void)loadDataFinishWithResouse:(LoadDataController *)controller{
 
     
@@ -133,14 +191,23 @@
         
         for (BaiSiBDJModel *model in self.contontDataController.contentArr) {
             
-            double heght=[self cellHeightWithContent:model.text];
+//            double heght=[self cellHeightWithContent:[NSString stringWithFormat:@"%@",model.text]];
             
+            double heght;
             
+            if ([model.type isEqualToString:@"text"]) {
+                
+                
+              heght=100  ;
+                
+            }else{
             
+             heght=[self cellHeightWithContent:model.text];
+            }
             double imageHeight=[self cellImageHeight:model.videoModelArr.lastObject];
             
             
-            NSString *height=[NSString stringWithFormat:@"%f",heght+60+imageHeight];
+            NSString *height=[NSString stringWithFormat:@"%f",heght+80+imageHeight];
 
             
             [self.titleArrHeght addObject:height];
@@ -173,12 +240,47 @@
 
 - (double)cellHeightWithContent:(NSString *)content{
 
-     CGSize size = CGSizeMake(kScreenSizeW-30,CGFLOAT_MAX);//LableWight标签宽度，固定的
-    CGSize labelsize = [content sizeWithFont:[UIFont systemFontOfSize:16.f] constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
+//     CGSize size = CGSizeMake(kScreenSizeW-30,CGFLOAT_MAX);//LableWight标签宽度，固定的
+//    CGSize labelsize = [content sizeWithFont:[UIFont systemFontOfSize:16.f] constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
+    
+    
     
 
-    return labelsize.height;
+    return [self contentSizeWith:content].height;
 
+}
+
+- (CGSize)contentSizeWith:(NSString *)content {
+    
+    
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:content];
+    
+    NSMutableParagraphStyle * style = [[NSMutableParagraphStyle alloc] init];
+    
+    style.lineSpacing=10;
+    UIFont *font=[UIFont systemFontOfSize:16];
+    [attributeString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, content.length)];
+    [attributeString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, content.length)];
+    
+     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kScreenSizeW-16, 1)];
+    label.font=font;
+    label.numberOfLines=0;
+    label.attributedText=attributeString;
+    CGSize size=[label sizeThatFits:CGSizeMake(kScreenSizeW-16, CGFLOAT_MAX)];
+    
+
+    
+//    style.lineBreakMode = NSLineBreakByWordWrapping;
+//    style.alignment = NSTextAlignmentLeft;
+//    
+//    NSDictionary * attributes = @{NSFontAttributeName : @16.f,
+//                                  NSParagraphStyleAttributeName : style};
+//    
+//    CGSize contentSize = [content boundingRectWithSize:CGSizeMake(kScreenSizeW-16, MAXFLOAT)
+//                                                 options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
+//                                              attributes:attributes
+//                                                 context:nil].size;
+    return size;
 }
 
 - (void)loadData:(LoadDataController *)controller failedWithEroor:(NSError *)error{

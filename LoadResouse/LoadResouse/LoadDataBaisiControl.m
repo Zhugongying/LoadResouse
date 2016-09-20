@@ -49,9 +49,14 @@
         [model setValuesForKeysWithDictionary:info];
         
         
-        VideoModel *videoModel=[[VideoModel alloc] initWithDictInfo:info[@"video"]];
+        if (![model.type isEqualToString:@"text"]) {
+            
+            VideoModel *videoModel=[[VideoModel alloc] initWithDictInfo:info[model.type]];
         
-        [model.videoModelArr addObject:videoModel];
+            [model.videoModelArr addObject:videoModel];
+        }
+        
+       
         
         
         [self.contentArr addObject:model];

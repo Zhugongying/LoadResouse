@@ -10,7 +10,7 @@
 #import "BaiSiBDJModel.h"
 
 @interface BaiSiBDJCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *videoImageView;
+
 @property (weak, nonatomic) IBOutlet UIButton *caiBtn;
 @property (weak, nonatomic) IBOutlet UIButton *shearBtn;
 @property (weak, nonatomic) IBOutlet UIButton *plBtn;

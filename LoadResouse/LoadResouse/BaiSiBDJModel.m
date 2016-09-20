@@ -38,6 +38,7 @@
 
     if (self) {
         
+        
         self.playfcount=info[@"playfcount"];
         self.height=info[@"height"];
         self.width=info[@"width"];
@@ -46,8 +47,8 @@
         self.video=info[@"video"];
         self.download=info[@"download"];
         self.thumbnail=info[@"thumbnail"];
-        
-        
+        self.medium=info[@"medium"];
+        self.images=info[@"images"];
         
     }
     

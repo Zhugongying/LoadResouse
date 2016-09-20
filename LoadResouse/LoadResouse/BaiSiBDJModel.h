@@ -49,7 +49,8 @@
 @property (nonatomic, strong)NSMutableArray *video;
 @property (nonatomic, strong)NSMutableArray *download;
 @property (nonatomic, strong)NSMutableArray *thumbnail;
-
+@property (nonatomic, strong)NSMutableArray *medium;
+@property (nonatomic, strong)NSMutableArray *images;
 
 - (id)initWithDictInfo:(NSDictionary *)info;
 
