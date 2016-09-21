@@ -147,9 +147,10 @@
     HeadTileModel *headModel=mode.titleList[indexPath.row];
     
   
+    NSString *titleStr=[NSString stringWithFormat:@"%@-%@",mode.name,headModel.name];
     
     
-    _myBlock(headModel.url);
+    _myBlock(headModel.url,titleStr);
     
     [self.navigationController popViewControllerAnimated:YES];
 

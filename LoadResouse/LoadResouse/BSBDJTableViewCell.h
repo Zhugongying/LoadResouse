@@ -10,6 +10,9 @@
 
 #import "BaiSiBDJModel.h"
 
+
+@class BSBDJTableViewCellDelegate;
+
 @interface BSBDJTableViewCell : UITableViewCell
 
 @property (nonatomic,strong)UIImageView *headImageView;
@@ -21,8 +24,18 @@
 @property (nonatomic, strong)UIButton *shearBtn;
 @property (nonatomic, strong)UIButton *plBtn;
 
+
+//@property (nonatomic,weak)id<BSBDJTableViewCellDelegate * >bsDelegate;
+
 - (void)showDataWithModel:(BaiSiBDJModel *)model;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
 @end
+
+@protocol BSBDJTableViewCellDelegate <NSObject>
+
+- (void)clickBtnForWitchButton:(NSString *)str;
+
+@end
+

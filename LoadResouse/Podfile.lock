@@ -20,6 +20,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core
   - SDWebImage/Core (3.8.2)
+  - UMengSocialCOM (5.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.12)
   - RTLabel (~> 1.0.1)
   - SDWebImage (~> 3.8.2)
+  - UMengSocialCOM (~> 5.2.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -34,5 +36,6 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   RTLabel: 6005d07fef57b101097c4271f804daae3110cbca
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
 
 COCOAPODS: 0.34.4

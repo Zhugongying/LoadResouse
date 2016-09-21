@@ -24,6 +24,14 @@
 		CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */; };
 		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
+		CE34F03A1D9141790018ABDC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F0391D9141790018ABDC /* Security.framework */; };
+		CE34F03C1D91418D0018ABDC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F03B1D91418D0018ABDC /* libiconv.tbd */; };
+		CE34F03E1D9141980018ABDC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F03D1D9141980018ABDC /* SystemConfiguration.framework */; };
+		CE34F0401D9141A40018ABDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F03F1D9141A40018ABDC /* CoreGraphics.framework */; };
+		CE34F0421D9141BD0018ABDC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F0411D9141BD0018ABDC /* libsqlite3.tbd */; };
+		CE34F0441D9141C90018ABDC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F0431D9141C90018ABDC /* CoreTelephony.framework */; };
+		CE34F0461D9141D40018ABDC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F0451D9141D40018ABDC /* libstdc++.tbd */; };
+		CE34F0481D9141E20018ABDC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F0471D9141E20018ABDC /* libz.tbd */; };
 		CE4B8F651D87DA3400D9C1BE /* hahha in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F641D87DA3400D9C1BE /* hahha */; };
 		CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F6E1D87F0A800D9C1BE /* MyHeadView.m */; };
 		CE4B8F711D87F0A800D9C1BE /* MyHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F6F1D87F0A800D9C1BE /* MyHeadView.xib */; };
@@ -82,6 +90,14 @@
 		CE106D0B1D7EBF7B00C7F181 /* XTGNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGNViewController.h; sourceTree = "<group>"; };
 		CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGNViewController.m; sourceTree = "<group>"; };
 		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		CE34F0391D9141790018ABDC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE34F03B1D91418D0018ABDC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		CE34F03D1D9141980018ABDC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE34F03F1D9141A40018ABDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE34F0411D9141BD0018ABDC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CE34F0431D9141C90018ABDC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CE34F0451D9141D40018ABDC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CE34F0471D9141E20018ABDC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CE4B8F641D87DA3400D9C1BE /* hahha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hahha; sourceTree = "<group>"; };
 		CE4B8F6D1D87F0A800D9C1BE /* MyHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHeadView.h; sourceTree = "<group>"; };
 		CE4B8F6E1D87F0A800D9C1BE /* MyHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHeadView.m; sourceTree = "<group>"; };
@@ -119,6 +135,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE34F0481D9141E20018ABDC /* libz.tbd in Frameworks */,
+				CE34F0461D9141D40018ABDC /* libstdc++.tbd in Frameworks */,
+				CE34F0441D9141C90018ABDC /* CoreTelephony.framework in Frameworks */,
+				CE34F0421D9141BD0018ABDC /* libsqlite3.tbd in Frameworks */,
+				CE34F0401D9141A40018ABDC /* CoreGraphics.framework in Frameworks */,
+				CE34F03E1D9141980018ABDC /* SystemConfiguration.framework in Frameworks */,
+				CE34F03C1D91418D0018ABDC /* libiconv.tbd in Frameworks */,
+				CE34F03A1D9141790018ABDC /* Security.framework in Frameworks */,
 				D479882B13F24A3692C724E7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +153,14 @@
 		0E20DF4D935D4331BA17581A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE34F0471D9141E20018ABDC /* libz.tbd */,
+				CE34F0451D9141D40018ABDC /* libstdc++.tbd */,
+				CE34F0431D9141C90018ABDC /* CoreTelephony.framework */,
+				CE34F0411D9141BD0018ABDC /* libsqlite3.tbd */,
+				CE34F03F1D9141A40018ABDC /* CoreGraphics.framework */,
+				CE34F03D1D9141980018ABDC /* SystemConfiguration.framework */,
+				CE34F03B1D91418D0018ABDC /* libiconv.tbd */,
+				CE34F0391D9141790018ABDC /* Security.framework */,
 				69A0DAB4BE8747228BC49F6E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -724,10 +756,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
 				INFOPLIST_FILE = LoadResouse/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -744,10 +777,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
 				INFOPLIST_FILE = LoadResouse/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";

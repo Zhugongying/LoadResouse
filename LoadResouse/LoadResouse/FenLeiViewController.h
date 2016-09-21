@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^FenLeiViewControllerBlockUrl)(NSString *);
+#import "TitleModel.h"
+
+typedef void(^FenLeiViewControllerBlockUrl)(NSString * ,NSString * titleStr);
 
 @interface FenLeiViewController : UIViewController
 

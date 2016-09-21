@@ -55,7 +55,7 @@
     FenLeiViewController * fenlei=[[FenLeiViewController alloc] init];
     
     
-    [fenlei requestOtherUrl:^(NSString *url) {
+    [fenlei requestOtherUrl:^(NSString *url ,NSString *titleStr) {
     
         self.hud=[MBProgressHUD showHUDAddedTo:self.view animated:YES];
         
@@ -71,7 +71,7 @@
         }
         
         
-        
+        self.title=titleStr;
         
         
         self.contontDataController=[[LoadDataBaisiControl alloc] initWithDelegate:self];

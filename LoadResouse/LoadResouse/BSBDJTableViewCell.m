@@ -71,21 +71,29 @@
     self.zanBtn=[UIButton buttonWithType:UIButtonTypeSystem];
     self.zanBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     self.zanBtn.backgroundColor=UIColorRGBA(0xf1f1f1, 1);
+    self.zanBtn.tag=10001;
+    [self.zanBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.zanBtn setTintColor:[UIColor blackColor]];
     
     self.caiBtn=[UIButton buttonWithType:UIButtonTypeSystem];
     self.caiBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     self.caiBtn.backgroundColor=UIColorRGBA(0xf1f1f1, 1);
+    self.zanBtn.tag=10002;
+    [self.zanBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.caiBtn setTintColor:[UIColor blackColor]];
     
     self.shearBtn=[UIButton buttonWithType:UIButtonTypeSystem];
     self.shearBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     self.shearBtn.backgroundColor=UIColorRGBA(0xf1f1f1, 1);
+    self.zanBtn.tag=10003;
+    [self.zanBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.shearBtn setTintColor:[UIColor blackColor]];
     
     self.plBtn=[UIButton buttonWithType:UIButtonTypeSystem];
     self.plBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     self.plBtn.backgroundColor=UIColorRGBA(0xf1f1f1, 1);
+    self.zanBtn.tag=10004;
+    [self.zanBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.plBtn setTintColor:[UIColor blackColor]];
     
     [self.contentView addSubview:self.zanBtn];
@@ -202,7 +210,37 @@
     [self.shearBtn setTitle:[NSString stringWithFormat:@"分享(%@)",model.forward] forState:UIControlStateNormal];
     [self.plBtn setTitle:[NSString stringWithFormat:@"评论(%@)",model.comment] forState:UIControlStateNormal];
 }
+- (void)chouseBtnClick:(UIButton *)btn{
 
+    switch (btn.tag-10000) {
+        case 1://赞
+        {
+        
+        }
+            break;
+        case 2://踩
+        {
+            
+        }
+            break;
+        case 3://分享
+        {
+            
+        }
+            break;
+        case 4://评论
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+
+
+
+}
 - (CGFloat)titleHeight:(NSString *)conten{
     
 //    CGSize size = CGSizeMake(kScreenSizeW-30,CGFLOAT_MAX);//LableWight标签宽度，固定的
