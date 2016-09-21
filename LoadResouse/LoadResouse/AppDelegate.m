@@ -10,7 +10,6 @@
 #import "HomeViewController.h"
 #import "LeftViewController.h"
 
-
 @interface AppDelegate ()
 
 @end
@@ -40,6 +39,11 @@
     
     
     self.window.rootViewController=sideMenuViewController;
+    
+    
+    
+    []
+    
     
     
     self.window.backgroundColor = [UIColor whiteColor];
