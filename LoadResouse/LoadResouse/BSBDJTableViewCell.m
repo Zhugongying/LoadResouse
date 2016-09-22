@@ -78,22 +78,22 @@
     self.caiBtn=[UIButton buttonWithType:UIButtonTypeSystem];
     self.caiBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     self.caiBtn.backgroundColor=UIColorRGBA(0xf1f1f1, 1);
-    self.zanBtn.tag=10002;
-    [self.zanBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.caiBtn.tag=10002;
+    [self.caiBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.caiBtn setTintColor:[UIColor blackColor]];
     
     self.shearBtn=[UIButton buttonWithType:UIButtonTypeSystem];
     self.shearBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     self.shearBtn.backgroundColor=UIColorRGBA(0xf1f1f1, 1);
-    self.zanBtn.tag=10003;
-    [self.zanBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.shearBtn.tag=10003;
+    [self.shearBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.shearBtn setTintColor:[UIColor blackColor]];
     
     self.plBtn=[UIButton buttonWithType:UIButtonTypeSystem];
     self.plBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     self.plBtn.backgroundColor=UIColorRGBA(0xf1f1f1, 1);
-    self.zanBtn.tag=10004;
-    [self.zanBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.plBtn.tag=10004;
+    [self.plBtn addTarget:self action:@selector(chouseBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.plBtn setTintColor:[UIColor blackColor]];
     
     [self.contentView addSubview:self.zanBtn];
@@ -226,10 +226,20 @@
         case 3://分享
         {
             
+            if (self.shearDelegate && [self.shearDelegate respondsToSelector:@selector(showBaiSiBDJModel: witchVideoModel:)]) {
+                
+                [self.shearDelegate showBaiSiBDJModel:self.model witchVideoModel:self.videoModel];
+                
+            }
+            
         }
             break;
         case 4://评论
         {
+            if (self.shearDelegate && [self.shearDelegate respondsToSelector:@selector(showBaiSiBDJPLContenc:)]) {
+                [self.shearDelegate showBaiSiBDJPLContenc:self.model];
+            }
+            
             
         }
             break;

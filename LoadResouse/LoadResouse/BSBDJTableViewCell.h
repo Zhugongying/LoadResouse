@@ -11,7 +11,14 @@
 #import "BaiSiBDJModel.h"
 
 
-@class BSBDJTableViewCellDelegate;
+
+@protocol BSBDJTableViewShearDelegate <NSObject>
+
+- (void)showBaiSiBDJModel:(BaiSiBDJModel *)BSModel witchVideoModel:(VideoModel *)videoModel;
+
+- (void)showBaiSiBDJPLContenc:(BaiSiBDJModel *)bsModel ;
+
+@end
 
 @interface BSBDJTableViewCell : UITableViewCell
 
@@ -24,18 +31,11 @@
 @property (nonatomic, strong)UIButton *shearBtn;
 @property (nonatomic, strong)UIButton *plBtn;
 
-
-//@property (nonatomic,weak)id<BSBDJTableViewCellDelegate * >bsDelegate;
+@property (nonatomic, weak)id<BSBDJTableViewShearDelegate>shearDelegate;
 
 - (void)showDataWithModel:(BaiSiBDJModel *)model;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
-
-@end
-
-@protocol BSBDJTableViewCellDelegate <NSObject>
-
-- (void)clickBtnForWitchButton:(NSString *)str;
 
 @end
 

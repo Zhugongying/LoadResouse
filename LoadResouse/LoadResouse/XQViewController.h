@@ -15,5 +15,6 @@
 @property (nonatomic, copy)NSString *xqStr;
 
 @property (nonatomic, strong)BaiSiBDJModel *model;
+@property (nonatomic, strong)VideoModel *videoModel;
 
 @end

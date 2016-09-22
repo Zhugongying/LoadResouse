@@ -46,6 +46,8 @@
         BaiSiBDJModel *model=[[BaiSiBDJModel alloc] init];
         model.videoModelArr=[NSMutableArray array];
         
+        
+        model.idStr=info[@"id"];
         [model setValuesForKeysWithDictionary:info];
         
         

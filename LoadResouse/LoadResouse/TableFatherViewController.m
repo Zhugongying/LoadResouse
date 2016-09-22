@@ -66,6 +66,12 @@
     return cell;
 
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 

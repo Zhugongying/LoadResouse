@@ -19,7 +19,14 @@
 
 #import "XQViewController.h"
 
-@interface BaiSiDJViewController ()<LoadDataControllerDelegate>
+
+#import <WXApi.h>
+#import "ShearView.h"
+
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
+
+@interface BaiSiDJViewController ()<LoadDataControllerDelegate,BSBDJTableViewShearDelegate,UMSocialUIDelegate,BSBDJTableTextDelegate,ShaarViewBtnClickDelegate>
 
 @property (nonatomic,strong)UICollectionView *chouseCollectView;
 @property (nonatomic,strong)NSMutableArray *titleArrHeght;
@@ -27,6 +34,12 @@
 @property (nonatomic,strong)LoadDataBaisiControl *contontDataController;
 
 @property (nonatomic,strong)MBProgressHUD *hud;
+
+@property (nonatomic, strong)ShearView *shearView;
+@property (nonatomic,strong)BaiSiBDJModel *bsModel;
+@property (nonatomic,strong)VideoModel *videoModel;
+
+@property (nonatomic,strong)AVPlayerViewController *player;
 @end
 
 @implementation BaiSiDJViewController
@@ -46,7 +59,20 @@
 - (void)creatBarBtnRight{
 
     self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(presenView)];
+    
+    
+    
+    
+    //对tableview添加手势 向上 或向下 滑动 隐藏 分享view
+    
+    UISwipeGestureRecognizer *swipe=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(hindenShearView)];
+    
+    [swipe setDirection:UISwipeGestureRecognizerDirectionUp ];
+    //| UISwipeGestureRecognizerDirectionDown
+    
+    //    [self.view addGestureRecognizer:swipe];
 
+    
 }
 
 
@@ -135,12 +161,16 @@
        
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
         
+        cell.shearDelegate=self;
+        
         [cell showDataWithModel:model];
         
         return cell;
         
         
     }
+ 
+    
     
     
     BSBDJTableViewCell *cell=[BSBDJTableViewCell cellWithTableView:tableView];
@@ -148,33 +178,231 @@
     if (self.contontDataController.contentArr.count==0) {
         return nil;
     }
-    
+    cell.shearDelegate=self;
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     
     [cell showDataWithModel:model];
+    
 
     return cell;
 
 
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    [self hindenShearView];
+
+
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     BaiSiBDJModel *model=self.contontDataController.contentArr[indexPath.row];
-    
+     VideoModel *videoModel=model.videoModelArr.firstObject;
     if ([model.type isEqualToString:@"video"]||[model.type isEqualToString:@"text"]) {
+        
+        
+        if ([model.type isEqualToString:@"video"]) {
+            
+            self.player=[[AVPlayerViewController alloc] init];
+            
+            self.player.player=[AVPlayer playerWithURL:[NSURL URLWithString:videoModel.video.firstObject]];
+            
+            [self.player.player play];
+            
+            [self presentViewController:self.player animated:YES completion:nil];
+            return;
+            
+            
+            
+        }
+        
+        
+        
+        
         
         XQViewController *xq=[[XQViewController alloc] init];
         
-        VideoModel *videoModel=model.videoModelArr.firstObject;
+       
         
         
         xq.model=model;
         xq.xqStr=videoModel.video.firstObject;
+        xq.videoModel=videoModel;
         [ self.navigationController pushViewController:xq animated:YES];
         
         
     }
     
+}
+
+#pragma mark - delegat
+- (void)wxBtnShearClickType:(NSString *)type{
+
+    if ([type isEqualToString:@"WXSceneSession"]) {
+        
+        
+        [self cratShearBtnWithType:type];
+        
+        
+    }else if([type isEqualToString:@"WXSceneTimeline"]){
+        
+        [self cratShearBtnWithType:type];
+    
+    
+    }else if([type isEqualToString:@"WechatAuth_Err_Ok"]){
+        
+        
+    }else if([type isEqualToString:@"CancelShearView"]){
+        
+        
+        [self hindenShearView];
+    }
+    
+    
+}
+
+
+- (void)hindenShearView{
+    
+    
+    if (self.shearView && self.shearView.frame.origin.y<kScreenSizeH) {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.shearView.frame=CGRectMake(0, kScreenSizeH, kScreenSizeW, 150);
+        }];
+    }
+}
+
+- (void)showBaiSiBDJPLContenc:(BaiSiBDJModel *)bsModel{
+
+    XQViewController *xq=[[XQViewController alloc] init];
+    
+    
+    VideoModel *videoModel=bsModel.videoModelArr.firstObject;
+    
+    xq.model=bsModel;
+    xq.xqStr=videoModel.video.firstObject;
+//    xq.videoModel=videoModel;
+    [ self.navigationController pushViewController:xq animated:YES];
+
+
+}
+
+- (void)showBaiSiBDJModel:(BaiSiBDJModel *)BSModel witchVideoModel:(VideoModel *)videoModel{
+
+    
+    if (self.shearView&& self.shearView.frame.origin.y<kScreenSizeH) {
+        
+        return;
+    }
+    
+    
+    self.shearView=[[ShearView alloc] initWithFrame:CGRectMake(0, kScreenSizeH  , kScreenSizeW, 150)];
+    
+    self.shearView.shearDelegate=self;
+    
+    [self.view addSubview:self.shearView];
+    
+    [UIView animateWithDuration:0.2 animations:^{
+
+        self.shearView.frame=CGRectMake(0, kScreenSizeH-150, kScreenSizeW, 150);
+        
+    } completion:^(BOOL finished) {
+       
+    }];
+    
+    self.bsModel=BSModel;
+    self.videoModel=videoModel;
+    
+
+    
+    
+    
+}
+- (void)cratShearBtnWithType:(NSString *)type{
+
+    
+     SendMessageToWXReq *req=[[SendMessageToWXReq alloc] init];
+    
+    if ([type isEqualToString:@"WXSceneSession"]) {
+        req.scene=WXSceneSession;
+        
+    }else if ([type isEqualToString:@"WXSceneTimeline"]){
+    
+        req.scene=WXSceneTimeline;
+        
+    }
+    
+    
+    if ([_bsModel.type isEqualToString:@"text"]) {
+        
+       
+        req.text=_bsModel.text;
+        req.bText=YES;
+//        req.scene=wxType;
+        [WXApi sendReq:req];
+        
+        
+        
+    }else if ([_bsModel.type isEqualToString:@"video"]||[_bsModel.type isEqualToString:@"gif"]){
+        WXMediaMessage *message=[WXMediaMessage message];
+        message.title=_bsModel.text;
+        message.description=@"🔫";
+        
+        
+        WXWebpageObject *videoObject=[WXWebpageObject object];
+        
+        videoObject.webpageUrl=_bsModel.share_url;
+        message.mediaObject=videoObject;
+        
+//        SendMessageToWXReq *req=[[SendMessageToWXReq alloc] init];
+        
+        req.bText=NO;
+        req.message=message;
+//        req.scene=wxType;
+        
+        [WXApi sendReq:req];
+        
+        
+        
+        
+    }else if ([_bsModel.type isEqualToString:@"image"]){
+        WXMediaMessage *message=[WXMediaMessage message];
+        
+        [message setThumbImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_videoModel.thumbnail_small.lastObject]]]];
+        
+        
+        WXImageObject *imageObject=[WXImageObject object];
+        
+        
+        
+        imageObject.imageData=[NSData dataWithContentsOfURL:[NSURL URLWithString:_videoModel.medium.lastObject]];
+        
+        message.mediaObject=imageObject;
+        
+//        SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+        
+        req.bText=NO;
+        req.message=message;
+//        req.scene=wxType;
+        [WXApi sendReq:req];
+        
+        
+        
+    }
+    
+
+
+}
+
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
 }
 
 - (void)loadDataFinishWithResouse:(LoadDataController *)controller{
@@ -204,7 +432,7 @@
             
              heght=[self cellHeightWithContent:model.text];
             }
-            double imageHeight=[self cellImageHeight:model.videoModelArr.lastObject];
+            double imageHeight=[self cellImageHeight:model.videoModelArr.lastObject witchType:model.type];
             
             
             NSString *height=[NSString stringWithFormat:@"%f",heght+80+imageHeight];
@@ -227,10 +455,15 @@
 
 }
 
-- (double)cellImageHeight:(VideoModel *)videomodel{
+- (double)cellImageHeight:(VideoModel *)videomodel witchType:(NSString *)type{
 
 
     double imageHeight=(kScreenSizeW-20) *videomodel.height.doubleValue/videomodel.width.doubleValue;
+    
+    if ([type isEqualToString:@"image"]) {
+        imageHeight+=40;
+    }
+    
     
     
     return imageHeight;

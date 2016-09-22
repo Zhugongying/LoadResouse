@@ -33,6 +33,8 @@
 @property (nonatomic, copy)NSString *forward;
 @property (nonatomic, copy)NSString *type;
 
+@property (nonatomic, copy)NSString *idStr;
+
 @property (nonatomic,strong)NSMutableArray *videoModelArr;
 
 
@@ -51,7 +53,9 @@
 @property (nonatomic, strong)NSMutableArray *thumbnail;
 @property (nonatomic, strong)NSMutableArray *medium;
 @property (nonatomic, strong)NSMutableArray *images;
-
+@property (nonatomic, strong)NSMutableArray *thumbnail_small;
+@property (nonatomic, strong)NSMutableArray *big;
+@property (nonatomic, strong)NSMutableArray *download_url;
 - (id)initWithDictInfo:(NSDictionary *)info;
 
 

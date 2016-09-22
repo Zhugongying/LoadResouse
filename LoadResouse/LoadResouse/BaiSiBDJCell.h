@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "BaiSiBDJModel.h"
 
+
+@protocol BSBDJTableTextDelegate <NSObject>
+
+- (void)showBaiSiBDJModel:(BaiSiBDJModel *)BSModel witchVideoModel:(VideoModel *)videoModel;
+- (void)showBaiSiBDJPLContenc:(BaiSiBDJModel *)bsModel ;
+
+@end
+
 @interface BaiSiBDJCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *caiBtn;
@@ -16,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *plBtn;
 @property (weak, nonatomic) IBOutlet UILabel *titleLable;
 @property (weak, nonatomic) IBOutlet UIButton *zanBtn;
+
+@property (nonatomic, weak)id<BSBDJTableTextDelegate>shearDelegate;
 - (IBAction)zanBtnClick:(id)sender;
 - (IBAction)caiBtnClick:(id)sender;
 - (IBAction)shareBtnClick:(id)sender;

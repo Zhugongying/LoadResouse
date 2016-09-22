@@ -8,6 +8,12 @@
 
 #import "BaiSiBDJCell.h"
 
+@interface BaiSiBDJCell ()
+@property (nonatomic,strong)BaiSiBDJModel *bsModel;
+@property (nonatomic,strong)VideoModel *videoModel;
+
+@end
+
 @implementation BaiSiBDJCell
 
 - (void)awakeFromNib {
@@ -24,17 +30,36 @@
 }
 
 - (IBAction)caiBtnClick:(id)sender {
+    
 }
 
 - (IBAction)shareBtnClick:(id)sender {
+    
+    if (self.shearDelegate&& [self.shearDelegate respondsToSelector:@selector(showBaiSiBDJModel:witchVideoModel:)]) {
+        
+        [self.shearDelegate showBaiSiBDJModel:self.bsModel witchVideoModel:self.videoModel];
+        
+    }
+    
+    
 }
 
 - (IBAction)pLBtnClick:(id)sender {
+    
+    if (self.shearDelegate && [self.shearDelegate respondsToSelector:@selector(showBaiSiBDJPLContenc:)]) {
+        [self.shearDelegate showBaiSiBDJPLContenc:self.bsModel];
+    }
+    
 }
 
 - (void)showDataWithModel:(BaiSiBDJModel *)model{
 
 
+    self.bsModel=model;
+    self.videoModel=model.videoModelArr.lastObject;
+    
+    
+    
     self.titleLable.text=model.text;
     [self.zanBtn setTitle:[NSString stringWithFormat:@"赞(%@)",model.up ] forState:UIControlStateNormal];
     [self.caiBtn setTitle:[NSString stringWithFormat:@"踩(%@)",model.down] forState:UIControlStateNormal];

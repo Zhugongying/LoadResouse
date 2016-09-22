@@ -49,6 +49,9 @@
         self.thumbnail=info[@"thumbnail"];
         self.medium=info[@"medium"];
         self.images=info[@"images"];
+        self.big=info[@"big"];
+        self.thumbnail_small=info[@"thumbnail_small"];
+        self.download_url=info[@"download_url"];
         
     }
     

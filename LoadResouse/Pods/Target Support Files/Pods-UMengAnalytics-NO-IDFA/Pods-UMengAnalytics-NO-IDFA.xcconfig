@@ -1,0 +1,3 @@
+PODS_UMENGANALYTICS_NO_IDFA_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/UMengAnalytics-NO-IDFA/umsdk_IOS_analyics_no-idfa_v4.1.1"
+PODS_UMENGANALYTICS_NO_IDFA_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/UMengAnalytics-NO-IDFA/**"
+PODS_UMENGANALYTICS_NO_IDFA_OTHER_LDFLAGS = -l"sqlite3" -l"z" -framework "CoreTelephony" -framework "UMMobClick"

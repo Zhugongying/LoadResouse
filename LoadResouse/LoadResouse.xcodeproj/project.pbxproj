@@ -47,8 +47,11 @@
 		CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EB11D828DA900D7720C /* FenLeiViewController.m */; };
 		CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EB51D82BE0900D7720C /* FenleiCell.m */; };
 		CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638EB61D82BE0900D7720C /* FenleiCell.xib */; };
+		CE885EC41D93910A00CB22D0 /* LoadDataBaiSiPLControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE885EC31D93910A00CB22D0 /* LoadDataBaiSiPLControl.m */; };
+		CE885EC81D9398FC00CB22D0 /* PLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE885EC71D9398FC00CB22D0 /* PLModel.m */; };
 		CEA184481D9004AA001B04DC /* XQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA184471D9004AA001B04DC /* XQViewController.m */; };
 		CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED719961D8F93E000A35F04 /* BSBDJTableViewCell.m */; };
+		CEEA68841D9292BE00017A2A /* ShearView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA68831D9292BE00017A2A /* ShearView.m */; };
 		D479882B13F24A3692C724E7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A0DAB4BE8747228BC49F6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -124,10 +127,16 @@
 		CE638EB41D82BE0900D7720C /* FenleiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenleiCell.h; sourceTree = "<group>"; };
 		CE638EB51D82BE0900D7720C /* FenleiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenleiCell.m; sourceTree = "<group>"; };
 		CE638EB61D82BE0900D7720C /* FenleiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FenleiCell.xib; sourceTree = "<group>"; };
+		CE885EC21D93910A00CB22D0 /* LoadDataBaiSiPLControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataBaiSiPLControl.h; sourceTree = "<group>"; };
+		CE885EC31D93910A00CB22D0 /* LoadDataBaiSiPLControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataBaiSiPLControl.m; sourceTree = "<group>"; };
+		CE885EC61D9398FC00CB22D0 /* PLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLModel.h; sourceTree = "<group>"; };
+		CE885EC71D9398FC00CB22D0 /* PLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLModel.m; sourceTree = "<group>"; };
 		CEA184461D9004AA001B04DC /* XQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQViewController.h; sourceTree = "<group>"; };
 		CEA184471D9004AA001B04DC /* XQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQViewController.m; sourceTree = "<group>"; };
 		CED719951D8F93E000A35F04 /* BSBDJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBDJTableViewCell.h; sourceTree = "<group>"; };
 		CED719961D8F93E000A35F04 /* BSBDJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBDJTableViewCell.m; sourceTree = "<group>"; wrapsLines = 0; };
+		CEEA68821D9292BE00017A2A /* ShearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShearView.h; sourceTree = "<group>"; };
+		CEEA68831D9292BE00017A2A /* ShearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShearView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +424,7 @@
 		CE638EAA1D81102D00D7720C /* LoadData */ = {
 			isa = PBXGroup;
 			children = (
+				CE885EC11D9390CB00CB22D0 /* 评论 */,
 				CE4B8F721D88E24700D9C1BE /* 分类 */,
 				CE4B8F761D88E28D00D9C1BE /* 内容 */,
 			);
@@ -464,6 +474,7 @@
 		CE68F82A1D7FF94900DE4A0C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE885EC51D9398CB00CB22D0 /* PLModel */,
 				CE638EA21D80100700D7720C /* titleModel */,
 				CE638E9F1D800BBD00D7720C /* BaiSiBDJModel.h */,
 				CE638EA01D800BBD00D7720C /* BaiSiBDJModel.m */,
@@ -474,6 +485,7 @@
 		CE68F82B1D7FF95500DE4A0C /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				CED098EB1D922A9C0048060C /* 分享View */,
 				CE638EB31D82BDD800D7720C /* 分类Cell */,
 				CE638E961D800B6200D7720C /* BaiSiBDJCell.h */,
 				CE638E971D800B6200D7720C /* BaiSiBDJCell.m */,
@@ -493,6 +505,24 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		CE885EC11D9390CB00CB22D0 /* 评论 */ = {
+			isa = PBXGroup;
+			children = (
+				CE885EC21D93910A00CB22D0 /* LoadDataBaiSiPLControl.h */,
+				CE885EC31D93910A00CB22D0 /* LoadDataBaiSiPLControl.m */,
+			);
+			name = "评论";
+			sourceTree = "<group>";
+		};
+		CE885EC51D9398CB00CB22D0 /* PLModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE885EC61D9398FC00CB22D0 /* PLModel.h */,
+				CE885EC71D9398FC00CB22D0 /* PLModel.m */,
+			);
+			name = PLModel;
+			sourceTree = "<group>";
+		};
 		CEA184441D90045D001B04DC /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +539,15 @@
 				CEA184471D9004AA001B04DC /* XQViewController.m */,
 			);
 			name = "详情页";
+			sourceTree = "<group>";
+		};
+		CED098EB1D922A9C0048060C /* 分享View */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA68821D9292BE00017A2A /* ShearView.h */,
+				CEEA68831D9292BE00017A2A /* ShearView.m */,
+			);
+			name = "分享View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,15 +668,18 @@
 				CE106CF01D7EA8DA00C7F181 /* RECommonFunctions.m in Sources */,
 				CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */,
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
+				CE885EC41D93910A00CB22D0 /* LoadDataBaiSiPLControl.m in Sources */,
 				CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */,
 				CE106CDD1D7EA7C500C7F181 /* HomeViewController.m in Sources */,
 				CE638EA11D800BBD00D7720C /* BaiSiBDJModel.m in Sources */,
 				CE106CEE1D7EA8DA00C7F181 /* MyHtmlViewController.m in Sources */,
 				CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */,
+				CE885EC81D9398FC00CB22D0 /* PLModel.m in Sources */,
 				CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */,
 				CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */,
 				CE638EAD1D81106000D7720C /* BaiSiBDJDataController.m in Sources */,
 				CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */,
+				CEEA68841D9292BE00017A2A /* ShearView.m in Sources */,
 				CE106CEF1D7EA8DA00C7F181 /* PlayerViewController.m in Sources */,
 				CE106CF31D7EA8DA00C7F181 /* TestViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,

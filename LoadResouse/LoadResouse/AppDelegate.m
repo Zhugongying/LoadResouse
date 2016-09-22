@@ -9,8 +9,12 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "LeftViewController.h"
+#import "UMSocialWechatHandler.h"
 
-@interface AppDelegate ()
+#import <WXApi.h>
+#import <UMMobClick/MobClick.h>
+
+@interface AppDelegate ()<WXApiDelegate>
 
 @end
 
@@ -41,9 +45,22 @@
     self.window.rootViewController=sideMenuViewController;
     
     
+    [WXApi registerApp:@"wx9e4f48a4d7ddb805"];
     
-   
+    [UMSocialData setAppKey:@"57e0fb0de0f55a6a95000d46"];
+    [UMSocialWechatHandler setWXAppId:@"wx9e4f48a4d7ddb805" appSecret:@"9c7b8cacef06b10095d419c74acafa06" url:@"http://www.baidu.com"];
     
+    // my  wx9e4f48a4d7ddb805  9c7b8cacef06b10095d419c74acafa06
+    
+    
+ //pptv   wxa4b68300ec455c0c
+    //b07327965857bea44e14c8c7f0ba88f0
+    
+    
+    UMConfigInstance.appKey=@"57e0fb0de0f55a6a95000d46";
+    UMConfigInstance.channelId=@"App Store";
+    
+    [MobClick startWithConfigure:UMConfigInstance];
     
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -51,6 +68,36 @@
     return YES;
 }
 
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+
+//    BOOL result=[UMSocialSnsService handleOpenURL:url];
+//    if (result == FALSE) {
+//        //调用其他SDK，例如支付宝SDK等
+//    }
+//    return result;
+    
+    return [WXApi handleOpenURL:url delegate:self];
+
+}
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+
+
+
+    return [WXApi handleOpenURL:url delegate:self];
+
+}
+- (void)onResp:(BaseResp *)resp{
+
+    NSLog(@"okokokok");
+
+}
+
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+//
+//
+//    return [WXApi handleOpenURL:url delegate:self];
+//}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
