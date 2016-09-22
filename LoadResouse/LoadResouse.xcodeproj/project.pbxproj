@@ -131,6 +131,7 @@
 		CE885EC31D93910A00CB22D0 /* LoadDataBaiSiPLControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataBaiSiPLControl.m; sourceTree = "<group>"; };
 		CE885EC61D9398FC00CB22D0 /* PLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLModel.h; sourceTree = "<group>"; };
 		CE885EC71D9398FC00CB22D0 /* PLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLModel.m; sourceTree = "<group>"; };
+		CE885ECD1D93D60500CB22D0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		CEA184461D9004AA001B04DC /* XQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQViewController.h; sourceTree = "<group>"; };
 		CEA184471D9004AA001B04DC /* XQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQViewController.m; sourceTree = "<group>"; };
 		CED719951D8F93E000A35F04 /* BSBDJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBDJTableViewCell.h; sourceTree = "<group>"; };
@@ -474,6 +475,7 @@
 		CE68F82A1D7FF94900DE4A0C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE885EC91D93C0BF00CB22D0 /* 下拉上啦model */,
 				CE885EC51D9398CB00CB22D0 /* PLModel */,
 				CE638EA21D80100700D7720C /* titleModel */,
 				CE638E9F1D800BBD00D7720C /* BaiSiBDJModel.h */,
@@ -521,6 +523,13 @@
 				CE885EC71D9398FC00CB22D0 /* PLModel.m */,
 			);
 			name = PLModel;
+			sourceTree = "<group>";
+		};
+		CE885EC91D93C0BF00CB22D0 /* 下拉上啦model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "下拉上啦model";
 			sourceTree = "<group>";
 		};
 		CEA184441D90045D001B04DC /* 首页 */ = {
@@ -701,6 +710,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE106CCD1D7EA5E700C7F181 /* Base */,
+				CE885ECD1D93D60500CB22D0 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -712,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -756,6 +767,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

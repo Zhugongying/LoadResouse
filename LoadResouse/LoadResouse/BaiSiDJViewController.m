@@ -26,6 +26,7 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+
 @interface BaiSiDJViewController ()<LoadDataControllerDelegate,BSBDJTableViewShearDelegate,UMSocialUIDelegate,BSBDJTableTextDelegate,ShaarViewBtnClickDelegate>
 
 @property (nonatomic,strong)UICollectionView *chouseCollectView;
@@ -40,6 +41,9 @@
 @property (nonatomic,strong)VideoModel *videoModel;
 
 @property (nonatomic,strong)AVPlayerViewController *player;
+
+@property (nonatomic, copy)NSString *loadUrl;
+
 @end
 
 @implementation BaiSiDJViewController
@@ -54,25 +58,28 @@
     
     [self loadDataResouse:nil];
     [self creatBarBtnRight];
+    [self oneLoadResouse];
+     [self refreshTableView];
 }
 #pragma mark - 创建筛选按钮
 - (void)creatBarBtnRight{
 
-    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(presenView)];
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"分类" style:UIBarButtonItemStylePlain target:self action:@selector(presenView)];
     
-    
-    
-    
-    //对tableview添加手势 向上 或向下 滑动 隐藏 分享view
-    
-    UISwipeGestureRecognizer *swipe=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(hindenShearView)];
-    
-    [swipe setDirection:UISwipeGestureRecognizerDirectionUp ];
-    //| UISwipeGestureRecognizerDirectionDown
-    
-    //    [self.view addGestureRecognizer:swipe];
+}
 
+- (void)oneLoadResouse{
+ self.contontDataController=[[LoadDataBaisiControl alloc] initWithDelegate:self];
+
+  
     
+    _contontDataController.contentURL=[NSString stringWithFormat:@"http://s.budejie.com/topic/list/jingxuan/1/%@",@"bs0315-iphone-4.3/0-20.json"];
+    
+    [_contontDataController.contentArr removeAllObjects];
+    
+    [_contontDataController requestWithArgs:nil];
+
+
 }
 
 
@@ -81,6 +88,8 @@
     FenLeiViewController * fenlei=[[FenLeiViewController alloc] init];
     
     
+    typeof(self)mySelf=self;
+    
     [fenlei requestOtherUrl:^(NSString *url ,NSString *titleStr) {
     
         self.hud=[MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -88,6 +97,9 @@
         self.hud.mode=MBProgressHUDModeText;
         _hud.labelText=@"稍等。。。";
         _hud.margin=10.f;
+        
+        
+        
         
         NSString *newUrl=url;
         
@@ -99,8 +111,9 @@
         
         self.title=titleStr;
         
+        mySelf.loadUrl=newUrl;
         
-        self.contontDataController=[[LoadDataBaisiControl alloc] initWithDelegate:self];
+       
         
         _contontDataController.contentURL=[NSString stringWithFormat:@"%@%@",newUrl,@"bs0315-iphone-4.3/0-20.json"];
     
@@ -113,7 +126,18 @@
 
 }
 
+- (void)refreshHeadView{
+    _contontDataController.contentURL=[NSString stringWithFormat:@"%@bs0315-iphone-4.3/%@-20.json",self.loadUrl,@"0"];
+    
+    [_contontDataController.contentArr removeAllObjects];
+     [_contontDataController requestWithArgs:nil];
 
+}
+- (void)refreshFooterView{
+
+ _contontDataController.contentURL=[NSString stringWithFormat:@"%@bs0315-iphone-4.3/%@-20.json",self.loadUrl,_contontDataController.npStr];
+    [_contontDataController requestWithArgs:nil];
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     
@@ -152,6 +176,7 @@
     BaiSiBDJModel *model=self.contontDataController.contentArr[indexPath.row];
     
     
+    
     if ([model.type isEqualToString:@"text"]) {
         
        
@@ -162,7 +187,7 @@
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
         
         cell.shearDelegate=self;
-        
+        cell.backgroundColor=UIColorRGBA(0xcdc4b2, 1);
         [cell showDataWithModel:model];
         
         return cell;
@@ -408,6 +433,9 @@
 - (void)loadDataFinishWithResouse:(LoadDataController *)controller{
 
     
+    [self endReafreshFooterView];
+    [self endReafreshHeadView];
+    
     self.titleArrHeght =[NSMutableArray array];
     
     dispatch_queue_t queur=dispatch_queue_create(0, 0);
@@ -521,6 +549,9 @@
     NSLog(@"失败！");
     [self.hud hide:YES];
 
+    [self endReafreshFooterView];
+    [self endReafreshHeadView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

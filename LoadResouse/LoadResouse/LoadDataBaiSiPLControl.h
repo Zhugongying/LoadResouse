@@ -13,6 +13,9 @@
 @property (nonatomic, strong)BaiSiBDJModel *bsModel;
 
 @property (nonatomic, strong)NSMutableArray *conmentArr;
+@property (nonatomic, copy)NSString *loadUrl;
+
+@property (nonatomic, copy)NSString *lastPageID;//当页最后一位id
 
 
 @end

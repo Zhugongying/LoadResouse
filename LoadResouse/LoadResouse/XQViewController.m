@@ -32,7 +32,7 @@
     [self creatTableView];
     [self loadPLData];
     
-   
+    [self refreshTableView];
     
     if ([self.model.type isEqualToString:@"text"]) {
         
@@ -49,29 +49,57 @@
 
 
     self.PL=[[LoadDataBaiSiPLControl alloc] initWithDelegate:self];
-    self.PL.bsModel=self.model;
+    
+    NSString *url=[NSString stringWithFormat:@"http://api.budejie.com/api/api_open.php?a=dataList&appname=bs0315&asid=5CE94083-CF6B-492F-9AC1-2517D2C18445&c=comment&client=iphone&data_id=%@&device=ios&device&from=ios&hot=1&jbk=0&mac=&market=&openudid=aa7f3209088794a2a4fae5fff4d3e3a9e59a6a7e&page=1&per=50&udid=&ver=4.3",self.model.idStr];
+    
+    
+    
+    self.PL.loadUrl=url;
     
     [self.PL requestWithArgs:nil];
 }
+- (void)refreshHeadView{
+    NSString *url=[NSString stringWithFormat:@"http://api.budejie.com/api/api_open.php?a=dataList&appname=bs0315&asid=5CE94083-CF6B-492F-9AC1-2517D2C18445&c=comment&client=iphone&data_id=%@&device=ios&device&from=ios&hot=1&jbk=0&mac=&market=&openudid=aa7f3209088794a2a4fae5fff4d3e3a9e59a6a7e&page=1&per=50&udid=&ver=4.3",self.model.idStr];
+    
+    self.PL.loadUrl=url;
+    [self.PL.conmentArr removeAllObjects];
+    
+    [self.PL requestWithArgs:nil];
+    
+
+}
+- (void)refreshFooterView{
+    
+    NSString *url=[NSString stringWithFormat:@"http://api.budejie.com/api/api_open.php?a=dataList&appname=bs0315&asid=5CE94083-CF6B-492F-9AC1-2517D2C18445&c=comment&client=iphone&data_id=%@&device=ios&device&from=ios&hot=1&jbk=0&mac=&market=&openudid=aa7f3209088794a2a4fae5fff4d3e3a9e59a6a7e&page=1&per=50&udid=&ver=4.3",self.model.idStr];
+    
+    NSString *upLoadUrl=[NSString stringWithFormat:@"%@&lastcid=%@",url,self.PL.lastPageID];
+    
+    self.PL.loadUrl=upLoadUrl;
+    [self.PL requestWithArgs:nil];
+
+
+}
+
+
 - (void)loadDataFinishWithResouse:(LoadDataController *)controller{
 
     self.plHeight=[NSMutableArray array];
     
     
+    [self endReafreshHeadView];
+    [self endReafreshFooterView];
+    
+    
     [self.tableView reloadData];
     
-    dispatch_queue_t queue=dispatch_queue_create(0, 0);
-    
-    dispatch_async(queue, ^{
-        
-        
-    });
+   
     
     
 
 }
 - (void)loadData:(LoadDataController *)controller failedWithEroor:(NSError *)error{
-
+    [self endReafreshHeadView];
+    [self endReafreshFooterView];
 
 }
 
@@ -86,7 +114,7 @@
     cell.textLabel.text=self.PL.conmentArr[indexPath.row];
   
     cell.textLabel.numberOfLines=0;
-    
+    cell.textLabel.font=[UIFont systemFontOfSize:16];
     cell.textLabel.textColor=UIColorRGBA(0x364715, 1);
     
     return cell;
@@ -101,7 +129,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
 
-    return [self contentSizeWith:self.PL.conmentArr[indexPath.row]];
+    return [self contentSizeWith:self.PL.conmentArr[indexPath.row]]+5;
 }
 
 - (NSInteger)contentSizeWith:(NSString *)content {
@@ -115,7 +143,7 @@
     [attributeString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, content.length)];
     [attributeString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, content.length)];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kScreenSizeW-16, 1)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 0, kScreenSizeW-16, 1)];
     label.font=font;
     label.numberOfLines=0;
     label.attributedText=attributeString;

@@ -16,7 +16,7 @@
 
     if ([super initWithDelegate:aDelegate]) {
         
-        
+         self.contentArr=[NSMutableArray array];
         
     }
 
@@ -38,9 +38,13 @@
     
     NSDictionary *contentDict=(NSDictionary *)content;
     
+  
+    self.npStr=contentDict[@"info"][@"np"];
+    
+    
     NSArray *list=contentDict[@"list"];
     
-    self.contentArr=[NSMutableArray array];
+   
     for (NSDictionary *info in list) {
        
         BaiSiBDJModel *model=[[BaiSiBDJModel alloc] init];

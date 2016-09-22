@@ -26,4 +26,13 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 
+
+- (void)refreshTableView;
+- (void)refreshHeadView;
+- (void)refreshFooterView;
+
+- (void)endReafreshHeadView;
+- (void)endReafreshFooterView;
+
+
 @end

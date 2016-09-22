@@ -8,6 +8,8 @@
 
 #import "TableFatherViewController.h"
 
+#import <MJRefresh.h>
+#import <UIScrollView+MJRefresh.h>
 @interface TableFatherViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -16,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 - (void)creatTableView{
 
@@ -28,11 +30,47 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.backgroundColor=UIColorRGBA(0xfefefe, 0.7);
     
+    
+    
     self.tableView.backgroundView.alpha=0.5f;
     
     [self.view addSubview:self.tableView];
     
+   
+    
 }
+
+#pragma mark - MJRefreah
+
+- (void)refreshTableView{
+
+    self.tableView.mj_header=[MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeadView)];
+    
+    self.tableView.mj_footer=[MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(refreshFooterView)];
+
+}
+- (void)refreshHeadView{
+    
+
+
+}
+- (void)refreshFooterView{
+    
+
+
+}
+
+- (void)endReafreshHeadView{
+
+    [self.tableView.mj_header endRefreshing];
+
+}
+- (void)endReafreshFooterView{
+    [self.tableView.mj_footer endRefreshing];
+}
+
+#pragma mark - 
+
 - (void)creatRegetCell{
 
 
@@ -42,6 +80,7 @@
     self.dataResouse=[NSMutableArray arrayWithArray:arr];
 
 }
+#pragma mark - tableviewdelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
     return self.dataResouse.count;
@@ -67,15 +106,17 @@
 
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-
-
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+
+}
+#pragma mark - 左侧按钮
+
 - (void)creatLeftBtn{
     UIImage *image=[[UIImage imageNamed:@"left"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(presentLeftMenuViewController:)];

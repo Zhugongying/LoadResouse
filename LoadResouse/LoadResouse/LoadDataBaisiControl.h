@@ -13,5 +13,7 @@
 @property (nonatomic, copy)NSString *contentURL;
 @property (nonatomic, strong)NSMutableArray  *contentArr;
 
+@property (nonatomic, copy)NSString *npStr;
+
 
 @end
