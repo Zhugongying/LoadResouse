@@ -35,7 +35,7 @@
 @property (nonatomic,strong)LoadDataBaisiControl *contontDataController;
 
 @property (nonatomic,strong)MBProgressHUD *hud;
-
+	
 @property (nonatomic, strong)ShearView *shearView;
 @property (nonatomic,strong)BaiSiBDJModel *bsModel;
 @property (nonatomic,strong)VideoModel *videoModel;
@@ -59,7 +59,7 @@
     [self loadDataResouse:nil];
     [self creatBarBtnRight];
     [self oneLoadResouse];
-     [self refreshTableView];
+    
 }
 #pragma mark - 创建筛选按钮
 - (void)creatBarBtnRight{
@@ -108,6 +108,7 @@
             newUrl=[NSString stringWithFormat:@"%@/",url];
         }
         
+        [mySelf refreshTableView];
         
         self.title=titleStr;
         
@@ -135,7 +136,14 @@
 }
 - (void)refreshFooterView{
 
- _contontDataController.contentURL=[NSString stringWithFormat:@"%@bs0315-iphone-4.3/%@-20.json",self.loadUrl,_contontDataController.npStr];
+    
+    
+    
+    _contontDataController.contentURL=[NSString stringWithFormat:@"%@bs0315-iphone-4.3/%@-20.json",self.loadUrl,_contontDataController.npStr];
+   
+    
+    
+ 
     [_contontDataController requestWithArgs:nil];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
