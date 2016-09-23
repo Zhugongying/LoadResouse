@@ -24,6 +24,7 @@
 		CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D001D7EAEDA00C7F181 /* TableFatherViewController.m */; };
 		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
+		CE191E191D95308300B9D8E4 /* AQYXQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE191E181D95308300B9D8E4 /* AQYXQViewController.m */; };
 		CE34F03A1D9141790018ABDC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F0391D9141790018ABDC /* Security.framework */; };
 		CE34F03C1D91418D0018ABDC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F03B1D91418D0018ABDC /* libiconv.tbd */; };
 		CE34F03E1D9141980018ABDC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F03D1D9141980018ABDC /* SystemConfiguration.framework */; };
@@ -57,6 +58,8 @@
 		CEA184481D9004AA001B04DC /* XQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA184471D9004AA001B04DC /* XQViewController.m */; };
 		CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED719961D8F93E000A35F04 /* BSBDJTableViewCell.m */; };
 		CEEA68841D9292BE00017A2A /* ShearView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA68831D9292BE00017A2A /* ShearView.m */; };
+		CEF21BF91D950CEB006B2BCC /* VideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF21BF71D950CEB006B2BCC /* VideoCollectionViewCell.m */; };
+		CEF21BFA1D950CEB006B2BCC /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF21BF81D950CEB006B2BCC /* VideoCollectionViewCell.xib */; };
 		D479882B13F24A3692C724E7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A0DAB4BE8747228BC49F6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,8 @@
 		CE106D0B1D7EBF7B00C7F181 /* XTGNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGNViewController.h; sourceTree = "<group>"; };
 		CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGNViewController.m; sourceTree = "<group>"; };
 		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		CE191E171D95308300B9D8E4 /* AQYXQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQYXQViewController.h; sourceTree = "<group>"; };
+		CE191E181D95308300B9D8E4 /* AQYXQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQYXQViewController.m; sourceTree = "<group>"; };
 		CE34F0391D9141790018ABDC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CE34F03B1D91418D0018ABDC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		CE34F03D1D9141980018ABDC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -153,6 +158,9 @@
 		CED719961D8F93E000A35F04 /* BSBDJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBDJTableViewCell.m; sourceTree = "<group>"; wrapsLines = 0; };
 		CEEA68821D9292BE00017A2A /* ShearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShearView.h; sourceTree = "<group>"; };
 		CEEA68831D9292BE00017A2A /* ShearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShearView.m; sourceTree = "<group>"; };
+		CEF21BF61D950CEB006B2BCC /* VideoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCollectionViewCell.h; sourceTree = "<group>"; };
+		CEF21BF71D950CEB006B2BCC /* VideoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCollectionViewCell.m; sourceTree = "<group>"; };
+		CEF21BF81D950CEB006B2BCC /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +290,7 @@
 		CE106CD81D7EA66000C7F181 /* ViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				CEF21BF51D950CC0006B2BCC /* 首页 */,
 				CE885ED01D93EDDE00CB22D0 /* 爱奇艺 */,
 			);
 			name = ViewCell;
@@ -302,6 +311,7 @@
 			children = (
 				CE106CDB1D7EA7C500C7F181 /* HomeViewController.h */,
 				CE106CDC1D7EA7C500C7F181 /* HomeViewController.m */,
+				CEF21BF41D950CAF006B2BCC /* New Group */,
 			);
 			name = HomeController;
 			sourceTree = "<group>";
@@ -349,7 +359,6 @@
 		CE106D021D7EB4E900C7F181 /* 功能模块 */ = {
 			isa = PBXGroup;
 			children = (
-				CE885ECE1D93EDA000CB22D0 /* 爱奇艺 */,
 				CE68F8291D7FF92600DE4A0C /* 百思不得姐 */,
 				CE106D0A1D7EBF5300C7F181 /* 系统模块 */,
 				CE106D091D7EBF4000C7F181 /* 主控制器 */,
@@ -381,6 +390,24 @@
 				CE106D101D7FBD0400C7F181 /* GlobalDefine.h */,
 			);
 			name = "全局";
+			sourceTree = "<group>";
+		};
+		CE191E151D95303F00B9D8E4 /*  爱奇艺首页 */ = {
+			isa = PBXGroup;
+			children = (
+				CE885ED21D93EE2C00CB22D0 /* AQYViewController.h */,
+				CE885ED31D93EE2C00CB22D0 /* AQYViewController.m */,
+			);
+			name = " 爱奇艺首页";
+			sourceTree = "<group>";
+		};
+		CE191E161D95306000B9D8E4 /* 详情页 */ = {
+			isa = PBXGroup;
+			children = (
+				CE191E171D95308300B9D8E4 /* AQYXQViewController.h */,
+				CE191E181D95308300B9D8E4 /* AQYXQViewController.m */,
+			);
+			name = "详情页";
 			sourceTree = "<group>";
 		};
 		CE4B8F0D1D87A7D100D9C1BE /* CollectionHead */ = {
@@ -568,8 +595,8 @@
 		CE885ECF1D93EDC100CB22D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CE885ED21D93EE2C00CB22D0 /* AQYViewController.h */,
-				CE885ED31D93EE2C00CB22D0 /* AQYViewController.m */,
+				CE191E161D95306000B9D8E4 /* 详情页 */,
+				CE191E151D95303F00B9D8E4 /*  爱奇艺首页 */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -635,6 +662,24 @@
 			name = "分享View";
 			sourceTree = "<group>";
 		};
+		CEF21BF41D950CAF006B2BCC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE885ECE1D93EDA000CB22D0 /* 爱奇艺 */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		CEF21BF51D950CC0006B2BCC /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				CEF21BF61D950CEB006B2BCC /* VideoCollectionViewCell.h */,
+				CEF21BF71D950CEB006B2BCC /* VideoCollectionViewCell.m */,
+				CEF21BF81D950CEB006B2BCC /* VideoCollectionViewCell.xib */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -698,6 +743,7 @@
 			files = (
 				CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */,
 				CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */,
+				CEF21BFA1D950CEB006B2BCC /* VideoCollectionViewCell.xib in Resources */,
 				CE4B8F651D87DA3400D9C1BE /* hahha in Resources */,
 				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
@@ -751,6 +797,7 @@
 				CE4B8F751D88E28900D9C1BE /* LoadDataBaisiControl.m in Sources */,
 				CE638E9E1D800BA600D7720C /* FatherModel.m in Sources */,
 				CE106CF01D7EA8DA00C7F181 /* RECommonFunctions.m in Sources */,
+				CEF21BF91D950CEB006B2BCC /* VideoCollectionViewCell.m in Sources */,
 				CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */,
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
 				CE885EC41D93910A00CB22D0 /* LoadDataBaiSiPLControl.m in Sources */,
@@ -778,6 +825,7 @@
 				CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */,
 				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,
 				CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */,
+				CE191E191D95308300B9D8E4 /* AQYXQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

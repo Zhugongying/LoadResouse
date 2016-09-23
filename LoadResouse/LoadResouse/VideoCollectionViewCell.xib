@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCollectionViewCell" id="gTV-IL-0wX" customClass="VideoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="76" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aqy" translatesAutoresizingMaskIntoConstraints="NO" id="eEJ-FL-PHm">
+                        <color key="backgroundColor" red="0.40800650167785235" green="0.35921770134228181" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="EVL-xQ-dNs"/>
+                            <constraint firstAttribute="width" constant="54" id="v9E-1n-Ofr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优酷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-CY-Ide">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Os6-25-GyV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eEJ-FL-PHm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="2dO-QM-AgL"/>
+                <constraint firstItem="eEJ-FL-PHm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="9aT-Ml-odW"/>
+                <constraint firstAttribute="trailing" secondItem="jx0-CY-Ide" secondAttribute="trailing" id="FXE-Vz-aWE"/>
+                <constraint firstAttribute="trailing" secondItem="eEJ-FL-PHm" secondAttribute="trailing" constant="11" id="YTj-Kd-MUn"/>
+                <constraint firstItem="jx0-CY-Ide" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ioZ-7E-SBq"/>
+                <constraint firstItem="jx0-CY-Ide" firstAttribute="top" secondItem="eEJ-FL-PHm" secondAttribute="bottom" constant="12" id="uLr-fU-fGI"/>
+            </constraints>
+            <size key="customSize" width="76" height="103"/>
+            <point key="canvasLocation" x="-81" y="48.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="aqy" width="400" height="305"/>
+    </resources>
+</document>

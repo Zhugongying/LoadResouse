@@ -9,5 +9,7 @@
 #import "LoadDataController.h"
 
 @interface AQYLoadDataControl : LoadDataController
+@property (nonatomic, copy)NSString *loadUrl;
 
+@property (nonatomic, strong)NSMutableArray  *contentArr;
 @end
