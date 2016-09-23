@@ -9,6 +9,7 @@
 #import "MoreToolViewController.h"
 #import "XTGNViewController.h"
 #import "BaiSiDJViewController.h"
+#import "AQYViewController.h"
 @interface MoreToolViewController ()
 
 @end
@@ -24,7 +25,7 @@
 }
 - (void)loadDataResouse:(NSArray *)arr{
     
-    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块",@"百思不得姐", nil];
+    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块",@"百思不得姐",@"爱奇艺", nil];
     [self.tableView reloadData];
     
 }
@@ -46,6 +47,15 @@
             [self.navigationController pushViewController:bdj animated:YES];
         
         }
+            break;
+            case 2:
+        {
+            AQYViewController *aqy=[[AQYViewController alloc] init];
+            [self.navigationController pushViewController:aqy animated:YES];
+            
+            
+        }
+            break;
             
         default:
             break;

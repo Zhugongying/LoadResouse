@@ -21,7 +21,6 @@
     #import "LoadDataController.h"
     #import <MBProgressHUD.h>
     #import <UIImageView+WebCache.h>
-    #import <UMSocial.h>
 
 //#define __UpLine__
 

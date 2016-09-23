@@ -20,14 +20,14 @@
 #import "XQViewController.h"
 
 
-#import <WXApi.h>
+#import "WXApi.h"
 #import "ShearView.h"
 
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface BaiSiDJViewController ()<LoadDataControllerDelegate,BSBDJTableViewShearDelegate,UMSocialUIDelegate,BSBDJTableTextDelegate,ShaarViewBtnClickDelegate>
+@interface BaiSiDJViewController ()<LoadDataControllerDelegate,BSBDJTableViewShearDelegate,BSBDJTableTextDelegate,ShaarViewBtnClickDelegate>
 
 @property (nonatomic,strong)UICollectionView *chouseCollectView;
 @property (nonatomic,strong)NSMutableArray *titleArrHeght;
@@ -113,7 +113,7 @@
         
         mySelf.loadUrl=newUrl;
         
-       
+       self.contontDataController=[[LoadDataBaisiControl alloc] initWithDelegate:self];
         
         _contontDataController.contentURL=[NSString stringWithFormat:@"%@%@",newUrl,@"bs0315-iphone-4.3/0-20.json"];
     
@@ -369,28 +369,42 @@
         
         
         
-    }else if ([_bsModel.type isEqualToString:@"video"]||[_bsModel.type isEqualToString:@"gif"]){
+    }else if ([_bsModel.type isEqualToString:@"video"]){
         WXMediaMessage *message=[WXMediaMessage message];
         message.title=_bsModel.text;
         message.description=@"🔫";
-        
+        [message setThumbImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.videoModel.thumbnail_small.lastObject]]]];
         
         WXWebpageObject *videoObject=[WXWebpageObject object];
-        
-        videoObject.webpageUrl=_bsModel.share_url;
+        videoObject.webpageUrl=self.videoModel.video.lastObject;
         message.mediaObject=videoObject;
-        
-//        SendMessageToWXReq *req=[[SendMessageToWXReq alloc] init];
         
         req.bText=NO;
         req.message=message;
-//        req.scene=wxType;
         
         [WXApi sendReq:req];
         
         
         
         
+    }else if ([_bsModel.type isEqualToString:@"gif"]){
+    
+        WXMediaMessage *message=[WXMediaMessage message];
+        message.title=_bsModel.text;
+        message.description=@"🔫";
+        [message setThumbImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.videoModel.download_url.lastObject]]]];
+        
+        WXWebpageObject *videoObject=[WXWebpageObject object];
+        videoObject.webpageUrl=self.videoModel.images.lastObject;
+        message.mediaObject=videoObject;
+        
+        req.bText=NO;
+        req.message=message;
+        
+        [WXApi sendReq:req];
+        
+        
+    
     }else if ([_bsModel.type isEqualToString:@"image"]){
         WXMediaMessage *message=[WXMediaMessage message];
         
@@ -420,69 +434,17 @@
 
 }
 
--(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
-{
-    //根据`responseCode`得到发送结果,如果分享成功
-    if(response.responseCode == UMSResponseCodeSuccess)
-    {
-        //得到分享到的平台名
-        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
-    }
-}
+//-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+//{
+//    //根据`responseCode`得到发送结果,如果分享成功
+//    if(response.responseCode == UMSResponseCodeSuccess)
+//    {
+//        //得到分享到的平台名
+//        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+//    }
+//}
 
-- (void)loadDataFinishWithResouse:(LoadDataController *)controller{
-
-    
-    [self endReafreshFooterView];
-    [self endReafreshHeadView];
-    
-    self.titleArrHeght =[NSMutableArray array];
-    
-    dispatch_queue_t queur=dispatch_queue_create(0, 0);
-    
-    dispatch_async(queur, ^{
-       
-        
-       
-        
-        for (BaiSiBDJModel *model in self.contontDataController.contentArr) {
-            
-//            double heght=[self cellHeightWithContent:[NSString stringWithFormat:@"%@",model.text]];
-            
-            double heght;
-            
-            if ([model.type isEqualToString:@"text"]) {
-                
-                
-              heght=100  ;
-                
-            }else{
-            
-             heght=[self cellHeightWithContent:model.text];
-            }
-            double imageHeight=[self cellImageHeight:model.videoModelArr.lastObject witchType:model.type];
-            
-            
-            NSString *height=[NSString stringWithFormat:@"%f",heght+80+imageHeight];
-
-            
-            [self.titleArrHeght addObject:height];
-            
-           
-            
-        }
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.hud hide:YES ];
-            [self.tableView reloadData];
-        });
-        
-        
-        
-    });
-
-}
-
+#pragma mark - 计算字符串高度
 - (double)cellImageHeight:(VideoModel *)videomodel witchType:(NSString *)type{
 
 
@@ -542,6 +504,55 @@
 //                                              attributes:attributes
 //                                                 context:nil].size;
     return size;
+}
+
+#pragma mark - 网络请求代理
+- (void)loadDataFinishWithResouse:(LoadDataController *)controller{
+    
+    
+    
+    
+    self.titleArrHeght =[NSMutableArray array];
+    
+    dispatch_queue_t queur=dispatch_queue_create(0, 0);
+    
+    dispatch_async(queur, ^{
+        
+        for (BaiSiBDJModel *model in self.contontDataController.contentArr) {
+            
+            double heght;
+            
+            if ([model.type isEqualToString:@"text"]) {
+                
+                
+                heght=100  ;
+                
+            }else{
+                
+                heght=[self cellHeightWithContent:model.text];
+            }
+            double imageHeight=[self cellImageHeight:model.videoModelArr.lastObject witchType:model.type];
+            
+            
+            NSString *height=[NSString stringWithFormat:@"%f",heght+80+imageHeight];
+            
+            
+            [self.titleArrHeght addObject:height];
+            
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.hud hide:YES ];
+            [self.tableView reloadData];
+        });
+        
+        
+        
+    });
+    
+    [self endReafreshFooterView];
+    [self endReafreshHeadView];
+    
 }
 
 - (void)loadData:(LoadDataController *)controller failedWithEroor:(NSError *)error{

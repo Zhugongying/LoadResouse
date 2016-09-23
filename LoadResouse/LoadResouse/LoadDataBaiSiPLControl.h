@@ -17,5 +17,7 @@
 
 @property (nonatomic, copy)NSString *lastPageID;//当页最后一位id
 
+@property (nonatomic, copy)NSString *conmentArrCount;//记录总数 判断刷新
+
 
 @end

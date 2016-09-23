@@ -9,10 +9,10 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "LeftViewController.h"
-#import "UMSocialWechatHandler.h"
 
-#import <WXApi.h>
-#import <UMMobClick/MobClick.h>
+
+#import "WXApi.h"
+//#import <UMMobClick/MobClick.h>
 
 @interface AppDelegate ()<WXApiDelegate>
 
@@ -47,8 +47,8 @@
     
     [WXApi registerApp:@"wx9e4f48a4d7ddb805"];
     
-    [UMSocialData setAppKey:@"57e0fb0de0f55a6a95000d46"];
-    [UMSocialWechatHandler setWXAppId:@"wx9e4f48a4d7ddb805" appSecret:@"9c7b8cacef06b10095d419c74acafa06" url:@"http://www.baidu.com"];
+//    [UMSocialData setAppKey:@"57e0fb0de0f55a6a95000d46"];
+//    [UMSocialWechatHandler setWXAppId:@"wx9e4f48a4d7ddb805" appSecret:@"9c7b8cacef06b10095d419c74acafa06" url:@"http://www.baidu.com"];
     
     // my  wx9e4f48a4d7ddb805  9c7b8cacef06b10095d419c74acafa06
     
@@ -56,11 +56,11 @@
  //pptv   wxa4b68300ec455c0c
     //b07327965857bea44e14c8c7f0ba88f0
     
-    
-    UMConfigInstance.appKey=@"57e0fb0de0f55a6a95000d46";
-    UMConfigInstance.channelId=@"App Store";
-    
-    [MobClick startWithConfigure:UMConfigInstance];
+//    
+//    UMConfigInstance.appKey=@"57e0fb0de0f55a6a95000d46";
+//    UMConfigInstance.channelId=@"App Store";
+//    
+//    [MobClick startWithConfigure:UMConfigInstance];
     
     
     self.window.backgroundColor = [UIColor whiteColor];

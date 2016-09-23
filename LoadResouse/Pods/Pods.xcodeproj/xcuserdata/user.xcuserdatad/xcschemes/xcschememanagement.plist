@@ -29,16 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-UMengAnalytics-NO-IDFA.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-UMengSocialCOM.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>029D763973E39C5C3BCBBA0E</key>
+		<key>573C63A76B5C37A797884C7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>04DBF8589D704ADD0AF9781C</key>
+		<key>616E8EDF4FE0AEA95EB38C72</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3597CB0BDD01B7F3BA6D09B0</key>
+		<key>752EA27DB691D0ACB9D153C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4552A27B93C19C6A72B6FC6C</key>
+		<key>7DC9945E96C4025A24E6EA05</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>85D677CC490E09423E87C13B</key>
+		<key>E04154E5BDCCCB3385F599D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6737C7BAA223608B258A87D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CEDAF043DDF8727A7EE8D028</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DFD399AF55E5F9060CA5D854</key>
+		<key>EB3C3318FF3A247FB6429785</key>
 		<dict>
 			<key>primary</key>
 			<true/>

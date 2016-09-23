@@ -62,9 +62,6 @@
             [model.videoModelArr addObject:videoModel];
         }
         
-       
-        
-        
         [self.contentArr addObject:model];
         
     }

@@ -10,7 +10,6 @@
 #import "HomeViewController.h"
 #import <MBProgressHUD.h>
 
-#import <WXApi.h>
 @interface AppDelegate : UIResponder <UIApplicationDelegate,RESideMenuDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

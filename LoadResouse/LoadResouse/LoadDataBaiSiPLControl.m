@@ -59,6 +59,7 @@
     NSDictionary *lastInfo=infoArr.lastObject;
     
     self.lastPageID=lastInfo[@"id"];
+    self.conmentArrCount=(NSString *)info[@"total"];
     
     
     
