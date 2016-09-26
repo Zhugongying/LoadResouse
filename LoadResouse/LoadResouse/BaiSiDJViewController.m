@@ -416,6 +416,8 @@
     }else if ([_bsModel.type isEqualToString:@"image"]){
         WXMediaMessage *message=[WXMediaMessage message];
         
+        message.description=self.bsModel.text;
+        message.title=self.bsModel.text;
         [message setThumbImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_videoModel.thumbnail_small.lastObject]]]];
         
         

@@ -10,11 +10,11 @@
 #import "HomeViewController.h"
 #import "LeftViewController.h"
 
-
+#import <Reachability.h>
 #import "WXApi.h"
 //#import <UMMobClick/MobClick.h>
 
-@interface AppDelegate ()<WXApiDelegate>
+@interface AppDelegate ()<WXApiDelegate,UIAlertViewDelegate>
 
 @end
 
@@ -63,6 +63,9 @@
 //    [MobClick startWithConfigure:UMConfigInstance];
     
     
+    
+    [self netWorkDetailStatus];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -90,6 +93,58 @@
 - (void)onResp:(BaseResp *)resp{
 
     NSLog(@"okokokok");
+
+}
+
+- (void)netWorkDetailStatus{
+
+    Reachability *reach=[Reachability reachabilityWithHostName:@"http://www.baidu.com"];
+    
+    BOOL isExistenceNetwork = YES;
+    
+    switch ([reach currentReachabilityStatus]) {
+        case NotReachable:
+        {
+            isExistenceNetwork=NO;
+            
+            UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"当前无网络" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            
+            [alertView show];
+            
+        
+        
+        }
+            break;
+        case ReachableViaWiFi:
+        {
+            isExistenceNetwork=YES;
+            
+        }
+            break;
+        case ReachableViaWWAN:
+        {
+            isExistenceNetwork=YES;
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+
+
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    NSLog(@"%ld",buttonIndex);
+    
+    if (buttonIndex==1) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=INTERNET_TETHERING"]];
+    }
+    
+    
+    
 
 }
 

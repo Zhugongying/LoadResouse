@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SDCycleScrollView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3961A7B5E4C22EA2B7A70BEC</key>
+		<key>10F3C8EE97279D6FE3925666</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CF29C9AB3E3E1C26E68483B</key>
+		<key>1217C6FC05B43702E550AB4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B1D67A1132995E5484EAAAE</key>
+		<key>1883A265AD2E8FBD4B86FC37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6E408837703F923DAC7F94B</key>
+		<key>1EE1904EB4D0515A25B4384E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C04C8DB0DC98621B772DCF75</key>
+		<key>41A95F83F2E65E0D1F207EE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D61BB3D6B69724EFFEA3E568</key>
+		<key>9F48BDB703689B4B1E558AD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F7269CB9C8C7D3402A586307</key>
+		<key>A119DB9F4C706E59CB932C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB142608DF7612FE007BF174</key>
 		<dict>
 			<key>primary</key>
 			<true/>

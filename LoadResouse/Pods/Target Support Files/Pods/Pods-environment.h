@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_RTLabel 0
 #define COCOAPODS_VERSION_PATCH_RTLabel 1
 
+// Reachability
+#define COCOAPODS_POD_AVAILABLE_Reachability
+#define COCOAPODS_VERSION_MAJOR_Reachability 3
+#define COCOAPODS_VERSION_MINOR_Reachability 2
+#define COCOAPODS_VERSION_PATCH_Reachability 0
+
 // SDCycleScrollView
 #define COCOAPODS_POD_AVAILABLE_SDCycleScrollView
 #define COCOAPODS_VERSION_MAJOR_SDCycleScrollView 1
