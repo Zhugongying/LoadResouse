@@ -123,6 +123,11 @@
             break;
         case ReachableViaWWAN:
         {
+            
+            UIAlertView *aleartView=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"老哥！你在用流量呀！怪费钱咧！用WIFI？" delegate:self cancelButtonTitle:@"我是土豪!不" otherButtonTitles:@"我是屌丝！切", nil];
+            
+            [aleartView show];
+            
             isExistenceNetwork=YES;
             
         }
@@ -140,6 +145,13 @@
     NSLog(@"%ld",buttonIndex);
     
     if (buttonIndex==1) {
+        
+        if ([alertView.title hasPrefix:@"老哥！"]) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
+            
+        }
+        
+        
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=INTERNET_TETHERING"]];
     }
     

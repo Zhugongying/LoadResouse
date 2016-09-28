@@ -39,7 +39,7 @@
 
     NSDictionary *info=(NSDictionary *)content;
     
-    NSLog( @"%@",info);
+//    NSLog( @"%@",info);
     
     NSArray *infoArr=info[@"data"];
     

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface VideoCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *textLable;
 @end

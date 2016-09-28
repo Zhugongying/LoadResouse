@@ -25,6 +25,9 @@
 		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
 		CE191E191D95308300B9D8E4 /* AQYXQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE191E181D95308300B9D8E4 /* AQYXQViewController.m */; };
+		CE31970F1D99200B006D2C42 /* SetingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31970E1D99200B006D2C42 /* SetingTableViewController.m */; };
+		CE3197141D992060006D2C42 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3197121D992060006D2C42 /* SettingTableViewCell.m */; };
+		CE3197151D992060006D2C42 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3197131D992060006D2C42 /* SettingTableViewCell.xib */; };
 		CE34F03A1D9141790018ABDC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F0391D9141790018ABDC /* Security.framework */; };
 		CE34F03C1D91418D0018ABDC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F03B1D91418D0018ABDC /* libiconv.tbd */; };
 		CE34F03E1D9141980018ABDC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34F03D1D9141980018ABDC /* SystemConfiguration.framework */; };
@@ -56,6 +59,16 @@
 		CE885EE01D94D23400CB22D0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE885EDF1D94D23400CB22D0 /* libsqlite3.0.tbd */; };
 		CE885EE21D94D24E00CB22D0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE885EE11D94D24E00CB22D0 /* libc++.tbd */; };
 		CEA184481D9004AA001B04DC /* XQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA184471D9004AA001B04DC /* XQViewController.m */; };
+		CEA713791D9A565600F5FCC3 /* AVPlayerVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA713781D9A565600F5FCC3 /* AVPlayerVideoViewController.m */; };
+		CEA7137D1D9A677500F5FCC3 /* VideoButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7137C1D9A677500F5FCC3 /* VideoButtonView.m */; };
+		CEA7137F1D9A679900F5FCC3 /* VideoButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA7137E1D9A679900F5FCC3 /* VideoButtonView.xib */; };
+		CED4BCAE1D9A117E0096E842 /* XLKKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */; };
+		CED4BCB41D9A12C50096E842 /* XLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCB21D9A12C50096E842 /* XLTableViewCell.m */; };
+		CED4BCB51D9A12C50096E842 /* XLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4BCB31D9A12C50096E842 /* XLTableViewCell.xib */; };
+		CED4BCB91D9A14A30096E842 /* XLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCB81D9A14A30096E842 /* XLModel.m */; };
+		CED4BCBC1D9A181F0096E842 /* NSObject+SBData.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCBB1D9A181F0096E842 /* NSObject+SBData.m */; };
+		CED4BCC01D9A19E50096E842 /* XLLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCBF1D9A19E50096E842 /* XLLoadDataController.m */; };
+		CED4BCC41D9A2DCB0096E842 /* XLVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCC31D9A2DCB0096E842 /* XLVideoModel.m */; };
 		CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED719961D8F93E000A35F04 /* BSBDJTableViewCell.m */; };
 		CEEA68841D9292BE00017A2A /* ShearView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA68831D9292BE00017A2A /* ShearView.m */; };
 		CEF21BF91D950CEB006B2BCC /* VideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF21BF71D950CEB006B2BCC /* VideoCollectionViewCell.m */; };
@@ -103,6 +116,11 @@
 		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		CE191E171D95308300B9D8E4 /* AQYXQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQYXQViewController.h; sourceTree = "<group>"; };
 		CE191E181D95308300B9D8E4 /* AQYXQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQYXQViewController.m; sourceTree = "<group>"; };
+		CE31970D1D99200B006D2C42 /* SetingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetingTableViewController.h; sourceTree = "<group>"; };
+		CE31970E1D99200B006D2C42 /* SetingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetingTableViewController.m; sourceTree = "<group>"; };
+		CE3197111D992060006D2C42 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		CE3197121D992060006D2C42 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		CE3197131D992060006D2C42 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		CE34F0391D9141790018ABDC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CE34F03B1D91418D0018ABDC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		CE34F03D1D9141980018ABDC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -154,6 +172,24 @@
 		CE885EE11D94D24E00CB22D0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		CEA184461D9004AA001B04DC /* XQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQViewController.h; sourceTree = "<group>"; };
 		CEA184471D9004AA001B04DC /* XQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQViewController.m; sourceTree = "<group>"; };
+		CEA713771D9A565600F5FCC3 /* AVPlayerVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerVideoViewController.h; sourceTree = "<group>"; };
+		CEA713781D9A565600F5FCC3 /* AVPlayerVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerVideoViewController.m; sourceTree = "<group>"; };
+		CEA7137B1D9A677500F5FCC3 /* VideoButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoButtonView.h; sourceTree = "<group>"; };
+		CEA7137C1D9A677500F5FCC3 /* VideoButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoButtonView.m; sourceTree = "<group>"; };
+		CEA7137E1D9A679900F5FCC3 /* VideoButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoButtonView.xib; sourceTree = "<group>"; };
+		CED4BCAC1D9A117E0096E842 /* XLKKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLKKViewController.h; sourceTree = "<group>"; };
+		CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLKKViewController.m; sourceTree = "<group>"; };
+		CED4BCB11D9A12C50096E842 /* XLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTableViewCell.h; sourceTree = "<group>"; };
+		CED4BCB21D9A12C50096E842 /* XLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTableViewCell.m; sourceTree = "<group>"; };
+		CED4BCB31D9A12C50096E842 /* XLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLTableViewCell.xib; sourceTree = "<group>"; };
+		CED4BCB71D9A14A30096E842 /* XLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLModel.h; sourceTree = "<group>"; };
+		CED4BCB81D9A14A30096E842 /* XLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLModel.m; sourceTree = "<group>"; };
+		CED4BCBA1D9A181F0096E842 /* NSObject+SBData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBData.h"; sourceTree = "<group>"; };
+		CED4BCBB1D9A181F0096E842 /* NSObject+SBData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBData.m"; sourceTree = "<group>"; };
+		CED4BCBE1D9A19E50096E842 /* XLLoadDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLLoadDataController.h; sourceTree = "<group>"; };
+		CED4BCBF1D9A19E50096E842 /* XLLoadDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLLoadDataController.m; sourceTree = "<group>"; };
+		CED4BCC21D9A2DCB0096E842 /* XLVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVideoModel.h; sourceTree = "<group>"; };
+		CED4BCC31D9A2DCB0096E842 /* XLVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLVideoModel.m; sourceTree = "<group>"; };
 		CED719951D8F93E000A35F04 /* BSBDJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBDJTableViewCell.h; sourceTree = "<group>"; };
 		CED719961D8F93E000A35F04 /* BSBDJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBDJTableViewCell.m; sourceTree = "<group>"; wrapsLines = 0; };
 		CEEA68821D9292BE00017A2A /* ShearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShearView.h; sourceTree = "<group>"; };
@@ -234,7 +270,7 @@
 		CE106CC31D7EA5E600C7F181 /* LoadResouse */ = {
 			isa = PBXGroup;
 			children = (
-				CE4B8F631D87DA1F00D9C1BE /* hhha */,
+				CE4B8F631D87DA1F00D9C1BE /* 数据下载 */,
 				CE638E9B1D800B7800D7720C /* MyModel */,
 				CE106D0F1D7FBCBF00C7F181 /* 全局 */,
 				CE638EA61D801C1B00D7720C /* 请求类 */,
@@ -282,6 +318,7 @@
 		CE106CD71D7EA65500C7F181 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CED4BCB61D9A14440096E842 /* 迅雷 */,
 				CE885ED11D93EDEA00CB22D0 /* 爱奇艺 */,
 			);
 			name = Model;
@@ -290,6 +327,7 @@
 		CE106CD81D7EA66000C7F181 /* ViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				CE3197101D992033006D2C42 /* 设置Cell */,
 				CEF21BF51D950CC0006B2BCC /* 首页 */,
 				CE885ED01D93EDDE00CB22D0 /* 爱奇艺 */,
 			);
@@ -299,6 +337,7 @@
 		CE106CD91D7EA66C00C7F181 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CE31970C1D991FDA006D2C42 /* 设置 */,
 				CE106D021D7EB4E900C7F181 /* 功能模块 */,
 				CE106CF71D7EAA1A00C7F181 /* LeftController */,
 				CE106CDA1D7EA67A00C7F181 /* HomeController */,
@@ -311,7 +350,7 @@
 			children = (
 				CE106CDB1D7EA7C500C7F181 /* HomeViewController.h */,
 				CE106CDC1D7EA7C500C7F181 /* HomeViewController.m */,
-				CEF21BF41D950CAF006B2BCC /* New Group */,
+				CEF21BF41D950CAF006B2BCC /* 小模块 */,
 			);
 			name = HomeController;
 			sourceTree = "<group>";
@@ -387,7 +426,11 @@
 		CE106D0F1D7FBCBF00C7F181 /* 全局 */ = {
 			isa = PBXGroup;
 			children = (
+				CEA7137A1D9A673B00F5FCC3 /* 播放器下边按钮 */,
+				CEA713761D9A560D00F5FCC3 /* 播放器 */,
 				CE106D101D7FBD0400C7F181 /* GlobalDefine.h */,
+				CED4BCBA1D9A181F0096E842 /* NSObject+SBData.h */,
+				CED4BCBB1D9A181F0096E842 /* NSObject+SBData.m */,
 			);
 			name = "全局";
 			sourceTree = "<group>";
@@ -410,6 +453,25 @@
 			name = "详情页";
 			sourceTree = "<group>";
 		};
+		CE31970C1D991FDA006D2C42 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				CE31970D1D99200B006D2C42 /* SetingTableViewController.h */,
+				CE31970E1D99200B006D2C42 /* SetingTableViewController.m */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
+		CE3197101D992033006D2C42 /* 设置Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE3197111D992060006D2C42 /* SettingTableViewCell.h */,
+				CE3197121D992060006D2C42 /* SettingTableViewCell.m */,
+				CE3197131D992060006D2C42 /* SettingTableViewCell.xib */,
+			);
+			name = "设置Cell";
+			sourceTree = "<group>";
+		};
 		CE4B8F0D1D87A7D100D9C1BE /* CollectionHead */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,12 +482,13 @@
 			name = CollectionHead;
 			sourceTree = "<group>";
 		};
-		CE4B8F631D87DA1F00D9C1BE /* hhha */ = {
+		CE4B8F631D87DA1F00D9C1BE /* 数据下载 */ = {
 			isa = PBXGroup;
 			children = (
+				CED4BCBD1D9A19AD0096E842 /* 迅雷数据下载 */,
 				CE4B8F641D87DA3400D9C1BE /* hahha */,
 			);
-			name = hhha;
+			name = "数据下载";
 			sourceTree = "<group>";
 		};
 		CE4B8F721D88E24700D9C1BE /* 分类 */ = {
@@ -653,6 +716,25 @@
 			name = "详情页";
 			sourceTree = "<group>";
 		};
+		CEA713761D9A560D00F5FCC3 /* 播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				CEA713771D9A565600F5FCC3 /* AVPlayerVideoViewController.h */,
+				CEA713781D9A565600F5FCC3 /* AVPlayerVideoViewController.m */,
+			);
+			name = "播放器";
+			sourceTree = "<group>";
+		};
+		CEA7137A1D9A673B00F5FCC3 /* 播放器下边按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7137B1D9A677500F5FCC3 /* VideoButtonView.h */,
+				CEA7137C1D9A677500F5FCC3 /* VideoButtonView.m */,
+				CEA7137E1D9A679900F5FCC3 /* VideoButtonView.xib */,
+			);
+			name = "播放器下边按钮";
+			sourceTree = "<group>";
+		};
 		CED098EB1D922A9C0048060C /* 分享View */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,20 +744,77 @@
 			name = "分享View";
 			sourceTree = "<group>";
 		};
-		CEF21BF41D950CAF006B2BCC /* New Group */ = {
+		CED4BCAB1D9A11540096E842 /* 迅雷看看 */ = {
 			isa = PBXGroup;
 			children = (
-				CE885ECE1D93EDA000CB22D0 /* 爱奇艺 */,
+				CED4BCAC1D9A117E0096E842 /* XLKKViewController.h */,
+				CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */,
 			);
-			name = "New Group";
+			name = "迅雷看看";
 			sourceTree = "<group>";
 		};
-		CEF21BF51D950CC0006B2BCC /* 首页 */ = {
+		CED4BCAF1D9A11960096E842 /* coletionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				CEF21BF61D950CEB006B2BCC /* VideoCollectionViewCell.h */,
 				CEF21BF71D950CEB006B2BCC /* VideoCollectionViewCell.m */,
 				CEF21BF81D950CEB006B2BCC /* VideoCollectionViewCell.xib */,
+			);
+			name = coletionViewCell;
+			sourceTree = "<group>";
+		};
+		CED4BCB01D9A129D0096E842 /* 迅雷Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BCB11D9A12C50096E842 /* XLTableViewCell.h */,
+				CED4BCB21D9A12C50096E842 /* XLTableViewCell.m */,
+				CED4BCB31D9A12C50096E842 /* XLTableViewCell.xib */,
+			);
+			name = "迅雷Cell";
+			sourceTree = "<group>";
+		};
+		CED4BCB61D9A14440096E842 /* 迅雷 */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BCC11D9A2DAC0096E842 /* videoModel */,
+				CED4BCB71D9A14A30096E842 /* XLModel.h */,
+				CED4BCB81D9A14A30096E842 /* XLModel.m */,
+			);
+			name = "迅雷";
+			sourceTree = "<group>";
+		};
+		CED4BCBD1D9A19AD0096E842 /* 迅雷数据下载 */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BCBE1D9A19E50096E842 /* XLLoadDataController.h */,
+				CED4BCBF1D9A19E50096E842 /* XLLoadDataController.m */,
+			);
+			name = "迅雷数据下载";
+			sourceTree = "<group>";
+		};
+		CED4BCC11D9A2DAC0096E842 /* videoModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BCC21D9A2DCB0096E842 /* XLVideoModel.h */,
+				CED4BCC31D9A2DCB0096E842 /* XLVideoModel.m */,
+			);
+			name = videoModel;
+			sourceTree = "<group>";
+		};
+		CEF21BF41D950CAF006B2BCC /* 小模块 */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BCAB1D9A11540096E842 /* 迅雷看看 */,
+				CE885ECE1D93EDA000CB22D0 /* 爱奇艺 */,
+			);
+			name = "小模块";
+			sourceTree = "<group>";
+		};
+		CEF21BF51D950CC0006B2BCC /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BCB01D9A129D0096E842 /* 迅雷Cell */,
+				CED4BCAF1D9A11960096E842 /* coletionViewCell */,
 			);
 			name = "首页";
 			sourceTree = "<group>";
@@ -745,7 +884,10 @@
 				CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */,
 				CEF21BFA1D950CEB006B2BCC /* VideoCollectionViewCell.xib in Resources */,
 				CE4B8F651D87DA3400D9C1BE /* hahha in Resources */,
+				CEA7137F1D9A679900F5FCC3 /* VideoButtonView.xib in Resources */,
 				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
+				CED4BCB51D9A12C50096E842 /* XLTableViewCell.xib in Resources */,
+				CE3197151D992060006D2C42 /* SettingTableViewCell.xib in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
 				CE106CCE1D7EA5E700C7F181 /* LaunchScreen.storyboard in Resources */,
 				CE4B8F711D87F0A800D9C1BE /* MyHeadView.xib in Resources */,
@@ -792,9 +934,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA713791D9A565600F5FCC3 /* AVPlayerVideoViewController.m in Sources */,
 				CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */,
+				CEA7137D1D9A677500F5FCC3 /* VideoButtonView.m in Sources */,
 				CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */,
 				CE4B8F751D88E28900D9C1BE /* LoadDataBaisiControl.m in Sources */,
+				CED4BCAE1D9A117E0096E842 /* XLKKViewController.m in Sources */,
 				CE638E9E1D800BA600D7720C /* FatherModel.m in Sources */,
 				CE106CF01D7EA8DA00C7F181 /* RECommonFunctions.m in Sources */,
 				CEF21BF91D950CEB006B2BCC /* VideoCollectionViewCell.m in Sources */,
@@ -808,15 +953,20 @@
 				CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */,
 				CE885EC81D9398FC00CB22D0 /* PLModel.m in Sources */,
 				CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */,
+				CE31970F1D99200B006D2C42 /* SetingTableViewController.m in Sources */,
 				CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */,
+				CED4BCB91D9A14A30096E842 /* XLModel.m in Sources */,
 				CE638EAD1D81106000D7720C /* BaiSiBDJDataController.m in Sources */,
 				CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */,
 				CEEA68841D9292BE00017A2A /* ShearView.m in Sources */,
 				CE106CEF1D7EA8DA00C7F181 /* PlayerViewController.m in Sources */,
+				CED4BCB41D9A12C50096E842 /* XLTableViewCell.m in Sources */,
 				CE106CF31D7EA8DA00C7F181 /* TestViewController.m in Sources */,
 				CE885ED81D93EF0700CB22D0 /* AQYLoadDataControl.m in Sources */,
+				CED4BCC41D9A2DCB0096E842 /* XLVideoModel.m in Sources */,
 				CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
+				CE3197141D992060006D2C42 /* SettingTableViewCell.m in Sources */,
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
 				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,
@@ -824,7 +974,9 @@
 				CE106CF21D7EA8DA00C7F181 /* TableViewController.m in Sources */,
 				CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */,
 				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,
+				CED4BCC01D9A19E50096E842 /* XLLoadDataController.m in Sources */,
 				CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */,
+				CED4BCBC1D9A181F0096E842 /* NSObject+SBData.m in Sources */,
 				CE191E191D95308300B9D8E4 /* AQYXQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -948,7 +1100,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
 			name = Debug;
@@ -973,7 +1125,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
 			name = Release;

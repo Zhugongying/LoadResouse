@@ -11,9 +11,11 @@
 
 #import "VideoCollectionViewCell.h"
 #import "AQYViewController.h"
+#import "XLKKViewController.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionView;
+@property (nonatomic,strong)NSArray *dataArr;
 @end
 
 @implementation HomeViewController
@@ -25,6 +27,7 @@
     [self creatBannerView];
     
     [self creatColectionView];
+    [self loadDataResouse];
 }
 
 - (void)creatLeftBtn{
@@ -96,7 +99,21 @@
     
     [self.view addSubview:self.collectionView];
 }
+- (void)loadDataResouse{
 
+    self.dataArr=@[@{
+                       @"image":@"aqy",
+                       @"text":@"爱奇艺"
+                       },
+                   @{
+                       @"image":@"xl",
+                       @"text":@"迅雷",
+                       }];
+
+    [self.collectionView reloadData];
+    
+
+}
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
 
     return 1;
@@ -104,7 +121,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
-    return 16;
+    return self.dataArr.count;
 }
 
 
@@ -117,6 +134,9 @@
 
     cell.backgroundColor=UIColorRGBA(0xffffff, 1);
     
+    cell.headImageView.image=[UIImage imageNamed:self.dataArr[indexPath.row][@"image"]];
+    cell.textLable.text=self.dataArr[indexPath.row][@"text"];
+    
     return cell;
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
@@ -127,7 +147,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
 
 
-    return CGSizeMake((kScreenSizeW-5)/4, 103);
+    return CGSizeMake((kScreenSizeW-5)/4, (kScreenSizeW-5)/4);
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -144,6 +164,18 @@
         
         }
             break;
+            
+            case 1:
+        {
+        
+            XLKKViewController *xl=[[XLKKViewController alloc] init];
+            
+            xl.title=@"迅雷";
+            [self.navigationController pushViewController:xl animated:YES];
+        
+        }
+            break;
+            
             
         default:
            

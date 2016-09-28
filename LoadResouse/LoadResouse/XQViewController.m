@@ -75,13 +75,9 @@
     NSString *upLoadUrl=[NSString stringWithFormat:@"%@&lastcid=%@",url,self.PL.lastPageID];
     
     
-    if ((NSInteger)self.PL.conmentArrCount >= self.PL.conmentArr.count) {
-        
+    if (self.PL.conmentArrCount.integerValue == self.PL.conmentArr.count) {
         [self endReafreshFooterView];
-        
         return;
-
-        
     }
     self.PL.loadUrl=upLoadUrl;
     [self.PL requestWithArgs:nil];

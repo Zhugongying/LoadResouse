@@ -10,6 +10,8 @@
 
 #import "MoreToolViewController.h"
 #import "HomeViewController.h"
+
+#import "SetingTableViewController.h"
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, readwrite, nonatomic) UITableView *tableView;
 @end
@@ -60,6 +62,17 @@
 //            break;
 //            
 //        }
+            
+            case 3 :
+        {
+        
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[SetingTableViewController alloc] init]]animated:YES];
+            
+            [self.sideMenuViewController hideMenuViewController];
+            
+        
+        }
+            break;
             
             
         default:

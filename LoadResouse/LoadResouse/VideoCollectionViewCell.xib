@@ -15,14 +15,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="76" height="103"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aqy" translatesAutoresizingMaskIntoConstraints="NO" id="eEJ-FL-PHm">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eEJ-FL-PHm">
                         <color key="backgroundColor" red="0.40800650167785235" green="0.35921770134228181" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="54" id="EVL-xQ-dNs"/>
-                            <constraint firstAttribute="width" constant="54" id="v9E-1n-Ofr"/>
+                            <constraint firstAttribute="height" constant="54" id="0tK-Cm-S97"/>
+                            <constraint firstAttribute="width" constant="54" id="kPX-Xx-1xn"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优酷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-CY-Ide">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱奇艺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-CY-Ide">
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Os6-25-GyV"/>
                         </constraints>
@@ -38,13 +38,14 @@
                 <constraint firstAttribute="trailing" secondItem="jx0-CY-Ide" secondAttribute="trailing" id="FXE-Vz-aWE"/>
                 <constraint firstAttribute="trailing" secondItem="eEJ-FL-PHm" secondAttribute="trailing" constant="11" id="YTj-Kd-MUn"/>
                 <constraint firstItem="jx0-CY-Ide" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ioZ-7E-SBq"/>
-                <constraint firstItem="jx0-CY-Ide" firstAttribute="top" secondItem="eEJ-FL-PHm" secondAttribute="bottom" constant="12" id="uLr-fU-fGI"/>
+                <constraint firstItem="jx0-CY-Ide" firstAttribute="top" secondItem="eEJ-FL-PHm" secondAttribute="bottom" constant="7" id="uLr-fU-fGI"/>
             </constraints>
             <size key="customSize" width="76" height="103"/>
+            <connections>
+                <outlet property="headImageView" destination="eEJ-FL-PHm" id="4DM-EQ-Fbf"/>
+                <outlet property="textLable" destination="jx0-CY-Ide" id="hVj-Ji-6mS"/>
+            </connections>
             <point key="canvasLocation" x="-81" y="48.5"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="aqy" width="400" height="305"/>
-    </resources>
 </document>
