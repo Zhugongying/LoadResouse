@@ -19,6 +19,12 @@
 */
 
 - (instancetype)initWithFrame:(CGRect)frame withNibName:(NSString *)nib{
+    
+//    self=[super initWithFrame:frame];
+    
+    
+    
+    
     NSArray *nibArr=[[NSBundle mainBundle] loadNibNamed:nib owner:self options:nil];
     
     self=nibArr.firstObject;
@@ -26,6 +32,12 @@
     
     if (self) {
         self.frame=frame;
+        self.backView=[[UIView alloc] initWithFrame:frame];
+        
+        self.backView.frame=frame;
+        
+        
+        
         
     }
     return self;

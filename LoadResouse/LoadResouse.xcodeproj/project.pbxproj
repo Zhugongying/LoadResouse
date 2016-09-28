@@ -62,6 +62,7 @@
 		CEA713791D9A565600F5FCC3 /* AVPlayerVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA713781D9A565600F5FCC3 /* AVPlayerVideoViewController.m */; };
 		CEA7137D1D9A677500F5FCC3 /* VideoButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7137C1D9A677500F5FCC3 /* VideoButtonView.m */; };
 		CEA7137F1D9A679900F5FCC3 /* VideoButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA7137E1D9A679900F5FCC3 /* VideoButtonView.xib */; };
+		CEC1F9C21D9BA742007A555C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC1F9C11D9BA742007A555C /* AVFoundation.framework */; };
 		CED4BCAE1D9A117E0096E842 /* XLKKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */; };
 		CED4BCB41D9A12C50096E842 /* XLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCB21D9A12C50096E842 /* XLTableViewCell.m */; };
 		CED4BCB51D9A12C50096E842 /* XLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4BCB31D9A12C50096E842 /* XLTableViewCell.xib */; };
@@ -177,6 +178,7 @@
 		CEA7137B1D9A677500F5FCC3 /* VideoButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoButtonView.h; sourceTree = "<group>"; };
 		CEA7137C1D9A677500F5FCC3 /* VideoButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoButtonView.m; sourceTree = "<group>"; };
 		CEA7137E1D9A679900F5FCC3 /* VideoButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoButtonView.xib; sourceTree = "<group>"; };
+		CEC1F9C11D9BA742007A555C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CED4BCAC1D9A117E0096E842 /* XLKKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLKKViewController.h; sourceTree = "<group>"; };
 		CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLKKViewController.m; sourceTree = "<group>"; };
 		CED4BCB11D9A12C50096E842 /* XLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTableViewCell.h; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC1F9C21D9BA742007A555C /* AVFoundation.framework in Frameworks */,
 				CE34F0441D9141C90018ABDC /* CoreTelephony.framework in Frameworks */,
 				CE885EE21D94D24E00CB22D0 /* libc++.tbd in Frameworks */,
 				CE885EE01D94D23400CB22D0 /* libsqlite3.0.tbd in Frameworks */,
@@ -225,6 +228,7 @@
 		0E20DF4D935D4331BA17581A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1F9C11D9BA742007A555C /* AVFoundation.framework */,
 				CE885EE11D94D24E00CB22D0 /* libc++.tbd */,
 				CE885EDF1D94D23400CB22D0 /* libsqlite3.0.tbd */,
 				CE34F0471D9141E20018ABDC /* libz.tbd */,

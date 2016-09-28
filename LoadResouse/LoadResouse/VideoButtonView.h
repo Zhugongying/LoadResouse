@@ -15,7 +15,10 @@
 @end
 
 @interface VideoButtonView : UIView
-@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (strong, nonatomic)  UIView *backView;
+@property (weak, nonatomic) IBOutlet UILabel *playTimeLable;
+@property (weak, nonatomic) IBOutlet UISlider *progressView;
+//@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UIButton *beginBtn;
 
 @property (nonatomic, weak) id<VideoButtonViewDelegate>btnDelegate;

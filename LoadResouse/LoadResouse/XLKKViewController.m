@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    self.view.backgroundColor=[UIColor whiteColor];
     [self loadDataXunLeiResouse];
     
     [self creatTableView];
@@ -102,8 +102,9 @@
         av.videoUrlStr=model.url;
         
         av.videoModel=model;
-        [self.navigationController pushViewController:av animated:YES];
-        
+//        [self.navigationController pushViewController:av animated:YES];
+
+        [self presentViewController:av animated:YES completion:nil];
         
         return;
     }

@@ -16,7 +16,7 @@
             startingLineNumber = "346"
             endingLineNumber = "346"
             landmarkName = "-showBaiSiBDJModel:witchVideoModel:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,7 +64,7 @@
             startingLineNumber = "117"
             endingLineNumber = "117"
             landmarkName = "-presenView"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,7 +96,7 @@
             startingLineNumber = "370"
             endingLineNumber = "370"
             landmarkName = "-cratShearBtnWithType:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             startingLineNumber = "138"
             endingLineNumber = "138"
             landmarkName = "-refreshFooterView"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -128,7 +128,7 @@
             startingLineNumber = "399"
             endingLineNumber = "399"
             landmarkName = "-cratShearBtnWithType:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -176,7 +176,7 @@
             startingLineNumber = "419"
             endingLineNumber = "419"
             landmarkName = "-cratShearBtnWithType:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
