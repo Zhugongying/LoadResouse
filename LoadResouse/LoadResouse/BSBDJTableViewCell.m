@@ -129,7 +129,8 @@
             dispatch_async(queue, ^{
                 
                 self.videoImage.hidden=NO;
-                [self.headImageView sd_setImageWithURL:[NSURL URLWithString:self.videoModel.thumbnail.firstObject] placeholderImage:nil ];
+//                [self.headImageView sd_setImageWithURL:[NSURL URLWithString:self.videoModel.thumbnail.firstObject] placeholderImage:nil ];
+            [self.headImageView yy_setImageWithURL:[NSURL URLWithString:self.videoModel.thumbnail.firstObject] options:YYWebImageOptionProgressive];
             });
         }else if ([self.model.type isEqualToString:@"image"]){
             dispatch_async(queue, ^{
@@ -141,7 +142,11 @@
         
             dispatch_async(queue, ^{
                 self.videoImage.hidden=YES;;
-                [self.headImageView sd_setImageWithURL:[NSURL URLWithString:self.videoModel.images.firstObject] placeholderImage:nil ];
+//                [self.headImageView sd_setImageWithURL:[NSURL URLWithString:self.videoModel.images.firstObject] placeholderImage:nil ];
+                
+              // 渐进式加载，增加模糊效果和渐变动画 （见本页最上方的GIF演示）  
+                [self.headImageView yy_setImageWithURL:[NSURL URLWithString:self.videoModel.images.firstObject] options:YYWebImageOptionProgressiveBlur | YYWebImageOptionSetImageWithFadeAnimation];
+                
                 
             });
         

@@ -62,6 +62,7 @@
 		CEA713791D9A565600F5FCC3 /* AVPlayerVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA713781D9A565600F5FCC3 /* AVPlayerVideoViewController.m */; };
 		CEA7137D1D9A677500F5FCC3 /* VideoButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7137C1D9A677500F5FCC3 /* VideoButtonView.m */; };
 		CEA7137F1D9A679900F5FCC3 /* VideoButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA7137E1D9A679900F5FCC3 /* VideoButtonView.xib */; };
+		CEA803361DA8F63F006C6717 /* MMYGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA803351DA8F63F006C6717 /* MMYGViewController.m */; };
 		CEC1F9C21D9BA742007A555C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC1F9C11D9BA742007A555C /* AVFoundation.framework */; };
 		CED4BCAE1D9A117E0096E842 /* XLKKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */; };
 		CED4BCB41D9A12C50096E842 /* XLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCB21D9A12C50096E842 /* XLTableViewCell.m */; };
@@ -178,6 +179,8 @@
 		CEA7137B1D9A677500F5FCC3 /* VideoButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoButtonView.h; sourceTree = "<group>"; };
 		CEA7137C1D9A677500F5FCC3 /* VideoButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoButtonView.m; sourceTree = "<group>"; };
 		CEA7137E1D9A679900F5FCC3 /* VideoButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoButtonView.xib; sourceTree = "<group>"; };
+		CEA803341DA8F63F006C6717 /* MMYGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMYGViewController.h; sourceTree = "<group>"; };
+		CEA803351DA8F63F006C6717 /* MMYGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMYGViewController.m; sourceTree = "<group>"; };
 		CEC1F9C11D9BA742007A555C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CED4BCAC1D9A117E0096E842 /* XLKKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLKKViewController.h; sourceTree = "<group>"; };
 		CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLKKViewController.m; sourceTree = "<group>"; };
@@ -739,6 +742,15 @@
 			name = "播放器下边按钮";
 			sourceTree = "<group>";
 		};
+		CEA803331DA8F61C006C6717 /* 木木优购 */ = {
+			isa = PBXGroup;
+			children = (
+				CEA803341DA8F63F006C6717 /* MMYGViewController.h */,
+				CEA803351DA8F63F006C6717 /* MMYGViewController.m */,
+			);
+			name = "木木优购";
+			sourceTree = "<group>";
+		};
 		CED098EB1D922A9C0048060C /* 分享View */ = {
 			isa = PBXGroup;
 			children = (
@@ -808,6 +820,7 @@
 		CEF21BF41D950CAF006B2BCC /* 小模块 */ = {
 			isa = PBXGroup;
 			children = (
+				CEA803331DA8F61C006C6717 /* 木木优购 */,
 				CED4BCAB1D9A11540096E842 /* 迅雷看看 */,
 				CE885ECE1D93EDA000CB22D0 /* 爱奇艺 */,
 			);
@@ -981,6 +994,7 @@
 				CED4BCC01D9A19E50096E842 /* XLLoadDataController.m in Sources */,
 				CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */,
 				CED4BCBC1D9A181F0096E842 /* NSObject+SBData.m in Sources */,
+				CEA803361DA8F63F006C6717 /* MMYGViewController.m in Sources */,
 				CE191E191D95308300B9D8E4 /* AQYXQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

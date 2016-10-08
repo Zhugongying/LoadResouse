@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F32F350673AE3614A3749D6"
+               BlueprintIdentifier = "C5113C21683FE7B3722E27C1"
                BuildableName = "libPods-SDCycleScrollView.a"
                BlueprintName = "Pods-SDCycleScrollView"
                ReferencedContainer = "container:Pods.xcodeproj">

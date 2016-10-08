@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DCAnimationKit (0.0.6)
   - MBProgressHUD (0.9.2)
   - MJRefresh (3.1.12)
   - Reachability (3.2)
@@ -23,6 +24,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core
   - SDWebImage/Core (3.8.2)
+  - Wonderful (1.2.0)
   - YYCache (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core
@@ -33,22 +35,26 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - DCAnimationKit
   - MBProgressHUD (~> 0.8)
   - MJRefresh (~> 3.1.12)
   - Reachability (~> 3.2)
   - RTLabel (~> 1.0.1)
   - SDCycleScrollView (~> 1.6)
   - SDWebImage (~> 3.8.2)
+  - Wonderful
   - YYWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DCAnimationKit: 7133bef877ce1aa113dcfeea1380ca67f91f7608
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RTLabel: 6005d07fef57b101097c4271f804daae3110cbca
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928

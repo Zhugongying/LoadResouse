@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 1
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 0
 
+// DCAnimationKit
+#define COCOAPODS_POD_AVAILABLE_DCAnimationKit
+#define COCOAPODS_VERSION_MAJOR_DCAnimationKit 0
+#define COCOAPODS_VERSION_MINOR_DCAnimationKit 0
+#define COCOAPODS_VERSION_PATCH_DCAnimationKit 6
+
 // MBProgressHUD
 #define COCOAPODS_POD_AVAILABLE_MBProgressHUD
 #define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
@@ -83,6 +89,12 @@
 #define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
 #define COCOAPODS_VERSION_MINOR_SDWebImage_Core 8
 #define COCOAPODS_VERSION_PATCH_SDWebImage_Core 2
+
+// Wonderful
+#define COCOAPODS_POD_AVAILABLE_Wonderful
+#define COCOAPODS_VERSION_MAJOR_Wonderful 1
+#define COCOAPODS_VERSION_MINOR_Wonderful 2
+#define COCOAPODS_VERSION_PATCH_Wonderful 0
 
 // YYCache
 #define COCOAPODS_POD_AVAILABLE_YYCache

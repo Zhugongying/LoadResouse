@@ -12,6 +12,7 @@
 #import "VideoCollectionViewCell.h"
 #import "AQYViewController.h"
 #import "XLKKViewController.h"
+#import "MMYGViewController.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -108,7 +109,13 @@
                    @{
                        @"image":@"xl",
                        @"text":@"迅雷",
-                       }];
+                       },
+                   @{
+                       @"image":@"mmyg",
+                       @"text":@"木木优购"
+                       }
+                   
+                   ];
 
     [self.collectionView reloadData];
     
@@ -173,6 +180,17 @@
             xl.title=@"迅雷";
             [self.navigationController pushViewController:xl animated:YES];
         
+        }
+            break;
+            
+            
+        case 2:
+        {
+        
+            MMYGViewController *mmyg=[[MMYGViewController alloc] init];
+            [self.navigationController pushViewController:mmyg animated:YES];
+            
+            
         }
             break;
             
