@@ -12,14 +12,18 @@
 
 - (void)VideoButtonViewButtonClick:(UIButton *)btn;
 
+- (void)videoButtonBackClick;
+
 @end
 
 @interface VideoButtonView : UIView
-@property (strong, nonatomic)  UIView *backView;
+@property (weak, nonatomic) IBOutlet VideoButtonView *headView;
 @property (weak, nonatomic) IBOutlet UILabel *playTimeLable;
 @property (weak, nonatomic) IBOutlet UISlider *progressView;
 //@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UIButton *beginBtn;
+@property (weak, nonatomic) IBOutlet UILabel *textStrLable;
+- (IBAction)backBtnClick:(id)sender;
 
 @property (nonatomic, weak) id<VideoButtonViewDelegate>btnDelegate;
 

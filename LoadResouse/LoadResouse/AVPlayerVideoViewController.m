@@ -18,6 +18,8 @@
 @property (nonatomic,strong)AVPlayer *player;
 @property (nonatomic,strong)AVPlayerItem *playerItem;
 @property (nonatomic,strong)VideoButtonView *videoButView;
+@property BOOL isClcik;
+
 @end
 
 @implementation AVPlayerVideoViewController
@@ -33,7 +35,7 @@
 
 - (void)creadPlayerView{
     
-    NSInteger videoH=self.videoModel.poster_height.integerValue * kScreenSizeW/self.videoModel.poster_width.integerValue;
+//    NSInteger videoH=self.videoModel.poster_height.integerValue * kScreenSizeW/self.videoModel.poster_width.integerValue;
     
     
     NSURL *videoUrl=[NSURL URLWithString:self.videoUrlStr];
@@ -49,6 +51,10 @@
     [self.view.layer addSublayer:playerLayer];
     
     
+    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBtnView)];
+    [self.view addGestureRecognizer:tap];
+    
+    
 //    dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 2*NSEC_PER_SEC);
 //    
 //    dispatch_after(time, dispatch_get_main_queue(), ^{
@@ -60,6 +66,15 @@
     
    self.videoButView.btnDelegate=self;
     
+    CGRect frame=self.videoButView.headView.frame;
+    frame.origin.x=0;
+    frame.origin.y=0;
+    frame.size.width=kScreenSizeH;
+    frame.size.height=60;
+    self.videoButView.headView.frame=frame;
+    self.videoButView.headView.btnDelegate=self;
+    self.videoButView.textStrLable.text=self.videoModel.title;
+    [self.view addSubview:self.videoButView.headView];
     [self.view addSubview:self.videoButView];
     
     [self addNot];
@@ -84,6 +99,11 @@
     
         if (newPlayerItem.status == AVPlayerItemStatusReadyToPlay) {
             [self.player play];
+            
+            self.isClcik=YES;
+            
+            [self hideButtonViewFromPlearView];
+            
         }else{
         
             UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"提示" message:@"播放错误" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
@@ -120,20 +140,72 @@
     return [NSString stringWithFormat:@"%02d:%02d:%02d", hour, minute, secend];
 }
 
+#pragma mark - 视图消失
+
+- (void)hideButtonViewFromPlearView{
+
+
+        dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 2*NSEC_PER_SEC);
+    
+        dispatch_after(time, dispatch_get_main_queue(), ^{
+    
+           [UIView animateWithDuration:0.5 animations:^{
+               
+               self.videoButView.alpha=0;
+               self.videoButView.headView.alpha=0;
+               
+               
+           } completion:^(BOOL finished) {
+//               self.videoButView.frame=CGRectMake(0, kScreenSizeW, kScreenSizeH, 60);
+//               self.videoButView.headView.frame=CGRectMake(0, -60, kScreenSizeH, 60);
+
+           }];
+            
+            
+            
+            
+        });
+}
+- (void)showBtnView{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.videoButView.alpha=1;
+        self.videoButView.headView.alpha=1;
+        
+        
+    } completion:^(BOOL finished) {
+        [self hideButtonViewFromPlearView];
+    }];
+
+    
+
+
+
+}
+#pragma mark - buttonDelegate
+
 - (void)VideoButtonViewButtonClick:(UIButton *)btn{
-    
-    
-    if ([btn.titleLabel.text isEqualToString:@"开始"]) {
+ 
+    if (self.isClcik == YES) {
         [self.player pause];
-        [btn setTitle:@"暂停" forState:UIControlStateNormal];
+        [btn setBackgroundImage:[UIImage imageNamed:@"pauseBtn"] forState:UIControlStateSelected];
+        self.isClcik=!self.isClcik;
     }else{
     
         [self.player play];
-        [btn setTitle:@"开始" forState:UIControlStateNormal];
+        [btn setBackgroundImage:[UIImage imageNamed:@"playBtn"] forState:UIControlStateSelected];
+        self.isClcik=!self.isClcik;
     
     }
 }
+- (void)videoButtonBackClick{
 
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+    [self interfaceOrientation:UIInterfaceOrientationPortrait];
+    
+}
 
 
 #pragma mark 强制横屏//不知道为啥push的时候就不调用这个方法

@@ -19,25 +19,23 @@
 */
 
 - (instancetype)initWithFrame:(CGRect)frame withNibName:(NSString *)nib{
-    
-//    self=[super initWithFrame:frame];
-    
-    
-    
+
     
     NSArray *nibArr=[[NSBundle mainBundle] loadNibNamed:nib owner:self options:nil];
     
     self=nibArr.firstObject;
 
-    
     if (self) {
         self.frame=frame;
-        self.backView=[[UIView alloc] initWithFrame:frame];
         
-        self.backView.frame=frame;
+        CGRect Oframe;
+        Oframe=self.playTimeLable.frame;
+        Oframe.origin.x=frame.size.width-150;
+        self.playTimeLable.frame=Oframe;
         
-        
-        
+        Oframe=self.progressView.frame;
+        Oframe.size.width=frame.size.width-self.playTimeLable.frame.size.width-100;
+        self.progressView.frame=Oframe;
         
     }
     return self;
@@ -49,6 +47,16 @@
     if (self.btnDelegate && [self.btnDelegate respondsToSelector:@selector(VideoButtonViewButtonClick:)]) {
         
         [self.btnDelegate VideoButtonViewButtonClick:self.beginBtn];
+        
+    }
+    
+    
+}
+- (IBAction)backBtnClick:(id)sender {
+    
+    if (self.btnDelegate && [self.btnDelegate respondsToSelector:@selector(videoButtonBackClick)]) {
+        
+        [self.btnDelegate videoButtonBackClick];
         
     }
     

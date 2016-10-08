@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *titleLable;
+@property (weak, nonatomic) IBOutlet UILabel *subTitleLable;
 
 @end
