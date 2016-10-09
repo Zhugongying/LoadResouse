@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-TWRCharts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Wonderful.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,67 +77,72 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2BCE29BECC47F1A5DDBDEBC4</key>
+		<key>1C72FD475B240D9C7CB2A0D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>48C05CCF26CBE46DF2F965F8</key>
+		<key>377293C6AD8C5C714EFD7205</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49F41E95CD0DD5887FD1EA25</key>
+		<key>500392F769DED450AA43781D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5FC1EF3BEA7B8D18C5D77B86</key>
+		<key>5EF9DFC02262AE810DDB5330</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928805772ECCBCF11F6A57D3</key>
+		<key>6C06CB5F1B30C8ABB6F3B63C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A0E21EE585F6EAD45E0F6ED6</key>
+		<key>6CF30C5FB2BE76B72D5A5C52</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A202F03438571E3DCD84B720</key>
+		<key>75FC9A7D37315EFADCF83F30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A856C6C50ADA9C199437A346</key>
+		<key>79039B0AFC729BB141EBCE9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE042B4FBA86E3FAD1E50952</key>
+		<key>7C9C31F1B0F545EA8BD665D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C078903A64DA3A84DA6AC3DE</key>
+		<key>9A64EE4993E5910EB015468C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5113C21683FE7B3722E27C1</key>
+		<key>CAC2FC1687BAD98E7997B17F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EEB30E2CDC3EC98A0144D8A5</key>
+		<key>D073A64522B4593DCC195671</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFC40DC1F414B3EF98F353E6</key>
+		<key>E2FF17F108BA42F66428D2A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F05CACAE2D2352CF77FD889B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

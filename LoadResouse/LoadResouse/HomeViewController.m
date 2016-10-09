@@ -87,6 +87,7 @@
     
     
     
+    
     self.collectionView=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 255, kScreenSizeW, kScreenSizeH-255) collectionViewLayout:flowLayout];
     
     self.collectionView.dataSource=self;

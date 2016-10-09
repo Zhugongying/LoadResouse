@@ -24,6 +24,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core
   - SDWebImage/Core (3.8.2)
+  - TWRCharts (0.1)
   - Wonderful (1.2.0)
   - YYCache (1.0.4)
   - YYImage (1.0.4):
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - RTLabel (~> 1.0.1)
   - SDCycleScrollView (~> 1.6)
   - SDWebImage (~> 3.8.2)
+  - TWRCharts
   - Wonderful
   - YYWebImage
 
@@ -54,6 +56,7 @@ SPEC CHECKSUMS:
   RTLabel: 6005d07fef57b101097c4271f804daae3110cbca
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TWRCharts: 7ab593e6dcd76e0267d9834a51025379165cd860
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54

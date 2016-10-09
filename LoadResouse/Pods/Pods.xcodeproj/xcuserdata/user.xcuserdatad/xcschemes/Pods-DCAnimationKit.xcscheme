@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE042B4FBA86E3FAD1E50952"
+               BlueprintIdentifier = "5EF9DFC02262AE810DDB5330"
                BuildableName = "libPods-DCAnimationKit.a"
                BlueprintName = "Pods-DCAnimationKit"
                ReferencedContainer = "container:Pods.xcodeproj">
