@@ -10,6 +10,7 @@
 #import "XTGNViewController.h"
 #import "BaiSiDJViewController.h"
 #import "AQYViewController.h"
+#import "ChartViewController.h"
 @interface MoreToolViewController ()
 
 @end
@@ -25,7 +26,7 @@
 }
 - (void)loadDataResouse:(NSArray *)arr{
     
-    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块",@"百思不得姐",@"爱奇艺", nil];
+    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块",@"百思不得姐",@"爱奇艺",@"表盘", nil];
     [self.tableView reloadData];
     
 }
@@ -54,6 +55,14 @@
             [self.navigationController pushViewController:aqy animated:YES];
             
             
+        }
+            break;
+        case 3:
+        {
+        
+            ChartViewController *chart=[[ChartViewController alloc] init];
+            [self.navigationController pushViewController:chart animated:YES];
+        
         }
             break;
             

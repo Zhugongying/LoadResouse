@@ -8,8 +8,9 @@
 
 #import "MMYGViewController.h"
 
-@interface MMYGViewController ()
+@interface MMYGViewController ()<UIWebViewDelegate,UIScrollViewDelegate>
 @property (nonatomic,strong)UIWebView *webView;
+@property float scrollViewSetY;
 @end
 
 @implementation MMYGViewController
@@ -19,14 +20,76 @@
     // Do any additional setup after loading the view.
     
     
-    self.webView=[[UIWebView alloc] initWithFrame:self.view.bounds];
+    _scrollViewSetY=0;
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.webView=[[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kScreenSizeW, kScreenSizeH)];
+    
+    self.webView.scalesPageToFit=YES;
+    self.webView.delegate=self;
+    self.webView.scrollView.delegate=self;
     
     NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.mumujz.com/mobile/"]] ;
     [self.view addSubview:self.webView];
+    self.webView.scrollView.bounces=NO;
     
     [self.webView loadRequest:requesr];
     
+//    UISwipeGestureRecognizer *swipe=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(hindenNavigationBar:)];
+//    
+//    [swipe setDirection:UISwipeGestureRecognizerDirectionUp];
     
+//    [self.webView.scrollView addGestureRecognizer:swipe];
+    
+}
+
+
+- (void)hindenNavigationBar:(UISwipeGestureRecognizer *)swipe{
+
+
+    if (swipe.direction==UISwipeGestureRecognizerDirectionUp) {
+        
+        
+        
+    }else if (swipe.direction == UISwipeGestureRecognizerDirectionDown){
+    
+    
+        
+    
+    }
+
+
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    
+    
+    if (scrollView.contentOffset.y - _scrollViewSetY > 0) {
+        
+        if (!(self.navigationController.navigationBarHidden==YES)) {
+            [self.navigationController setNavigationBarHidden:YES animated:YES];
+        }
+        
+    }else if(_scrollViewSetY - scrollView.contentOffset.y  >0){
+        if (!(self.navigationController.navigationBarHidden==NO)) {
+            [self.navigationController setNavigationBarHidden:NO animated:YES];
+        }
+    
+    }
+    
+    
+    _scrollViewSetY=scrollView.contentOffset.y;
+    
+    
+    
+//
+//    NSLog(@"%@",scrollView.gestureRecognizers);
+//    NSLog(@"%f",scrollView.contentOffset.y);
+    
+    
+
+
 }
 
 - (void)didReceiveMemoryWarning {

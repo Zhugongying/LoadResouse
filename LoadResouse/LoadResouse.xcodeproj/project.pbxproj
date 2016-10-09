@@ -65,6 +65,7 @@
 		CEA803361DA8F63F006C6717 /* MMYGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA803351DA8F63F006C6717 /* MMYGViewController.m */; };
 		CEA803391DA9E488006C6717 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = CEA803371DA9E488006C6717 /* Chart.js */; };
 		CEA8033A1DA9E488006C6717 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CEA803381DA9E488006C6717 /* index.html */; };
+		CEA8033E1DA9E5C7006C6717 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8033D1DA9E5C7006C6717 /* ChartViewController.m */; };
 		CEC1F9C21D9BA742007A555C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC1F9C11D9BA742007A555C /* AVFoundation.framework */; };
 		CED4BCAE1D9A117E0096E842 /* XLKKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */; };
 		CED4BCB41D9A12C50096E842 /* XLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BCB21D9A12C50096E842 /* XLTableViewCell.m */; };
@@ -185,6 +186,8 @@
 		CEA803351DA8F63F006C6717 /* MMYGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMYGViewController.m; sourceTree = "<group>"; };
 		CEA803371DA9E488006C6717 /* Chart.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = Chart.js; path = Pods/TWRCharts/TWRCharts/Chart.js; sourceTree = "<group>"; };
 		CEA803381DA9E488006C6717 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = Pods/TWRCharts/TWRCharts/index.html; sourceTree = "<group>"; };
+		CEA8033C1DA9E5C7006C6717 /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		CEA8033D1DA9E5C7006C6717 /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
 		CEC1F9C11D9BA742007A555C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CED4BCAC1D9A117E0096E842 /* XLKKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLKKViewController.h; sourceTree = "<group>"; };
 		CED4BCAD1D9A117E0096E842 /* XLKKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLKKViewController.m; sourceTree = "<group>"; };
@@ -411,6 +414,7 @@
 		CE106D021D7EB4E900C7F181 /* 功能模块 */ = {
 			isa = PBXGroup;
 			children = (
+				CEA8033B1DA9E529006C6717 /* 表盘 */,
 				CE68F8291D7FF92600DE4A0C /* 百思不得姐 */,
 				CE106D0A1D7EBF5300C7F181 /* 系统模块 */,
 				CE106D091D7EBF4000C7F181 /* 主控制器 */,
@@ -757,6 +761,15 @@
 			name = "木木优购";
 			sourceTree = "<group>";
 		};
+		CEA8033B1DA9E529006C6717 /* 表盘 */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8033C1DA9E5C7006C6717 /* ChartViewController.h */,
+				CEA8033D1DA9E5C7006C6717 /* ChartViewController.m */,
+			);
+			name = "表盘";
+			sourceTree = "<group>";
+		};
 		CED098EB1D922A9C0048060C /* 分享View */ = {
 			isa = PBXGroup;
 			children = (
@@ -988,6 +1001,7 @@
 				CED4BCB41D9A12C50096E842 /* XLTableViewCell.m in Sources */,
 				CE106CF31D7EA8DA00C7F181 /* TestViewController.m in Sources */,
 				CE885ED81D93EF0700CB22D0 /* AQYLoadDataControl.m in Sources */,
+				CEA8033E1DA9E5C7006C6717 /* ChartViewController.m in Sources */,
 				CED4BCC41D9A2DCB0096E842 /* XLVideoModel.m in Sources */,
 				CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
@@ -1111,6 +1125,7 @@
 			baseConfigurationReference = 21E1E70429D533FD9DDD4B3D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
@@ -1136,6 +1151,7 @@
 			baseConfigurationReference = 66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
