@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C0FBCB6F48E72BA07625C833"
+               BlueprintIdentifier = "C1BE4084177361F468A2725B"
                BuildableName = "libPods-YYCache.a"
                BlueprintName = "Pods-YYCache"
                ReferencedContainer = "container:Pods.xcodeproj">

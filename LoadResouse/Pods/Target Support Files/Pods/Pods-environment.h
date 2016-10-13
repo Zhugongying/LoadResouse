@@ -72,6 +72,13 @@
 #define COCOAPODS_VERSION_MINOR_MJRefresh 1
 #define COCOAPODS_VERSION_PATCH_MJRefresh 12
 
+// OpenSSL-Universal
+#define COCOAPODS_POD_AVAILABLE_OpenSSL_Universal
+// This library does not follow semantic-versioning,
+// so we were not able to define version macros.
+// Please contact the author.
+// Version: 1.0.1.19.
+
 // RTLabel
 #define COCOAPODS_POD_AVAILABLE_RTLabel
 #define COCOAPODS_VERSION_MAJOR_RTLabel 1
@@ -137,4 +144,11 @@
 #define COCOAPODS_VERSION_MAJOR_YYWebImage 1
 #define COCOAPODS_VERSION_MINOR_YYWebImage 0
 #define COCOAPODS_VERSION_PATCH_YYWebImage 5
+
+// pjsip
+#define COCOAPODS_POD_AVAILABLE_pjsip
+// This library does not follow semantic-versioning,
+// so we were not able to define version macros.
+// Please contact the author.
+// Version: 2.5.5.2.
 

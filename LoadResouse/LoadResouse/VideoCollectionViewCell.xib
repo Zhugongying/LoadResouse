@@ -16,14 +16,12 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eEJ-FL-PHm">
-                        <color key="backgroundColor" red="0.40800650167785235" green="0.35921770134228181" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="54" id="8E5-FE-lfo"/>
                             <constraint firstAttribute="width" constant="54" id="bvD-om-nwZ"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="爱奇艺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-CY-Ide">
-                        <frame key="frameInset" minX="13" minY="67" width="76" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱奇艺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-CY-Ide">
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="OiK-yR-qrU"/>
                         </constraints>
@@ -33,6 +31,7 @@
                     </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="jx0-CY-Ide" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="CJ1-0E-dyd"/>
                 <constraint firstItem="eEJ-FL-PHm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="MWd-Zb-BiN"/>

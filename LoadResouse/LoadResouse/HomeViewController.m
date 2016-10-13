@@ -140,7 +140,7 @@
     
     
 
-    cell.backgroundColor=UIColorRGBA(0xffffff, 1);
+//    cell.backgroundColor=UIColorRGBA(0xffffff, 1);
     
     cell.headImageView.image=[UIImage imageNamed:self.dataArr[indexPath.row][@"image"]];
     cell.textLable.text=self.dataArr[indexPath.row][@"text"];
@@ -155,7 +155,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
 
 
-    return CGSizeMake((kScreenSizeW-5)/4, (kScreenSizeW-5)/4);
+    return CGSizeMake((kScreenSizeW-5)/4, 98);
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 

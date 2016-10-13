@@ -45,7 +45,7 @@
     self.player=[AVPlayer playerWithPlayerItem:self.playerItem];
 
     AVPlayerLayer *playerLayer=[AVPlayerLayer playerLayerWithPlayer:self.player];
-    playerLayer.frame=CGRectMake(2,2, kScreenSizeH-4, kScreenSizeW-4);
+    playerLayer.frame=CGRectMake(0,0, kScreenSizeH, kScreenSizeW);
     playerLayer.videoGravity=AVLayerVideoGravityResizeAspect;
 //    playerLayer.backgroundColor=[UIColor redColor].CGColor;
     [self.view.layer addSublayer:playerLayer];

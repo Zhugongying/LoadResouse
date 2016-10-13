@@ -25,6 +25,12 @@
 		CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D041D7EB56100C7F181 /* MoreToolViewController.m */; };
 		CE106D0D1D7EBF7B00C7F181 /* XTGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106D0C1D7EBF7B00C7F181 /* XTGNViewController.m */; };
 		CE191E191D95308300B9D8E4 /* AQYXQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE191E181D95308300B9D8E4 /* AQYXQViewController.m */; };
+		CE268A1D1DAC9FB80021AA00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE268A1C1DAC9FB80021AA00 /* AudioToolbox.framework */; };
+		CE268A1F1DACB8270021AA00 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE268A1E1DACB8270021AA00 /* CoreMotion.framework */; };
+		CE268A211DACB83D0021AA00 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE268A201DACB83D0021AA00 /* CoreMedia.framework */; };
+		CE268A231DACB8550021AA00 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE268A221DACB8550021AA00 /* VideoToolbox.framework */; };
+		CE268A251DACB8830021AA00 /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE268A241DACB8830021AA00 /* AgoraAudioKit.framework */; };
+		CE268A271DACB8CF0021AA00 /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE268A261DACB8CF0021AA00 /* AgoraAudioKit.framework */; };
 		CE31970F1D99200B006D2C42 /* SetingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31970E1D99200B006D2C42 /* SetingTableViewController.m */; };
 		CE3197141D992060006D2C42 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3197121D992060006D2C42 /* SettingTableViewCell.m */; };
 		CE3197151D992060006D2C42 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3197131D992060006D2C42 /* SettingTableViewCell.xib */; };
@@ -40,6 +46,7 @@
 		CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F6E1D87F0A800D9C1BE /* MyHeadView.m */; };
 		CE4B8F711D87F0A800D9C1BE /* MyHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4B8F6F1D87F0A800D9C1BE /* MyHeadView.xib */; };
 		CE4B8F751D88E28900D9C1BE /* LoadDataBaisiControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B8F741D88E28900D9C1BE /* LoadDataBaisiControl.m */; };
+		CE5E7DC41DAB45EA00E8DC6A /* TelAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E7DC31DAB45EA00E8DC6A /* TelAddressViewController.m */; };
 		CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */; };
 		CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638E971D800B6200D7720C /* BaiSiBDJCell.m */; };
 		CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638E981D800B6200D7720C /* BaiSiBDJCell.xib */; };
@@ -121,6 +128,12 @@
 		CE106D101D7FBD0400C7F181 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		CE191E171D95308300B9D8E4 /* AQYXQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQYXQViewController.h; sourceTree = "<group>"; };
 		CE191E181D95308300B9D8E4 /* AQYXQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQYXQViewController.m; sourceTree = "<group>"; };
+		CE268A1C1DAC9FB80021AA00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CE268A1E1DACB8270021AA00 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CE268A201DACB83D0021AA00 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CE268A221DACB8550021AA00 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		CE268A241DACB8830021AA00 /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraAudioKit.framework; path = ../../../Downloads/Agora_Native_SDK_for_iOS_v1_6_1_VOICE/libs/AgoraAudioKit.framework; sourceTree = "<group>"; };
+		CE268A261DACB8CF0021AA00 /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraAudioKit.framework; sourceTree = "<group>"; };
 		CE31970D1D99200B006D2C42 /* SetingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetingTableViewController.h; sourceTree = "<group>"; };
 		CE31970E1D99200B006D2C42 /* SetingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetingTableViewController.m; sourceTree = "<group>"; };
 		CE3197111D992060006D2C42 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
@@ -140,6 +153,8 @@
 		CE4B8F6F1D87F0A800D9C1BE /* MyHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyHeadView.xib; sourceTree = "<group>"; };
 		CE4B8F731D88E28900D9C1BE /* LoadDataBaisiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataBaisiControl.h; sourceTree = "<group>"; };
 		CE4B8F741D88E28900D9C1BE /* LoadDataBaisiControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataBaisiControl.m; sourceTree = "<group>"; };
+		CE5E7DC21DAB45EA00E8DC6A /* TelAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelAddressViewController.h; sourceTree = "<group>"; };
+		CE5E7DC31DAB45EA00E8DC6A /* TelAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelAddressViewController.m; sourceTree = "<group>"; };
 		CE638E931D800B3D00D7720C /* BaiSiDJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiDJViewController.h; sourceTree = "<group>"; };
 		CE638E941D800B3D00D7720C /* BaiSiDJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiSiDJViewController.m; sourceTree = "<group>"; };
 		CE638E961D800B6200D7720C /* BaiSiBDJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiSiBDJCell.h; sourceTree = "<group>"; };
@@ -216,12 +231,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE268A251DACB8830021AA00 /* AgoraAudioKit.framework in Frameworks */,
+				CE268A231DACB8550021AA00 /* VideoToolbox.framework in Frameworks */,
+				CE268A211DACB83D0021AA00 /* CoreMedia.framework in Frameworks */,
+				CE268A1F1DACB8270021AA00 /* CoreMotion.framework in Frameworks */,
+				CE268A1D1DAC9FB80021AA00 /* AudioToolbox.framework in Frameworks */,
 				CEC1F9C21D9BA742007A555C /* AVFoundation.framework in Frameworks */,
 				CE34F0441D9141C90018ABDC /* CoreTelephony.framework in Frameworks */,
 				CE885EE21D94D24E00CB22D0 /* libc++.tbd in Frameworks */,
 				CE885EE01D94D23400CB22D0 /* libsqlite3.0.tbd in Frameworks */,
 				CE34F0481D9141E20018ABDC /* libz.tbd in Frameworks */,
 				CE34F0461D9141D40018ABDC /* libstdc++.tbd in Frameworks */,
+				CE268A271DACB8CF0021AA00 /* AgoraAudioKit.framework in Frameworks */,
 				CE34F0421D9141BD0018ABDC /* libsqlite3.tbd in Frameworks */,
 				CE885EDD1D94CE5600CB22D0 /* libWeChatSDK.a in Frameworks */,
 				CE34F0401D9141A40018ABDC /* CoreGraphics.framework in Frameworks */,
@@ -238,6 +259,11 @@
 		0E20DF4D935D4331BA17581A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE268A241DACB8830021AA00 /* AgoraAudioKit.framework */,
+				CE268A221DACB8550021AA00 /* VideoToolbox.framework */,
+				CE268A201DACB83D0021AA00 /* CoreMedia.framework */,
+				CE268A1E1DACB8270021AA00 /* CoreMotion.framework */,
+				CE268A1C1DAC9FB80021AA00 /* AudioToolbox.framework */,
 				CEC1F9C11D9BA742007A555C /* AVFoundation.framework */,
 				CE885EE11D94D24E00CB22D0 /* libc++.tbd */,
 				CE885EDF1D94D23400CB22D0 /* libsqlite3.0.tbd */,
@@ -266,6 +292,7 @@
 		CE106CB81D7EA5E600C7F181 = {
 			isa = PBXGroup;
 			children = (
+				CE268A261DACB8CF0021AA00 /* AgoraAudioKit.framework */,
 				CEA803371DA9E488006C6717 /* Chart.js */,
 				CEA803381DA9E488006C6717 /* index.html */,
 				CE106CC31D7EA5E600C7F181 /* LoadResouse */,
@@ -414,6 +441,7 @@
 		CE106D021D7EB4E900C7F181 /* 功能模块 */ = {
 			isa = PBXGroup;
 			children = (
+				CE5E7DC11DAB45AC00E8DC6A /* 号码归属地 */,
 				CEA8033B1DA9E529006C6717 /* 表盘 */,
 				CE68F8291D7FF92600DE4A0C /* 百思不得姐 */,
 				CE106D0A1D7EBF5300C7F181 /* 系统模块 */,
@@ -524,6 +552,15 @@
 				CE4B8F741D88E28900D9C1BE /* LoadDataBaisiControl.m */,
 			);
 			name = "内容";
+			sourceTree = "<group>";
+		};
+		CE5E7DC11DAB45AC00E8DC6A /* 号码归属地 */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E7DC21DAB45EA00E8DC6A /* TelAddressViewController.h */,
+				CE5E7DC31DAB45EA00E8DC6A /* TelAddressViewController.m */,
+			);
+			name = "号码归属地";
 			sourceTree = "<group>";
 		};
 		CE638E9B1D800B7800D7720C /* MyModel */ = {
@@ -989,6 +1026,7 @@
 				CE638EA11D800BBD00D7720C /* BaiSiBDJModel.m in Sources */,
 				CE106CEE1D7EA8DA00C7F181 /* MyHtmlViewController.m in Sources */,
 				CE638EA91D801C4900D7720C /* LoadDataController.m in Sources */,
+				CE5E7DC41DAB45EA00E8DC6A /* TelAddressViewController.m in Sources */,
 				CE885EC81D9398FC00CB22D0 /* PLModel.m in Sources */,
 				CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */,
 				CE31970F1D99200B006D2C42 /* SetingTableViewController.m in Sources */,
@@ -1130,8 +1168,44 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/DCAnimationKit\"",
+					"\"${PODS_ROOT}/Headers/Public/EAIntroView\"",
+					"\"${PODS_ROOT}/Headers/Public/EARestrictedScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal/openssl\"",
+					"\"${PODS_ROOT}/Headers/Public/RTLabel\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/TWRCharts\"",
+					"\"${PODS_ROOT}/Headers/Public/Wonderful\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/pjsip\"",
+					"\"${PODS_ROOT}/Headers/Public/pjsip/src/pjlib/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjlib/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjlib-util/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjmedia/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjnath/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjsip/include\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib-util\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjmedia\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjsip\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjnath\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib\"",
+				);
 				INFOPLIST_FILE = LoadResouse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1156,8 +1230,44 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/DCAnimationKit\"",
+					"\"${PODS_ROOT}/Headers/Public/EAIntroView\"",
+					"\"${PODS_ROOT}/Headers/Public/EARestrictedScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal/openssl\"",
+					"\"${PODS_ROOT}/Headers/Public/RTLabel\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/TWRCharts\"",
+					"\"${PODS_ROOT}/Headers/Public/Wonderful\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/pjsip\"",
+					"\"${PODS_ROOT}/Headers/Public/pjsip/src/pjlib/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjlib/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjlib-util/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjmedia/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjnath/include\"",
+					"\"$(PODS_ROOT)/pjsip/build/pjproject/src/pjsip/include\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib-util\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjmedia\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjsip\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjnath\"",
+					"\"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib\"",
+				);
 				INFOPLIST_FILE = LoadResouse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

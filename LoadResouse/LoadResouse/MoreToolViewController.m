@@ -11,6 +11,7 @@
 #import "BaiSiDJViewController.h"
 #import "AQYViewController.h"
 #import "ChartViewController.h"
+#import "TelAddressViewController.h"
 @interface MoreToolViewController ()
 
 @end
@@ -26,7 +27,7 @@
 }
 - (void)loadDataResouse:(NSArray *)arr{
     
-    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块",@"百思不得姐",@"爱奇艺",@"表盘", nil];
+    self.dataResouse=[NSMutableArray arrayWithObjects:@"系统模块",@"百思不得姐",@"爱奇艺",@"表盘",@"号码归属地", nil];
     [self.tableView reloadData];
     
 }
@@ -65,6 +66,12 @@
         
         }
             break;
+            case 4:
+        {
+        
+            TelAddressViewController *tel=[[TelAddressViewController alloc] init];
+            [self.navigationController pushViewController:tel animated:YES];
+        }
             
         default:
             break;
