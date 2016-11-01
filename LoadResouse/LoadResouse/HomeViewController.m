@@ -13,6 +13,7 @@
 #import "AQYViewController.h"
 #import "XLKKViewController.h"
 #import "MMYGViewController.h"
+#import "TextViewController.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -114,6 +115,10 @@
                    @{
                        @"image":@"mmyg",
                        @"text":@"木木优购"
+                       },
+                   @{
+                       @"image":@"",
+                       @"text":@"测试"
                        }
                    
                    ];
@@ -194,6 +199,13 @@
             
         }
             break;
+            case 3:
+        {
+            TextViewController *text=[[TextViewController alloc] init];
+            
+            [self.navigationController pushViewController:text animated:YES];
+        
+        }
             
             
         default:

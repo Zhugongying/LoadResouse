@@ -29,8 +29,8 @@
     self.webView.delegate=self;
     self.webView.scrollView.delegate=self;
     
-//    NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.mumujz.com/mobile/"]] ;
-     NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"tel://13253009266"]] ;
+    NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.mumujz.com/mobile/"]] ;
+//     NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"tel://13253009266"]] ;
     
     
     [self.view addSubview:self.webView];

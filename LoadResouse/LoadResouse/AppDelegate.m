@@ -12,6 +12,8 @@
 
 #import <Reachability.h>
 #import "WXApi.h"
+#import <Foundation/Foundation.h>
+
 //#import <UMMobClick/MobClick.h>
 
 @interface AppDelegate ()<WXApiDelegate,UIAlertViewDelegate>
@@ -61,6 +63,11 @@
 //    UMConfigInstance.channelId=@"App Store";
 //    
 //    [MobClick startWithConfigure:UMConfigInstance];
+    
+    
+    
+   
+    
     
     
     
@@ -160,6 +167,27 @@
 
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+
+
+    UIAlertView *alert =[[UIAlertView alloc] initWithTitle:notification.alertTitle message:notification.alertBody delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    
+    [alert show];
+    
+    
+
+    NSDictionary *dic =[[NSDictionary alloc] init];
+    
+    dic = notification.userInfo ;
+    
+     NSLog(@"user info = %@",[dic objectForKey:@"key"]);
+    
+    application.applicationIconBadgeNumber -= 1;
+    
+    
+
+}
+
 //- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
 //
 //
@@ -168,6 +196,9 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
+    application.applicationIconBadgeNumber -= 1 ;
+
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

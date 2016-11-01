@@ -135,7 +135,7 @@
         }else if ([self.model.type isEqualToString:@"image"]){
             dispatch_async(queue, ^{
                 self.videoImage.hidden=YES;
-                [self.headImageView sd_setImageWithURL:[NSURL URLWithString:self.videoModel.medium.firstObject] placeholderImage:nil ];
+                [self.headImageView sd_setImageWithURL:[NSURL URLWithString:self.videoModel.download_url.firstObject] placeholderImage:nil ];
                 
             });
         }else if ([self.model.type isEqualToString:@"gif"]){

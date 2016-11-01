@@ -58,6 +58,7 @@
 		CE638EB21D828DA900D7720C /* FenLeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EB11D828DA900D7720C /* FenLeiViewController.m */; };
 		CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE638EB51D82BE0900D7720C /* FenleiCell.m */; };
 		CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE638EB61D82BE0900D7720C /* FenleiCell.xib */; };
+		CE6CC59F1DAF843600BDE875 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CC59E1DAF843600BDE875 /* TextViewController.m */; };
 		CE885EC41D93910A00CB22D0 /* LoadDataBaiSiPLControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE885EC31D93910A00CB22D0 /* LoadDataBaiSiPLControl.m */; };
 		CE885EC81D9398FC00CB22D0 /* PLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE885EC71D9398FC00CB22D0 /* PLModel.m */; };
 		CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE885ED31D93EE2C00CB22D0 /* AQYViewController.m */; };
@@ -175,6 +176,8 @@
 		CE638EB41D82BE0900D7720C /* FenleiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenleiCell.h; sourceTree = "<group>"; };
 		CE638EB51D82BE0900D7720C /* FenleiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenleiCell.m; sourceTree = "<group>"; };
 		CE638EB61D82BE0900D7720C /* FenleiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FenleiCell.xib; sourceTree = "<group>"; };
+		CE6CC59D1DAF843600BDE875 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		CE6CC59E1DAF843600BDE875 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		CE885EC21D93910A00CB22D0 /* LoadDataBaiSiPLControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataBaiSiPLControl.h; sourceTree = "<group>"; };
 		CE885EC31D93910A00CB22D0 /* LoadDataBaiSiPLControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataBaiSiPLControl.m; sourceTree = "<group>"; };
 		CE885EC61D9398FC00CB22D0 /* PLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLModel.h; sourceTree = "<group>"; };
@@ -675,6 +678,15 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		CE6CC59C1DAF83FF00BDE875 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				CE6CC59D1DAF843600BDE875 /* TextViewController.h */,
+				CE6CC59E1DAF843600BDE875 /* TextViewController.m */,
+			);
+			name = "测试";
+			sourceTree = "<group>";
+		};
 		CE885EC11D9390CB00CB22D0 /* 评论 */ = {
 			isa = PBXGroup;
 			children = (
@@ -876,6 +888,7 @@
 		CEF21BF41D950CAF006B2BCC /* 小模块 */ = {
 			isa = PBXGroup;
 			children = (
+				CE6CC59C1DAF83FF00BDE875 /* 测试 */,
 				CEA803331DA8F61C006C6717 /* 木木优购 */,
 				CED4BCAB1D9A11540096E842 /* 迅雷看看 */,
 				CE885ECE1D93EDA000CB22D0 /* 爱奇艺 */,
@@ -1012,6 +1025,7 @@
 				CEA713791D9A565600F5FCC3 /* AVPlayerVideoViewController.m in Sources */,
 				CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */,
 				CEA7137D1D9A677500F5FCC3 /* VideoButtonView.m in Sources */,
+				CE6CC59F1DAF843600BDE875 /* TextViewController.m in Sources */,
 				CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */,
 				CE4B8F751D88E28900D9C1BE /* LoadDataBaisiControl.m in Sources */,
 				CED4BCAE1D9A117E0096E842 /* XLKKViewController.m in Sources */,
