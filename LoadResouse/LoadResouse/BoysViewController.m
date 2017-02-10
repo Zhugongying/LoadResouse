@@ -11,6 +11,8 @@
 #import "BoysCell.h"
 #import "WebViewController.h"
 #import "BoysLoadDataController.h"
+#import <kxmovie/KxMovieViewController.h>
+
 
 @interface BoysViewController () <LoadDataControllerDelegate, PlayViewClickDelegeate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *resourtArr;
@@ -21,6 +23,7 @@
 @property (nonatomic, strong) NSArray *urlArr;
 @property (nonatomic, strong) NSString *baseUrl;
 @property (nonatomic) NSInteger page;
+@property (nonatomic, strong) KxMovieViewController *player;
 @end
 
 
@@ -98,7 +101,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BoysCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BoysCell" forIndexPath:indexPath];
     cell.playDelegeate = self;
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     BoysModel *model = self.resourtArr[indexPath.row];
     [cell setBoysCellWithModek:model];
     
@@ -109,10 +112,17 @@
     return 350;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    BoysModel *model = self.resourtArr[indexPath.row];
+    self.player = [KxMovieViewController movieViewControllerWithContentPath:model.videoStr parameters:nil];
+    [self presentViewController:self.player animated:YES completion:nil ];
+}
+
 - (void)videoPlayClick:(BoysModel *)model {
-    WebViewController *web = [[WebViewController alloc] init];
-    web.loadUrl = model.videoStr;
-    [self.navigationController pushViewController:web animated:YES];
+    
+    self.player = [KxMovieViewController movieViewControllerWithContentPath:model.videoStr parameters:nil];
+    [self presentViewController:self.player animated:YES completion:nil ];
+    
 }
 
 - (void)refreshFooterView {
@@ -140,9 +150,6 @@
         }
         [self.tableView reloadData];
     }
-    
-    
-    
 }
 
 - (void)loadData:(LoadDataController *)controller failedWithEroor:(NSError *)error {
