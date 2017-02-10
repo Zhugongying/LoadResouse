@@ -160,7 +160,6 @@
     return size.height;
 }
 
-
 - (void)creatPlayVideoView{
 
     self.playView=[[AVPlayerViewController alloc] init];
@@ -170,16 +169,10 @@
     
     [self.view addSubview:self.playView.view];
     
-
 }
 
 - (void)creatRTLabel{
-    
-    
-    
-    
-    
-    
+
     RTLabel *rtLable=[[RTLabel alloc] initWithFrame:CGRectMake(10, 64, kScreenSizeW-20, [self contentSizeWith:self.model.text])];
     
     [rtLable setText:self.model.text];

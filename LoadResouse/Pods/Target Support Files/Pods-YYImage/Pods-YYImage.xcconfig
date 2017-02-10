@@ -1,1 +1,0 @@
-PODS_YYIMAGE_OTHER_LDFLAGS = -l"z" -framework "Accelerate" -framework "AssetsLibrary" -framework "CoreFoundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "UIKit"

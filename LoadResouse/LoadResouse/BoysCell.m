@@ -28,7 +28,7 @@
     NSString *requestUrlStr = [NSString stringWithFormat:@"%@%@", model.picUrl, model.picType];
     
     
-    [self.picImage sd_setImageWithURL:[NSURL URLWithString:requestUrlStr]];
+    [self.picImage sd_setImageWithURL:[NSURL URLWithString:requestUrlStr] placeholderImage:[UIImage imageNamed:@"timg"]];
     self.playCount.text = model.playCount;
     self.playLonge.text = model.playLonge;
 }

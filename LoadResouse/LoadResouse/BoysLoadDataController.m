@@ -12,22 +12,17 @@
 @implementation BoysLoadDataController
 - (instancetype)initWithDelegate:(id<LoadDataControllerDelegate>)aDelegate{
     
-    
     self=[super initWithDelegate:aDelegate];
     if (self) {
         self.dataSouseArr=[NSMutableArray array];
-        
-        
+
         
     }
     return self;
     
 }
 - (NSString *)requestURL{
-    
-    
-    return @"http://api.miaopai.com/m/v2_topic.json?os=ios&page=1&per=20&stpid=XqLH1jhWz5L1decQ&timestamp=1486627364.69782&token=CNk4vpEO7TG6arxT~0oPJ~jnthGzbhlA&type=2&unique_id=6d43a571caf7abe9e29f08d6bf94ee792483732007&uuid=6d43a571caf7abe9e29f08d6bf94ee792483732007&vend=miaopai&version=6.5.7";
-    
+    return self.contentUrl;
 }
 
 - (RequestMethod)requestMethod{

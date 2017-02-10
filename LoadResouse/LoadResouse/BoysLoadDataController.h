@@ -10,5 +10,5 @@
 
 @interface BoysLoadDataController : LoadDataController
 @property (nonatomic,strong)NSMutableArray *dataSouseArr;
-
+@property (nonatomic, strong)NSString *contentUrl;
 @end

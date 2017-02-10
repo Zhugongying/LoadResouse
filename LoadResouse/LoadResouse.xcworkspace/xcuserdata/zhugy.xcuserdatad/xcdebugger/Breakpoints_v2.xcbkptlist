@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadResouse/BoysViewController.m"
-            timestampString = "508325750.971054"
+            timestampString = "508338336.96137"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-loadDataFinishWithResouse:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadResouse/BoysViewController.m"
-            timestampString = "508325884.074229"
+            timestampString = "508338726.021789"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "-videoPlayClick:"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-refreshFooterView"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

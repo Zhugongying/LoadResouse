@@ -4,185 +4,165 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-DCAnimationKit.xcscheme</key>
+		<key>DCAnimationKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-EAIntroView.xcscheme</key>
+		<key>EAIntroView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-EARestrictedScrollView.xcscheme</key>
+		<key>EARestrictedScrollView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-MBProgressHUD.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-MJRefresh.xcscheme</key>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>Pods-OpenSSL-Universal.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-		<key>Pods-RTLabel.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>Pods-Reachability.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
-		</dict>
-		<key>Pods-SDCycleScrollView.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
-		<key>Pods-SDWebImage.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
-		<key>Pods-TWRCharts.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
-		</dict>
-		<key>Pods-Wonderful.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
-		</dict>
-		<key>Pods-YYCache.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
-		</dict>
-		<key>Pods-YYImage.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
-		</dict>
-		<key>Pods-YYWebImage.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
-		</dict>
-		<key>Pods-pjsip.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RTLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TWRCharts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Wonderful.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>090C590706ECA0799B9FE8B5</key>
+		<key>199379C274366F958213F49D088328D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14634682AC4A6F4215F3281C</key>
+		<key>33987D4958123EB3F595956FB4CF4766</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FE132CF892A9F1B71157613</key>
+		<key>3B3E4548391F007CB1A139B694D4D627</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F5D0E6F6F266FF297C3FBFA</key>
+		<key>3FE3D1E99FB90C5169D1716445AA6BE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3AA1E17D16EF7B6B2932E7EE</key>
+		<key>4C9E99CC2B5F0FA4FC11C2E24D4EF986</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3CA36BD09046ECEB1910D320</key>
+		<key>5C7771799E5E49E270890375FC12FD4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DFE1A5F19792E61F3A54F98</key>
+		<key>70BC44266C6FFE30D2C57129458E070B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E8FC60FB6B0723901618E2A</key>
+		<key>8CB30D71E74A5F1C3E15B577B5AF5FD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60CAEF175FB6CC64FD78C4FA</key>
+		<key>8F92AB6DEFFF61E08D86B03365A4F4AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6FB735E5643016FA5BC4B5C0</key>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86B378CF27196E39FBEA40BA</key>
+		<key>A9623937F1635970AD35F02DF2BF2BC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97E39D78588D0BF5336BDA6B</key>
+		<key>B6FA3B87D9A720224954787F685879FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BADC09EC56154BEBC6847C51</key>
+		<key>B74F25CEECCAD20681AEDCFD7B44E887</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD173224CFE50F368465758E</key>
+		<key>D1EC2572C5166CE2498C72FAF128EABE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C1BE4084177361F468A2725B</key>
+		<key>FBC8198F5EB91C61146C1519763579AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8173995308DF4191B355FA6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CE19AC80EBDC0F73C0B2C80B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D47135FAE9DE9A7B1AEDD542</key>
+		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,1 +1,0 @@
-PODS_YYWEBIMAGE_OTHER_LDFLAGS = -framework "Accelerate" -framework "AssetsLibrary" -framework "CoreFoundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "UIKit"

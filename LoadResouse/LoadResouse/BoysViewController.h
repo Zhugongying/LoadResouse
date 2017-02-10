@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableFatherViewController.h"
 
-@interface BoysViewController : UITableViewController
+@interface BoysViewController : TableFatherViewController
 
 @end

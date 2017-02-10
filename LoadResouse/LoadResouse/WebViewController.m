@@ -7,8 +7,10 @@
 //
 
 #import "WebViewController.h"
-
-@interface WebViewController ()
+#import <WebKit/WebKit.h>
+#import <WebKit/WKWebView.h>
+@interface WebViewController ()<WKUIDelegate, WKNavigationDelegate>
+@property (nonatomic, strong) WKWebView *webView;
 
 @end
 
@@ -16,6 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+    
+    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, kScreenSizeW, kScreenSizeH) configuration:config];
+    [self.view addSubview:self.webView];
+    [self.webView loadRequest: [NSURLRequest requestWithURL:[NSURL URLWithString:self.loadUrl]]];
+    
     // Do any additional setup after loading the view.
 }
 
