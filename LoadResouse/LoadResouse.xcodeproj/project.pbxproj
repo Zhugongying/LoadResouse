@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1FC7721E4C582700014E19 /* BoysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7711E4C582700014E19 /* BoysViewController.m */; };
+		2B1FC7771E4C587C00014E19 /* BoysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7751E4C587C00014E19 /* BoysCell.m */; };
+		2B1FC7781E4C587C00014E19 /* BoysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1FC7761E4C587C00014E19 /* BoysCell.xib */; };
+		2B1FC77C1E4C590200014E19 /* BoysModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC77B1E4C590200014E19 /* BoysModel.m */; };
+		2B1FC7801E4C653800014E19 /* BoysLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC77F1E4C653800014E19 /* BoysLoadDataController.m */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -91,6 +96,15 @@
 
 /* Begin PBXFileReference section */
 		21E1E70429D533FD9DDD4B3D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2B1FC7701E4C582700014E19 /* BoysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoysViewController.h; sourceTree = "<group>"; };
+		2B1FC7711E4C582700014E19 /* BoysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoysViewController.m; sourceTree = "<group>"; };
+		2B1FC7741E4C587C00014E19 /* BoysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoysCell.h; sourceTree = "<group>"; };
+		2B1FC7751E4C587C00014E19 /* BoysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoysCell.m; sourceTree = "<group>"; };
+		2B1FC7761E4C587C00014E19 /* BoysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoysCell.xib; sourceTree = "<group>"; };
+		2B1FC77A1E4C590200014E19 /* BoysModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoysModel.h; sourceTree = "<group>"; };
+		2B1FC77B1E4C590200014E19 /* BoysModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoysModel.m; sourceTree = "<group>"; };
+		2B1FC77E1E4C653800014E19 /* BoysLoadDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoysLoadDataController.h; sourceTree = "<group>"; };
+		2B1FC77F1E4C653800014E19 /* BoysLoadDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoysLoadDataController.m; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE106CC11D7EA5E600C7F181 /* LoadResouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadResouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -283,6 +297,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2B1FC76F1E4C57E800014E19 /* BOYS */ = {
+			isa = PBXGroup;
+			children = (
+				2B1FC77D1E4C64EB00014E19 /* LoadData */,
+				2B1FC7701E4C582700014E19 /* BoysViewController.h */,
+				2B1FC7711E4C582700014E19 /* BoysViewController.m */,
+			);
+			name = BOYS;
+			sourceTree = "<group>";
+		};
+		2B1FC7731E4C585400014E19 /* BoysCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B1FC7741E4C587C00014E19 /* BoysCell.h */,
+				2B1FC7751E4C587C00014E19 /* BoysCell.m */,
+				2B1FC7761E4C587C00014E19 /* BoysCell.xib */,
+			);
+			name = BoysCell;
+			sourceTree = "<group>";
+		};
+		2B1FC7791E4C588500014E19 /* BoysModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B1FC77A1E4C590200014E19 /* BoysModel.h */,
+				2B1FC77B1E4C590200014E19 /* BoysModel.m */,
+			);
+			name = BoysModel;
+			sourceTree = "<group>";
+		};
+		2B1FC77D1E4C64EB00014E19 /* LoadData */ = {
+			isa = PBXGroup;
+			children = (
+				2B1FC77E1E4C653800014E19 /* BoysLoadDataController.h */,
+				2B1FC77F1E4C653800014E19 /* BoysLoadDataController.m */,
+			);
+			name = LoadData;
+			sourceTree = "<group>";
+		};
 		797F5641D7C452D2C64E3BF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +416,7 @@
 		CE106CD71D7EA65500C7F181 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B1FC7791E4C588500014E19 /* BoysModel */,
 				CED4BCB61D9A14440096E842 /* 迅雷 */,
 				CE885ED11D93EDEA00CB22D0 /* 爱奇艺 */,
 			);
@@ -373,6 +426,7 @@
 		CE106CD81D7EA66000C7F181 /* ViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				2B1FC7731E4C585400014E19 /* BoysCell */,
 				CE3197101D992033006D2C42 /* 设置Cell */,
 				CEF21BF51D950CC0006B2BCC /* 首页 */,
 				CE885ED01D93EDDE00CB22D0 /* 爱奇艺 */,
@@ -444,6 +498,7 @@
 		CE106D021D7EB4E900C7F181 /* 功能模块 */ = {
 			isa = PBXGroup;
 			children = (
+				2B1FC76F1E4C57E800014E19 /* BOYS */,
 				CE5E7DC11DAB45AC00E8DC6A /* 号码归属地 */,
 				CEA8033B1DA9E529006C6717 /* 表盘 */,
 				CE68F8291D7FF92600DE4A0C /* 百思不得姐 */,
@@ -970,6 +1025,7 @@
 				CEA8033A1DA9E488006C6717 /* index.html in Resources */,
 				CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */,
 				CE638EB81D82BE0900D7720C /* FenleiCell.xib in Resources */,
+				2B1FC7781E4C587C00014E19 /* BoysCell.xib in Resources */,
 				CEF21BFA1D950CEB006B2BCC /* VideoCollectionViewCell.xib in Resources */,
 				CE4B8F651D87DA3400D9C1BE /* hahha in Resources */,
 				CEA7137F1D9A679900F5FCC3 /* VideoButtonView.xib in Resources */,
@@ -1024,6 +1080,7 @@
 			files = (
 				CEA713791D9A565600F5FCC3 /* AVPlayerVideoViewController.m in Sources */,
 				CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */,
+				2B1FC7771E4C587C00014E19 /* BoysCell.m in Sources */,
 				CEA7137D1D9A677500F5FCC3 /* VideoButtonView.m in Sources */,
 				CE6CC59F1DAF843600BDE875 /* TextViewController.m in Sources */,
 				CE638E991D800B6200D7720C /* BaiSiBDJCell.m in Sources */,
@@ -1035,6 +1092,7 @@
 				CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */,
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
 				CE885EC41D93910A00CB22D0 /* LoadDataBaiSiPLControl.m in Sources */,
+				2B1FC7801E4C653800014E19 /* BoysLoadDataController.m in Sources */,
 				CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */,
 				CE106CDD1D7EA7C500C7F181 /* HomeViewController.m in Sources */,
 				CE638EA11D800BBD00D7720C /* BaiSiBDJModel.m in Sources */,
@@ -1054,10 +1112,12 @@
 				CE106CF31D7EA8DA00C7F181 /* TestViewController.m in Sources */,
 				CE885ED81D93EF0700CB22D0 /* AQYLoadDataControl.m in Sources */,
 				CEA8033E1DA9E5C7006C6717 /* ChartViewController.m in Sources */,
+				2B1FC77C1E4C590200014E19 /* BoysModel.m in Sources */,
 				CED4BCC41D9A2DCB0096E842 /* XLVideoModel.m in Sources */,
 				CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
 				CE3197141D992060006D2C42 /* SettingTableViewCell.m in Sources */,
+				2B1FC7721E4C582700014E19 /* BoysViewController.m in Sources */,
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
 				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,

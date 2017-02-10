@@ -14,6 +14,7 @@
 #import "XLKKViewController.h"
 #import "MMYGViewController.h"
 #import "TextViewController.h"
+#import "BoysViewController.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -119,6 +120,10 @@
                    @{
                        @"image":@"",
                        @"text":@"测试"
+                       },
+                   @{
+                       @"image": @"",
+                       @"text": @"Boys"
                        }
                    
                    ];
@@ -167,14 +172,10 @@
     switch (indexPath.row) {
         case 0://爱奇艺
         {
-        
             AQYViewController *aqy=[[AQYViewController alloc] init];
-            
             aqy.title=@"爱奇艺";
             [self.navigationController pushViewController:aqy animated:YES];
-            
-            
-        
+
         }
             break;
             
@@ -182,13 +183,11 @@
         {
         
             XLKKViewController *xl=[[XLKKViewController alloc] init];
-            
             xl.title=@"迅雷";
             [self.navigationController pushViewController:xl animated:YES];
         
         }
             break;
-            
             
         case 2:
         {
@@ -205,6 +204,12 @@
             
             [self.navigationController pushViewController:text animated:YES];
         
+        }
+            break;
+            case 4:
+        {
+            BoysViewController *boy = [[BoysViewController alloc] init];
+            [self.navigationController pushViewController:boy animated:YES];
         }
             
             
