@@ -18,6 +18,10 @@
 		2B1FC7911E4D6B6F00014E19 /* JKCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1FC78F1E4D6B6F00014E19 /* JKCell.xib */; };
 		2B1FC7941E4D6BDC00014E19 /* JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7931E4D6BDC00014E19 /* JKViewController.m */; };
 		2B1FC7971E4D6C2100014E19 /* JKLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7961E4D6C2100014E19 /* JKLoadDataController.m */; };
+		2B1FC79A1E4DB0FF00014E19 /* JKCountentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7991E4DB0FF00014E19 /* JKCountentViewController.m */; };
+		2B1FC79E1E4DB2AB00014E19 /* CenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC79D1E4DB2AB00014E19 /* CenterModel.m */; };
+		2B1FC7A11E4DB5A100014E19 /* JKContentLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7A01E4DB5A100014E19 /* JKContentLoadDataController.m */; };
+		2B1FC7A41E4DCD8E00014E19 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7A31E4DCD8E00014E19 /* ContentViewController.m */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -122,6 +126,15 @@
 		2B1FC7931E4D6BDC00014E19 /* JKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKViewController.m; sourceTree = "<group>"; };
 		2B1FC7951E4D6C2100014E19 /* JKLoadDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLoadDataController.h; sourceTree = "<group>"; };
 		2B1FC7961E4D6C2100014E19 /* JKLoadDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLoadDataController.m; sourceTree = "<group>"; };
+		2B1FC7981E4DB0FF00014E19 /* JKCountentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountentViewController.h; sourceTree = "<group>"; };
+		2B1FC7991E4DB0FF00014E19 /* JKCountentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountentViewController.m; sourceTree = "<group>"; };
+		2B1FC79C1E4DB2AB00014E19 /* CenterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterModel.h; sourceTree = "<group>"; };
+		2B1FC79D1E4DB2AB00014E19 /* CenterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterModel.m; sourceTree = "<group>"; };
+		2B1FC79F1E4DB5A100014E19 /* JKContentLoadDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKContentLoadDataController.h; sourceTree = "<group>"; };
+		2B1FC7A01E4DB5A100014E19 /* JKContentLoadDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKContentLoadDataController.m; sourceTree = "<group>"; };
+		2B1FC7A21E4DCD8E00014E19 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		2B1FC7A31E4DCD8E00014E19 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../../jtk/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE106CC11D7EA5E600C7F181 /* LoadResouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadResouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +306,7 @@
 		0E20DF4D935D4331BA17581A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */,
 				CE268A241DACB8830021AA00 /* AgoraAudioKit.framework */,
 				CE268A221DACB8550021AA00 /* VideoToolbox.framework */,
 				CE268A201DACB83D0021AA00 /* CoreMedia.framework */,
@@ -367,6 +381,10 @@
 				2B1FC7871E4D6AF600014E19 /* LoadDate */,
 				2B1FC7921E4D6BDC00014E19 /* JKViewController.h */,
 				2B1FC7931E4D6BDC00014E19 /* JKViewController.m */,
+				2B1FC7981E4DB0FF00014E19 /* JKCountentViewController.h */,
+				2B1FC7991E4DB0FF00014E19 /* JKCountentViewController.m */,
+				2B1FC7A21E4DCD8E00014E19 /* ContentViewController.h */,
+				2B1FC7A31E4DCD8E00014E19 /* ContentViewController.m */,
 			);
 			name = "极客网";
 			sourceTree = "<group>";
@@ -376,6 +394,8 @@
 			children = (
 				2B1FC7951E4D6C2100014E19 /* JKLoadDataController.h */,
 				2B1FC7961E4D6C2100014E19 /* JKLoadDataController.m */,
+				2B1FC79F1E4DB5A100014E19 /* JKContentLoadDataController.h */,
+				2B1FC7A01E4DB5A100014E19 /* JKContentLoadDataController.m */,
 			);
 			name = LoadDate;
 			sourceTree = "<group>";
@@ -385,6 +405,8 @@
 			children = (
 				2B1FC7891E4D6B3300014E19 /* JKModel.h */,
 				2B1FC78A1E4D6B3300014E19 /* JKModel.m */,
+				2B1FC79C1E4DB2AB00014E19 /* CenterModel.h */,
+				2B1FC79D1E4DB2AB00014E19 /* CenterModel.m */,
 			);
 			name = JKModel;
 			sourceTree = "<group>";
@@ -1177,6 +1199,7 @@
 				CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */,
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
 				CE885EC41D93910A00CB22D0 /* LoadDataBaiSiPLControl.m in Sources */,
+				2B1FC7A11E4DB5A100014E19 /* JKContentLoadDataController.m in Sources */,
 				2B1FC7801E4C653800014E19 /* BoysLoadDataController.m in Sources */,
 				CE638E951D800B3D00D7720C /* BaiSiDJViewController.m in Sources */,
 				CE106CDD1D7EA7C500C7F181 /* HomeViewController.m in Sources */,
@@ -1193,6 +1216,7 @@
 				2B1FC7841E4C760800014E19 /* WebViewController.m in Sources */,
 				CED4BCB91D9A14A30096E842 /* XLModel.m in Sources */,
 				CE638EAD1D81106000D7720C /* BaiSiBDJDataController.m in Sources */,
+				2B1FC79E1E4DB2AB00014E19 /* CenterModel.m in Sources */,
 				CE638EB71D82BE0900D7720C /* FenleiCell.m in Sources */,
 				CEEA68841D9292BE00017A2A /* ShearView.m in Sources */,
 				CE106CEF1D7EA8DA00C7F181 /* PlayerViewController.m in Sources */,
@@ -1204,10 +1228,12 @@
 				2B1FC7971E4D6C2100014E19 /* JKLoadDataController.m in Sources */,
 				CED4BCC41D9A2DCB0096E842 /* XLVideoModel.m in Sources */,
 				CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */,
+				2B1FC79A1E4DB0FF00014E19 /* JKCountentViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
 				CE3197141D992060006D2C42 /* SettingTableViewCell.m in Sources */,
 				2B1FC7721E4C582700014E19 /* BoysViewController.m in Sources */,
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
+				2B1FC7A41E4DCD8E00014E19 /* ContentViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
 				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,
 				CEA184481D9004AA001B04DC /* XQViewController.m in Sources */,

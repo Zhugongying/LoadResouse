@@ -9,5 +9,12 @@
 #import "FatherModel.h"
 
 @interface JKModel : FatherModel
+@property (nonatomic, copy) NSString *baseName;
 
+@end
+
+@interface SubJKModel : FatherModel
+
+@property (nonatomic, copy) NSString *subName;
+@property (nonatomic, copy) NSString *changeID;
 @end

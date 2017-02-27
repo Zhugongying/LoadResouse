@@ -1,16 +1,13 @@
 //
-//  JKModel.m
+//  ContentViewController.h
 //  LoadResouse
 //
 //  Created by zhugy on 2017/2/10.
 //  Copyright © 2017年 Zhugy. All rights reserved.
 //
 
-#import "JKModel.h"
+#import <UIKit/UIKit.h>
 
-@implementation JKModel
-
-@end
-@implementation SubJKModel
+@interface ContentViewController : UIViewController
 
 @end

@@ -9,5 +9,7 @@
 #import "LoadDataController.h"
 
 @interface JKLoadDataController : LoadDataController
-
+@property (nonatomic, copy) NSString *loadUrlStr;
+@property (nonatomic, strong) NSMutableArray *baseArr;
+@property (nonatomic, strong) NSMutableDictionary *reouseDict;
 @end

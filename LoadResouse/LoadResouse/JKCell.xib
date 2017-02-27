@@ -1,19 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JKCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JKCell" rowHeight="76" id="KGk-i7-Jjw" customClass="JKCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bgb-E5-oBl">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="NFE-t7-iuS"/>
+                            <constraint firstAttribute="height" constant="60" id="VDu-do-Iuv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aj-p3-a9h">
+                        <rect key="frame" x="76" y="8" width="236" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZf-vK-eYD">
+                        <rect key="frame" x="76" y="34" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.16078431369999999" green="0.58431372550000005" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxi-ka-GlN">
+                        <rect key="frame" x="281" y="53.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.69803921570000005" green="0.026646205360000001" blue="0.1850446429" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZQ-A8-NIj">
+                        <rect key="frame" x="76" y="53" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Lxi-ka-GlN" secondAttribute="bottom" constant="-0.5" id="0hI-TB-EWh"/>
+                    <constraint firstItem="SZQ-A8-NIj" firstAttribute="top" secondItem="aZf-vK-eYD" secondAttribute="bottom" constant="4.5" id="ILX-R8-hHy"/>
+                    <constraint firstItem="SZQ-A8-NIj" firstAttribute="leading" secondItem="Bgb-E5-oBl" secondAttribute="trailing" constant="8" id="Jd0-fU-ubN"/>
+                    <constraint firstAttribute="topMargin" secondItem="Bgb-E5-oBl" secondAttribute="top" id="N6g-TP-Rl4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Lxi-ka-GlN" secondAttribute="trailing" id="NDV-nK-GlZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4aj-p3-a9h" secondAttribute="trailing" id="XSl-d5-POm"/>
+                    <constraint firstItem="aZf-vK-eYD" firstAttribute="leading" secondItem="Bgb-E5-oBl" secondAttribute="trailing" constant="8" id="e6m-rU-K3n"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Bgb-E5-oBl" secondAttribute="bottom" constant="-0.5" id="gA3-Od-4FF"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Bgb-E5-oBl" secondAttribute="leading" id="j5X-P9-eq6"/>
+                    <constraint firstAttribute="topMargin" secondItem="4aj-p3-a9h" secondAttribute="top" id="jwX-Sg-92A"/>
+                    <constraint firstItem="4aj-p3-a9h" firstAttribute="leading" secondItem="Bgb-E5-oBl" secondAttribute="trailing" constant="8" id="rO2-uY-Ppo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="SZQ-A8-NIj" secondAttribute="bottom" id="v6p-pJ-Vgq"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="articleLabel" destination="aZf-vK-eYD" id="NWB-fM-t5u"/>
+                <outlet property="iconImage" destination="Bgb-E5-oBl" id="2sv-1c-Mhu"/>
+                <outlet property="readCountLable" destination="Lxi-ka-GlN" id="9b7-Qo-eeq"/>
+                <outlet property="titleLable" destination="4aj-p3-a9h" id="85h-xV-nL9"/>
+                <outlet property="updateLabel" destination="SZQ-A8-NIj" id="W0W-xg-827"/>
+            </connections>
+            <point key="canvasLocation" x="-463" y="-27"/>
         </tableViewCell>
     </objects>
 </document>

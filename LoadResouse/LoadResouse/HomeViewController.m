@@ -15,6 +15,8 @@
 #import "MMYGViewController.h"
 #import "TextViewController.h"
 #import "BoysViewController.h"
+#import "JKViewController.h"
+#import "ContentViewController.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -204,7 +206,7 @@
             break;
             case 3:
         {
-            TextViewController *text=[[TextViewController alloc] init];
+            ContentViewController *text=[[ContentViewController alloc] init];
             
             [self.navigationController pushViewController:text animated:YES];
         
@@ -215,7 +217,12 @@
             BoysViewController *boy = [[BoysViewController alloc] init];
             [self.navigationController pushViewController:boy animated:YES];
         }
-            
+            break;
+            case 5:
+        {
+            JKViewController *jk = [[JKViewController alloc] init];
+            [self.navigationController pushViewController:jk animated:YES];
+        }
             
         default:
            

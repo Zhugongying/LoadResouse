@@ -14,7 +14,14 @@
     [super awakeFromNib];
     // Initialization code
 }
-
+- (void)fullCellWithModel:(CenterModel *)model {
+    [self.iconImage sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:[UIImage imageNamed:@""]];
+    
+    self.titleLable.text = model.title;
+    self.articleLabel.text = [NSString stringWithFormat:@"%@章",model.article_count];
+    self.updateLabel.text = model.update_time;
+    self.readCountLable.text = [NSString stringWithFormat:@"%@人阅读",model.readerCount];
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

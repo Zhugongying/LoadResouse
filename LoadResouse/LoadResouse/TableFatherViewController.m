@@ -29,9 +29,7 @@
     self.tableView.tableFooterView=[[UIView alloc] init];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.backgroundColor=UIColorRGBA(0xfefefe, 0.7);
-    
-    
-    
+        
     self.tableView.backgroundView.alpha=0.5f;
     
     [self.view addSubview:self.tableView];

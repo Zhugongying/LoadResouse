@@ -1,16 +1,13 @@
 //
-//  JKModel.m
+//  CenterModel.m
 //  LoadResouse
 //
 //  Created by zhugy on 2017/2/10.
 //  Copyright © 2017年 Zhugy. All rights reserved.
 //
 
-#import "JKModel.h"
+#import "CenterModel.h"
 
-@implementation JKModel
-
-@end
-@implementation SubJKModel
+@implementation CenterModel
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Zhugy. All rights reserved.
 //
 
-#import "TableFatherViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface JKViewController : TableFatherViewController
+@interface JKViewController : UIViewController
 
 @end
