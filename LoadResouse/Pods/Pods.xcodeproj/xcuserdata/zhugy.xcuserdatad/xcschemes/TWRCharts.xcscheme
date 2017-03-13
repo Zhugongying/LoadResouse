@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C24C502C0BBBCB240C8A1878'
+               BlueprintIdentifier = '60AFBC889B9EEA1BE8191463'
                BlueprintName = 'TWRCharts'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTWRCharts.a'>

@@ -14,6 +14,9 @@
 #import "WXApi.h"
 #import <Foundation/Foundation.h>
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 //#import <UMMobClick/MobClick.h>
 
 @interface AppDelegate ()<WXApiDelegate,UIAlertViewDelegate>
@@ -43,6 +46,12 @@
     sideMenuViewController.contentViewShadowRadius = 12;
     sideMenuViewController.contentViewShadowEnabled = YES;
     
+    KSCrashInstallationStandard *installation = [KSCrashInstallationStandard sharedInstance];
+    installation.url = [NSURL URLWithString:@"https://collector.bughd.com/kscrash?key=fc0c229d6fa40fa8096df25c92e8275b"];
+    [installation install];
+    [installation sendAllReportsWithCompletion:nil];
+    
+    [Fabric with:@[[Crashlytics class]]];
     
     self.window.rootViewController=sideMenuViewController;
     
@@ -67,7 +76,9 @@
     
     
    
-    
+    // TODO: Move this to where you establish a user session
+    [self logUser];
+
     
     
     
@@ -76,6 +87,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+- (void) logUser {
+    // TODO: Use the current user's information
+    // You can call any combination of these three methods
+    [CrashlyticsKit setUserIdentifier:@"12345"];
+    [CrashlyticsKit setUserEmail:@"user@fabric.io"];
+    [CrashlyticsKit setUserName:@"Test User"];
 }
 
 

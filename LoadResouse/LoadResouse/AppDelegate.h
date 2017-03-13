@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HomeViewController.h"
 #import <MBProgressHUD.h>
+#import <KSCrash/KSCrashInstallationStandard.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,RESideMenuDelegate>
 

@@ -29,7 +29,7 @@
     self.webView.delegate=self;
     self.webView.scrollView.delegate=self;
     
-    NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.mumujz.com/mobile/"]] ;
+    NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ddp.vip.pptv.com/h5/myorder/"]] ;
 //     NSURLRequest *requesr=[NSURLRequest requestWithURL:[NSURL URLWithString:@"tel://13253009266"]] ;
     
     
@@ -67,22 +67,22 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     
-    
-    if (scrollView.contentOffset.y - _scrollViewSetY > 0) {
-        
-        if (!(self.navigationController.navigationBarHidden==YES)) {
-            [self.navigationController setNavigationBarHidden:YES animated:YES];
-        }
-        
-    }else if(_scrollViewSetY - scrollView.contentOffset.y  >0){
-        if (!(self.navigationController.navigationBarHidden==NO)) {
-            [self.navigationController setNavigationBarHidden:NO animated:YES];
-        }
-    
-    }
-    
-    
-    _scrollViewSetY=scrollView.contentOffset.y;
+//    
+//    if (scrollView.contentOffset.y - _scrollViewSetY > 0) {
+//        
+//        if (!(self.navigationController.navigationBarHidden==YES)) {
+//            [self.navigationController setNavigationBarHidden:YES animated:YES];
+//        }
+//        
+//    }else if(_scrollViewSetY - scrollView.contentOffset.y  >0){
+//        if (!(self.navigationController.navigationBarHidden==NO)) {
+//            [self.navigationController setNavigationBarHidden:NO animated:YES];
+//        }
+//    
+//    }
+//    
+//    
+//    _scrollViewSetY=scrollView.contentOffset.y;
     
     
     

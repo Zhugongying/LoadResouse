@@ -7,6 +7,7 @@
 //
 
 #import "TextViewController.h"
+#import <Crashlytics/Crashlytics.h>
 
 @interface TextViewController ()
 
@@ -21,8 +22,26 @@
 
 //    [self setPaiXu];
     
-    [self localNotification];
+//    [self localNotification];
+    
+    [self loadCresh];
 }
+- (void)loadCresh {
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(20, 100, 100, 30);
+    [button setTitle:@"Crash" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(crashButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+
+
+}
+- (IBAction)crashButtonTapped:(id)sender {
+    
+    NSArray *a = @[@1];
+    NSLog(@"%@", a[1]);
+    
+}
+
 
 - (void)localNotification{
 

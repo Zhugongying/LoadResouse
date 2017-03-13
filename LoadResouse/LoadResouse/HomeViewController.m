@@ -206,7 +206,7 @@
             break;
             case 3:
         {
-            ContentViewController *text=[[ContentViewController alloc] init];
+            TextViewController *text=[[TextViewController alloc] init];
             
             [self.navigationController pushViewController:text animated:YES];
         

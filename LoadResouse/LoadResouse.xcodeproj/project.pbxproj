@@ -22,6 +22,8 @@
 		2B1FC79E1E4DB2AB00014E19 /* CenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC79D1E4DB2AB00014E19 /* CenterModel.m */; };
 		2B1FC7A11E4DB5A100014E19 /* JKContentLoadDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7A01E4DB5A100014E19 /* JKContentLoadDataController.m */; };
 		2B1FC7A41E4DCD8E00014E19 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7A31E4DCD8E00014E19 /* ContentViewController.m */; };
+		2B6F34031E763D5D00AAE84A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6F34011E763D5D00AAE84A /* Fabric.framework */; };
+		2B6F34041E763D5D00AAE84A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6F34021E763D5D00AAE84A /* Crashlytics.framework */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -134,6 +136,8 @@
 		2B1FC7A01E4DB5A100014E19 /* JKContentLoadDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKContentLoadDataController.m; sourceTree = "<group>"; };
 		2B1FC7A21E4DCD8E00014E19 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		2B1FC7A31E4DCD8E00014E19 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		2B6F34011E763D5D00AAE84A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		2B6F34021E763D5D00AAE84A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../../jtk/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,7 +293,9 @@
 				CE885EE01D94D23400CB22D0 /* libsqlite3.0.tbd in Frameworks */,
 				CE34F0481D9141E20018ABDC /* libz.tbd in Frameworks */,
 				CE34F0461D9141D40018ABDC /* libstdc++.tbd in Frameworks */,
+				2B6F34031E763D5D00AAE84A /* Fabric.framework in Frameworks */,
 				CE268A271DACB8CF0021AA00 /* AgoraAudioKit.framework in Frameworks */,
+				2B6F34041E763D5D00AAE84A /* Crashlytics.framework in Frameworks */,
 				CE34F0421D9141BD0018ABDC /* libsqlite3.tbd in Frameworks */,
 				CE885EDD1D94CE5600CB22D0 /* libWeChatSDK.a in Frameworks */,
 				CE34F0401D9141A40018ABDC /* CoreGraphics.framework in Frameworks */,
@@ -433,6 +439,8 @@
 		CE106CB81D7EA5E600C7F181 = {
 			isa = PBXGroup;
 			children = (
+				2B6F34011E763D5D00AAE84A /* Fabric.framework */,
+				2B6F34021E763D5D00AAE84A /* Crashlytics.framework */,
 				CE268A261DACB8CF0021AA00 /* AgoraAudioKit.framework */,
 				CEA803371DA9E488006C6717 /* Chart.js */,
 				CEA803381DA9E488006C6717 /* index.html */,
@@ -1063,6 +1071,7 @@
 				CE106CBF1D7EA5E600C7F181 /* Resources */,
 				5C3566C20EDE4143A8666EA4 /* Copy Pods Resources */,
 				4D7C90654A0EE13EF50D574C /* Embed Pods Frameworks */,
+				2B6F34001E763D4600AAE84A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1133,6 +1142,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B6F34001E763D4600AAE84A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 16ddc564357ffbbbfa512480fec9bf8b6e3e2c1f bd1720e8d9b3a417acd1a042d9b3b86fed08d142f7b4f067ab9bbe3973ab802d";
+		};
 		4D7C90654A0EE13EF50D574C /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1356,6 +1378,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1403,6 +1426,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoadResouse",
 				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1465,6 +1489,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoadResouse",
 				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
