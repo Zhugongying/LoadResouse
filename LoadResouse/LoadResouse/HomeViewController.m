@@ -17,6 +17,7 @@
 #import "BoysViewController.h"
 #import "JKViewController.h"
 #import "ContentViewController.h"
+#import "LoadResouse-Swift.h"
 
 @interface HomeViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -130,6 +131,10 @@
                    @{
                        @"image": @"",
                        @"text": @"极客网"
+                       },
+                   @{
+                        @"image": @"",
+                        @"text": @"Swift"
                        }
                    
                    ];
@@ -223,7 +228,12 @@
             JKViewController *jk = [[JKViewController alloc] init];
             [self.navigationController pushViewController:jk animated:YES];
         }
-            
+            break;
+            case 6:
+        {
+            SwiftViewController *swift =[[SwiftViewController alloc] init];
+            [self.navigationController pushViewController:swift animated:YES];
+        }
         default:
            
             

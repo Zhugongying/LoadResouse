@@ -24,6 +24,7 @@
 		2B1FC7A41E4DCD8E00014E19 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FC7A31E4DCD8E00014E19 /* ContentViewController.m */; };
 		2B6F34031E763D5D00AAE84A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6F34011E763D5D00AAE84A /* Fabric.framework */; };
 		2B6F34041E763D5D00AAE84A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6F34021E763D5D00AAE84A /* Crashlytics.framework */; };
+		2B735A291E792B0F00CBA4A2 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B735A281E792B0F00CBA4A2 /* SwiftViewController.swift */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -138,6 +139,8 @@
 		2B1FC7A31E4DCD8E00014E19 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		2B6F34011E763D5D00AAE84A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		2B6F34021E763D5D00AAE84A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		2B735A271E792B0F00CBA4A2 /* LoadResouse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadResouse-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B735A281E792B0F00CBA4A2 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../../jtk/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -427,6 +430,15 @@
 			name = JKCell;
 			sourceTree = "<group>";
 		};
+		2B735A251E792AA100CBA4A2 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2B735A281E792B0F00CBA4A2 /* SwiftViewController.swift */,
+				2B735A271E792B0F00CBA4A2 /* LoadResouse-Bridging-Header.h */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
 		797F5641D7C452D2C64E3BF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +474,7 @@
 		CE106CC31D7EA5E600C7F181 /* LoadResouse */ = {
 			isa = PBXGroup;
 			children = (
+				2B735A251E792AA100CBA4A2 /* Swift */,
 				2B1FC7811E4C75DD00014E19 /* 网页公共展示 */,
 				CE4B8F631D87DA1F00D9C1BE /* 数据下载 */,
 				CE638E9B1D800B7800D7720C /* MyModel */,
@@ -1094,6 +1107,7 @@
 					CE106CC01D7EA5E600C7F181 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3U62SP5YP3;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1249,6 +1263,7 @@
 				2B1FC77C1E4C590200014E19 /* BoysModel.m in Sources */,
 				2B1FC7971E4D6C2100014E19 /* JKLoadDataController.m in Sources */,
 				CED4BCC41D9A2DCB0096E842 /* XLVideoModel.m in Sources */,
+				2B735A291E792B0F00CBA4A2 /* SwiftViewController.swift in Sources */,
 				CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */,
 				2B1FC79A1E4DB0FF00014E19 /* JKCountentViewController.m in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
@@ -1374,8 +1389,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21E1E70429D533FD9DDD4B3D /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1429,6 +1446,10 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoadResouse/LoadResouse-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LoadResouse-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
@@ -1438,8 +1459,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U62SP5YP3;
@@ -1492,6 +1515,9 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pptv.LoadResouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoadResouse/LoadResouse-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LoadResouse-Swift.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${SRCR))T}/**";
 			};
