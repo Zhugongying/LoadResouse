@@ -37,8 +37,6 @@
 }
 - (IBAction)crashButtonTapped:(id)sender {
     
-    NSArray *a = @[@1];
-    NSLog(@"%@", a[1]);
     
 }
 

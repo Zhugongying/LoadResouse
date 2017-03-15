@@ -51,7 +51,7 @@
     [installation install];
     [installation sendAllReportsWithCompletion:nil];
     
-    [Fabric with:@[[Crashlytics class]]];
+//    [Fabric with:@[[Crashlytics class]]];
     
     self.window.rootViewController=sideMenuViewController;
     
