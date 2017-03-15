@@ -25,6 +25,12 @@
 		2B6F34031E763D5D00AAE84A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6F34011E763D5D00AAE84A /* Fabric.framework */; };
 		2B6F34041E763D5D00AAE84A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6F34021E763D5D00AAE84A /* Crashlytics.framework */; };
 		2B735A291E792B0F00CBA4A2 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B735A281E792B0F00CBA4A2 /* SwiftViewController.swift */; };
+		2B735A301E7935E100CBA4A2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2A1E7935E100CBA4A2 /* Alamofire.framework */; };
+		2B735A311E7935E100CBA4A2 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2B1E7935E100CBA4A2 /* Cartography.framework */; };
+		2B735A321E7935E100CBA4A2 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2C1E7935E100CBA4A2 /* Locksmith.framework */; };
+		2B735A331E7935E100CBA4A2 /* MonkeyKing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2D1E7935E100CBA4A2 /* MonkeyKing.framework */; };
+		2B735A341E7935E100CBA4A2 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2E1E7935E100CBA4A2 /* ObjectMapper.framework */; };
+		2B735A351E7935E100CBA4A2 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2F1E7935E100CBA4A2 /* Reachability.framework */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -141,6 +147,12 @@
 		2B6F34021E763D5D00AAE84A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		2B735A271E792B0F00CBA4A2 /* LoadResouse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadResouse-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B735A281E792B0F00CBA4A2 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		2B735A2A1E7935E100CBA4A2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		2B735A2B1E7935E100CBA4A2 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
+		2B735A2C1E7935E100CBA4A2 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
+		2B735A2D1E7935E100CBA4A2 /* MonkeyKing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MonkeyKing.framework; path = Carthage/Build/iOS/MonkeyKing.framework; sourceTree = "<group>"; };
+		2B735A2E1E7935E100CBA4A2 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		2B735A2F1E7935E100CBA4A2 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
 		2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../../jtk/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,6 +297,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B735A301E7935E100CBA4A2 /* Alamofire.framework in Frameworks */,
+				2B735A311E7935E100CBA4A2 /* Cartography.framework in Frameworks */,
+				2B735A321E7935E100CBA4A2 /* Locksmith.framework in Frameworks */,
+				2B735A331E7935E100CBA4A2 /* MonkeyKing.framework in Frameworks */,
+				2B735A341E7935E100CBA4A2 /* ObjectMapper.framework in Frameworks */,
+				2B735A351E7935E100CBA4A2 /* Reachability.framework in Frameworks */,
 				CE268A251DACB8830021AA00 /* AgoraAudioKit.framework in Frameworks */,
 				CE268A231DACB8550021AA00 /* VideoToolbox.framework in Frameworks */,
 				CE268A211DACB83D0021AA00 /* CoreMedia.framework in Frameworks */,
@@ -315,6 +333,12 @@
 		0E20DF4D935D4331BA17581A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B735A2A1E7935E100CBA4A2 /* Alamofire.framework */,
+				2B735A2B1E7935E100CBA4A2 /* Cartography.framework */,
+				2B735A2C1E7935E100CBA4A2 /* Locksmith.framework */,
+				2B735A2D1E7935E100CBA4A2 /* MonkeyKing.framework */,
+				2B735A2E1E7935E100CBA4A2 /* ObjectMapper.framework */,
+				2B735A2F1E7935E100CBA4A2 /* Reachability.framework */,
 				2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */,
 				CE268A241DACB8830021AA00 /* AgoraAudioKit.framework */,
 				CE268A221DACB8550021AA00 /* VideoToolbox.framework */,
@@ -1162,12 +1186,18 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MonkeyKing.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Reachability.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 16ddc564357ffbbbfa512480fec9bf8b6e3e2c1f bd1720e8d9b3a417acd1a042d9b3b86fed08d142f7b4f067ab9bbe3973ab802d";
+			shellScript = "./Fabric.framework/run 16ddc564357ffbbbfa512480fec9bf8b6e3e2c1f bd1720e8d9b3a417acd1a042d9b3b86fed08d142f7b4f067ab9bbe3973ab802d\n/usr/local/bin/carthage copy-frameworks";
 		};
 		4D7C90654A0EE13EF50D574C /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1401,6 +1431,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
@@ -1470,6 +1501,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoadResouse/LoadResouse-Prefix.pch";
