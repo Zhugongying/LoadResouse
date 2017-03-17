@@ -31,6 +31,11 @@
 		2B735A331E7935E100CBA4A2 /* MonkeyKing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2D1E7935E100CBA4A2 /* MonkeyKing.framework */; };
 		2B735A341E7935E100CBA4A2 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2E1E7935E100CBA4A2 /* ObjectMapper.framework */; };
 		2B735A351E7935E100CBA4A2 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2F1E7935E100CBA4A2 /* Reachability.framework */; };
+		2BBC6B981E793DB600E0458C /* BlueTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6B971E793DB600E0458C /* BlueTouchViewController.swift */; };
+		2BBC6B9C1E7A699000E0458C /* JSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6B9B1E7A699000E0458C /* JSViewController.swift */; };
+		2BBC6BA01E7A820B00E0458C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BBC6B9F1E7A820B00E0458C /* test.html */; };
+		2BBC6BA21E7A9C2000E0458C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */; };
+		2BBC6BA51E7BAB3700E0458C /* PPTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6BA41E7BAB3700E0458C /* PPTestViewController.swift */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -154,6 +159,12 @@
 		2B735A2E1E7935E100CBA4A2 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		2B735A2F1E7935E100CBA4A2 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
 		2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../../jtk/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		2BBC6B971E793DB600E0458C /* BlueTouchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueTouchViewController.swift; sourceTree = "<group>"; };
+		2BBC6B991E794C6A00E0458C /* LoadResouse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoadResouse.entitlements; sourceTree = "<group>"; };
+		2BBC6B9B1E7A699000E0458C /* JSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSViewController.swift; sourceTree = "<group>"; };
+		2BBC6B9F1E7A820B00E0458C /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		2BBC6BA41E7BAB3700E0458C /* PPTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPTestViewController.swift; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE106CC11D7EA5E600C7F181 /* LoadResouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadResouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,9 +469,37 @@
 			isa = PBXGroup;
 			children = (
 				2B735A281E792B0F00CBA4A2 /* SwiftViewController.swift */,
+				2BBC6BA31E7BAB1B00E0458C /* Test */,
+				2BBC6B9A1E7A697600E0458C /* WKWebView */,
+				2BBC6B961E793D9600E0458C /* 蓝牙 */,
 				2B735A271E792B0F00CBA4A2 /* LoadResouse-Bridging-Header.h */,
+				2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */,
 			);
 			name = Swift;
+			sourceTree = "<group>";
+		};
+		2BBC6B961E793D9600E0458C /* 蓝牙 */ = {
+			isa = PBXGroup;
+			children = (
+				2BBC6B971E793DB600E0458C /* BlueTouchViewController.swift */,
+			);
+			name = "蓝牙";
+			sourceTree = "<group>";
+		};
+		2BBC6B9A1E7A697600E0458C /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				2BBC6B9B1E7A699000E0458C /* JSViewController.swift */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
+		2BBC6BA31E7BAB1B00E0458C /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2BBC6BA41E7BAB3700E0458C /* PPTestViewController.swift */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 		797F5641D7C452D2C64E3BF2 /* Pods */ = {
@@ -480,6 +519,7 @@
 				CE268A261DACB8CF0021AA00 /* AgoraAudioKit.framework */,
 				CEA803371DA9E488006C6717 /* Chart.js */,
 				CEA803381DA9E488006C6717 /* index.html */,
+				2BBC6B9F1E7A820B00E0458C /* test.html */,
 				CE106CC31D7EA5E600C7F181 /* LoadResouse */,
 				CE106CC21D7EA5E600C7F181 /* Products */,
 				0E20DF4D935D4331BA17581A /* Frameworks */,
@@ -498,6 +538,7 @@
 		CE106CC31D7EA5E600C7F181 /* LoadResouse */ = {
 			isa = PBXGroup;
 			children = (
+				2BBC6B991E794C6A00E0458C /* LoadResouse.entitlements */,
 				2B735A251E792AA100CBA4A2 /* Swift */,
 				2B1FC7811E4C75DD00014E19 /* 网页公共展示 */,
 				CE4B8F631D87DA1F00D9C1BE /* 数据下载 */,
@@ -1133,6 +1174,14 @@
 						DevelopmentTeam = 3U62SP5YP3;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -1171,6 +1220,7 @@
 				CE638E9A1D800B6200D7720C /* BaiSiBDJCell.xib in Resources */,
 				CED4BCB51D9A12C50096E842 /* XLTableViewCell.xib in Resources */,
 				CE3197151D992060006D2C42 /* SettingTableViewCell.xib in Resources */,
+				2BBC6BA01E7A820B00E0458C /* test.html in Resources */,
 				CE106CF41D7EA8DA00C7F181 /* TestViewController.xib in Resources */,
 				CE106CCE1D7EA5E700C7F181 /* LaunchScreen.storyboard in Resources */,
 				CE4B8F711D87F0A800D9C1BE /* MyHeadView.xib in Resources */,
@@ -1264,6 +1314,7 @@
 				CEF21BF91D950CEB006B2BCC /* VideoCollectionViewCell.m in Sources */,
 				CED719971D8F93E000A35F04 /* BSBDJTableViewCell.m in Sources */,
 				CE106CC61D7EA5E600C7F181 /* main.m in Sources */,
+				2BBC6B9C1E7A699000E0458C /* JSViewController.swift in Sources */,
 				CE885EC41D93910A00CB22D0 /* LoadDataBaiSiPLControl.m in Sources */,
 				2B1FC7A11E4DB5A100014E19 /* JKContentLoadDataController.m in Sources */,
 				2B1FC7801E4C653800014E19 /* BoysLoadDataController.m in Sources */,
@@ -1296,6 +1347,8 @@
 				2B735A291E792B0F00CBA4A2 /* SwiftViewController.swift in Sources */,
 				CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */,
 				2B1FC79A1E4DB0FF00014E19 /* JKCountentViewController.m in Sources */,
+				2BBC6BA51E7BAB3700E0458C /* PPTestViewController.swift in Sources */,
+				2BBC6B981E793DB600E0458C /* BlueTouchViewController.swift in Sources */,
 				CE106CF51D7EA8DA00C7F181 /* UIViewController+RESideMenu.m in Sources */,
 				CE3197141D992060006D2C42 /* SettingTableViewCell.m in Sources */,
 				2B1FC7721E4C582700014E19 /* BoysViewController.m in Sources */,
@@ -1309,6 +1362,7 @@
 				2B1FC7941E4D6BDC00014E19 /* JKViewController.m in Sources */,
 				CE106D051D7EB56100C7F181 /* MoreToolViewController.m in Sources */,
 				CED4BCC01D9A19E50096E842 /* XLLoadDataController.m in Sources */,
+				2BBC6BA21E7A9C2000E0458C /* AccountManager.swift in Sources */,
 				CE106D011D7EAEDA00C7F181 /* TableFatherViewController.m in Sources */,
 				CED4BCBC1D9A181F0096E842 /* NSObject+SBData.m in Sources */,
 				CEA803361DA8F63F006C6717 /* MMYGViewController.m in Sources */,

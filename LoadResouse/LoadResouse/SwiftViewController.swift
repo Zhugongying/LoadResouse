@@ -7,29 +7,103 @@
 //
 
 import UIKit
+import Cartography
 
 class SwiftViewController: UIViewController {
 
+    internal let items: [Item] = [.blueTouch, .js, .test]
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.tableFooterView = UIView()
+        tableView.separatorColor = UIColor.gray
+        tableView.separatorStyle = .singleLine
+        return tableView
+    }()
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        title = "Swift"
+        view.backgroundColor = UIColor.white
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = UIColor.red
+        setTableView()
+        
+    }
+    private func setTableView() {
+        view.addSubview(tableView)
+        constrain(tableView) { (tableView) in
+            tableView.leading == tableView.superview!.leading
+            tableView.trailing == tableView.superview!.trailing
+            tableView.top == tableView.superview!.top
+            tableView.bottom == tableView.superview!.bottom
+        }
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension SwiftViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        switch item {
+        case .blueTouch:
+            navigationController?.pushViewController(BlueTouchViewController(), animated: true)
+        case .js:
+            navigationController?.pushViewController(JSViewController(), animated: true)
+        case .test:
+            navigationController?.pushViewController(PPTestViewController(), animated: true)
+        }
     }
-    */
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+}
 
+extension SwiftViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = items[indexPath.row]
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        cell.textLabel?.text = item.title
+        return cell
+    }
+}
+
+extension SwiftViewController {
+    enum Item {
+        case blueTouch
+        case js
+        case test
+        
+        var title: String {
+            switch self {
+            case .blueTouch:
+                return "蓝牙"
+            case .js:
+                return "JS交互"
+            case .test:
+                return "测试"
+            }
+        }
+    }
 }

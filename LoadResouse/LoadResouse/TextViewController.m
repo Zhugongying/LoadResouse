@@ -8,8 +8,9 @@
 
 #import "TextViewController.h"
 #import <Crashlytics/Crashlytics.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface TextViewController ()
+@interface TextViewController ()<CBCentralManagerDelegate>
 
 @end
 
@@ -36,8 +37,13 @@
 
 }
 - (IBAction)crashButtonTapped:(id)sender {
+    CBCentralManager *center = [[CBCentralManager alloc] initWithDelegate:self queue:nil options:nil];
+    [center scanForPeripheralsWithServices:nil options:nil];
     
-    
+}
+
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
+
 }
 
 
