@@ -1,0 +1,76 @@
+BCSymbolMap Version: 2.0
+-[_FBKVOInfo initWithController:keyPath:options:block:action:context:]
+-[_FBKVOInfo initWithController:keyPath:options:block:]
+-[_FBKVOInfo initWithController:keyPath:options:action:]
+-[_FBKVOInfo initWithController:keyPath:options:context:]
+-[_FBKVOInfo initWithController:keyPath:]
+-[_FBKVOInfo hash]
+-[_FBKVOInfo isEqual:]
+-[_FBKVOInfo debugDescription]
+-[_FBKVOInfo .cxx_destruct]
++[_FBKVOSharedController sharedController]
+___42+[_FBKVOSharedController sharedController]_block_invoke
+-[_FBKVOSharedController init]
+-[_FBKVOSharedController dealloc]
+-[_FBKVOSharedController debugDescription]
+-[_FBKVOSharedController observe:info:]
+-[_FBKVOSharedController unobserve:info:]
+-[_FBKVOSharedController unobserve:infos:]
+-[_FBKVOSharedController observeValueForKeyPath:ofObject:change:context:]
+-[_FBKVOSharedController .cxx_destruct]
++[FBKVOController controllerWithObserver:]
+-[FBKVOController initWithObserver:retainObserved:]
+-[FBKVOController initWithObserver:]
+-[FBKVOController dealloc]
+-[FBKVOController debugDescription]
+___35-[FBKVOController debugDescription]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[FBKVOController _observe:info:]
+-[FBKVOController _unobserve:info:]
+-[FBKVOController _unobserve:]
+-[FBKVOController _unobserveAll]
+-[FBKVOController observe:keyPath:options:block:]
+-[FBKVOController observe:keyPaths:options:block:]
+-[FBKVOController observe:keyPath:options:action:]
+-[FBKVOController observe:keyPaths:options:action:]
+-[FBKVOController observe:keyPath:options:context:]
+-[FBKVOController observe:keyPaths:options:context:]
+-[FBKVOController unobserve:keyPath:]
+-[FBKVOController unobserve:]
+-[FBKVOController unobserveAll]
+-[FBKVOController observer]
+-[FBKVOController .cxx_destruct]
+_describe_option
+_sharedController._controller
+_sharedController.onceToken
+___block_descriptor_tmp
+___block_literal_global
+_OBJC_IVAR_$__FBKVOSharedController._infos
+_OBJC_IVAR_$__FBKVOSharedController._mutex
+_OBJC_IVAR_$_FBKVOController._observer
+_OBJC_IVAR_$_FBKVOController._objectInfosMap
+_OBJC_IVAR_$_FBKVOController._lock
+___block_descriptor_tmp.134
+Apple LLVM version 8.0.0 (clang-800.0.38)
+/Users/nlutsenko/src/oss/kvocontroller/FBKVOController/FBKVOController.m
+/Users/nlutsenko/src/oss/kvocontroller
+describe_option
+/Users/nlutsenko/src/oss/kvocontroller/FBKVOController/FBKVOController.h
+__destroy_helper_block_
+__copy_helper_block_
+__35-[FBKVOController debugDescription]_block_invoke
+__42+[_FBKVOSharedController sharedController]_block_invoke
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/usr/include/dispatch/once.h
+describe_options
+append_option_description
+enumerate_flags
+-[NSObject(FBKVOController) KVOController]
+-[NSObject(FBKVOController) setKVOController:]
+-[NSObject(FBKVOController) KVOControllerNonRetaining]
+-[NSObject(FBKVOController) setKVOControllerNonRetaining:]
+_NSObjectKVOControllerKey
+_NSObjectKVOControllerNonRetainingKey
+/Users/nlutsenko/src/oss/kvocontroller/FBKVOController/NSObject+FBKVOController.m
+/Users/nlutsenko/Desktop/XcodeDerivedData/FBKVOController-govpluxdzzjmalclnrhffhrjxode/Build/Intermediates/FBKVOController.build/Release-watchos/FBKVOController-watchOS-Dynamic.build/DerivedSources/KVOController_vers.c
