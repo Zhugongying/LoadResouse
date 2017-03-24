@@ -11,7 +11,7 @@ import Cartography
 
 class SwiftViewController: UIViewController {
 
-    internal let items: [Item] = [.blueTouch, .js, .test]
+    internal let items: [Item] = [.blueTouch, .js, .animation,.test]
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.tableFooterView = UIView()
@@ -64,6 +64,8 @@ extension SwiftViewController: UITableViewDelegate {
             navigationController?.pushViewController(JSViewController(), animated: true)
         case .test:
             navigationController?.pushViewController(PPTestViewController(), animated: true)
+        case .animation:
+            navigationController?.pushViewController(AnimationViewController(), animated: true)
         }
     }
     
@@ -94,6 +96,7 @@ extension SwiftViewController {
         case blueTouch
         case js
         case test
+        case animation
         
         var title: String {
             switch self {
@@ -103,6 +106,8 @@ extension SwiftViewController {
                 return "JS交互"
             case .test:
                 return "测试"
+            case .animation:
+                return "动画"
             }
         }
     }

@@ -31,6 +31,7 @@
 		2B735A331E7935E100CBA4A2 /* MonkeyKing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2D1E7935E100CBA4A2 /* MonkeyKing.framework */; };
 		2B735A341E7935E100CBA4A2 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2E1E7935E100CBA4A2 /* ObjectMapper.framework */; };
 		2B735A351E7935E100CBA4A2 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B735A2F1E7935E100CBA4A2 /* Reachability.framework */; };
+		2B8A31881E83B5C800B1D6FE /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A31871E83B5C800B1D6FE /* AnimationViewController.swift */; };
 		2BBC6B981E793DB600E0458C /* BlueTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6B971E793DB600E0458C /* BlueTouchViewController.swift */; };
 		2BBC6B9C1E7A699000E0458C /* JSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6B9B1E7A699000E0458C /* JSViewController.swift */; };
 		2BBC6BA01E7A820B00E0458C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BBC6B9F1E7A820B00E0458C /* test.html */; };
@@ -158,6 +159,7 @@
 		2B735A2D1E7935E100CBA4A2 /* MonkeyKing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MonkeyKing.framework; path = Carthage/Build/iOS/MonkeyKing.framework; sourceTree = "<group>"; };
 		2B735A2E1E7935E100CBA4A2 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		2B735A2F1E7935E100CBA4A2 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		2B8A31871E83B5C800B1D6FE /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		2BAE32121E52F5BF00E74F3F /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../../jtk/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		2BBC6B971E793DB600E0458C /* BlueTouchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueTouchViewController.swift; sourceTree = "<group>"; };
 		2BBC6B991E794C6A00E0458C /* LoadResouse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoadResouse.entitlements; sourceTree = "<group>"; };
@@ -469,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				2B735A281E792B0F00CBA4A2 /* SwiftViewController.swift */,
+				2B8A31861E83B5A300B1D6FE /* Animation */,
 				2BBC6BA31E7BAB1B00E0458C /* Test */,
 				2BBC6B9A1E7A697600E0458C /* WKWebView */,
 				2BBC6B961E793D9600E0458C /* 蓝牙 */,
@@ -476,6 +479,14 @@
 				2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */,
 			);
 			name = Swift;
+			sourceTree = "<group>";
+		};
+		2B8A31861E83B5A300B1D6FE /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				2B8A31871E83B5C800B1D6FE /* AnimationViewController.swift */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 		2BBC6B961E793D9600E0458C /* 蓝牙 */ = {
@@ -1330,6 +1341,7 @@
 				2B1FC78B1E4D6B3300014E19 /* JKModel.m in Sources */,
 				CE5E7DC41DAB45EA00E8DC6A /* TelAddressViewController.m in Sources */,
 				CE885EC81D9398FC00CB22D0 /* PLModel.m in Sources */,
+				2B8A31881E83B5C800B1D6FE /* AnimationViewController.swift in Sources */,
 				2B1FC7901E4D6B6F00014E19 /* JKCell.m in Sources */,
 				CE4B8F701D87F0A800D9C1BE /* MyHeadView.m in Sources */,
 				CE31970F1D99200B006D2C42 /* SetingTableViewController.m in Sources */,
