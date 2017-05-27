@@ -37,6 +37,7 @@
 		2BBC6BA01E7A820B00E0458C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BBC6B9F1E7A820B00E0458C /* test.html */; };
 		2BBC6BA21E7A9C2000E0458C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */; };
 		2BBC6BA51E7BAB3700E0458C /* PPTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6BA41E7BAB3700E0458C /* PPTestViewController.swift */; };
+		2BEB95BE1ED941C300B2DDC5 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB95BD1ED941C300B2DDC5 /* NewCollectionViewCell.swift */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -167,6 +168,7 @@
 		2BBC6B9F1E7A820B00E0458C /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		2BBC6BA41E7BAB3700E0458C /* PPTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPTestViewController.swift; sourceTree = "<group>"; };
+		2BEB95BD1ED941C300B2DDC5 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE106CC11D7EA5E600C7F181 /* LoadResouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadResouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -417,6 +419,7 @@
 			children = (
 				2B1FC7821E4C760800014E19 /* WebViewController.h */,
 				2B1FC7831E4C760800014E19 /* WebViewController.m */,
+				2BEB95BD1ED941C300B2DDC5 /* NewCollectionViewCell.swift */,
 			);
 			name = "网页公共展示";
 			sourceTree = "<group>";
@@ -1367,6 +1370,7 @@
 				CE106CFA1D7EAA3200C7F181 /* LeftViewController.m in Sources */,
 				2B1FC7A41E4DCD8E00014E19 /* ContentViewController.m in Sources */,
 				CE106CF11D7EA8DA00C7F181 /* RESideMenu.m in Sources */,
+				2BEB95BE1ED941C300B2DDC5 /* NewCollectionViewCell.swift in Sources */,
 				CE638EA51D80102200D7720C /* TitleModel.m in Sources */,
 				CEA184481D9004AA001B04DC /* XQViewController.m in Sources */,
 				CE106CF21D7EA8DA00C7F181 /* TableViewController.m in Sources */,
