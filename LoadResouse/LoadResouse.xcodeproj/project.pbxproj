@@ -38,6 +38,7 @@
 		2BBC6BA21E7A9C2000E0458C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */; };
 		2BBC6BA51E7BAB3700E0458C /* PPTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC6BA41E7BAB3700E0458C /* PPTestViewController.swift */; };
 		2BEB95BE1ED941C300B2DDC5 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB95BD1ED941C300B2DDC5 /* NewCollectionViewCell.swift */; };
+		2BEB95C01ED942A600B2DDC5 /* DemoNewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB95BF1ED942A600B2DDC5 /* DemoNewCollectionViewCell.swift */; };
 		CE106CC61D7EA5E600C7F181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC51D7EA5E600C7F181 /* main.m */; };
 		CE106CC91D7EA5E600C7F181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE106CC81D7EA5E600C7F181 /* AppDelegate.m */; };
 		CE106CCB1D7EA5E700C7F181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE106CCA1D7EA5E700C7F181 /* Assets.xcassets */; };
@@ -169,6 +170,7 @@
 		2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		2BBC6BA41E7BAB3700E0458C /* PPTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPTestViewController.swift; sourceTree = "<group>"; };
 		2BEB95BD1ED941C300B2DDC5 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
+		2BEB95BF1ED942A600B2DDC5 /* DemoNewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoNewCollectionViewCell.swift; sourceTree = "<group>"; };
 		66F1DE8C89C2F6441F3DB5CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69A0DAB4BE8747228BC49F6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE106CC11D7EA5E600C7F181 /* LoadResouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadResouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -480,6 +482,7 @@
 				2BBC6B961E793D9600E0458C /* 蓝牙 */,
 				2B735A271E792B0F00CBA4A2 /* LoadResouse-Bridging-Header.h */,
 				2BBC6BA11E7A9C2000E0458C /* AccountManager.swift */,
+				2BEB95BF1ED942A600B2DDC5 /* DemoNewCollectionViewCell.swift */,
 			);
 			name = Swift;
 			sourceTree = "<group>";
@@ -1365,6 +1368,7 @@
 				CED4BCC41D9A2DCB0096E842 /* XLVideoModel.m in Sources */,
 				2B735A291E792B0F00CBA4A2 /* SwiftViewController.swift in Sources */,
 				CE885ED41D93EE2C00CB22D0 /* AQYViewController.m in Sources */,
+				2BEB95C01ED942A600B2DDC5 /* DemoNewCollectionViewCell.swift in Sources */,
 				2B1FC79A1E4DB0FF00014E19 /* JKCountentViewController.m in Sources */,
 				2BBC6BA51E7BAB3700E0458C /* PPTestViewController.swift in Sources */,
 				2BBC6B981E793DB600E0458C /* BlueTouchViewController.swift in Sources */,
